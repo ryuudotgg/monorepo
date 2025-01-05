@@ -6,6 +6,9 @@ settings:
 
 catalogs:
   default:
+    '@t3-oss/env-nextjs':
+      specifier: ^0.11.1
+      version: 0.11.1
     eslint:
       specifier: ^9.17.0
       version: 9.17.0
@@ -15,6 +18,9 @@ catalogs:
     typescript:
       specifier: ^5.7.2
       version: 5.7.2
+    zod:
+      specifier: ^3.24.1
+      version: 3.24.1
 
 importers:
 
@@ -35,6 +41,34 @@ importers:
       turbo:
         specifier: ^2.3.3
         version: 2.3.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.7.2
+
+  packages/env:
+    dependencies:
+      '@t3-oss/env-nextjs':
+        specifier: 'catalog:'
+        version: 0.11.1(typescript@5.7.2)(zod@3.24.1)
+      zod:
+        specifier: 'catalog:'
+        version: 3.24.1
+    devDependencies:
+      '@purr/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@purr/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@purr/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
+      eslint:
+        specifier: 'catalog:'
+        version: 9.17.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.4.2
       typescript:
         specifier: 'catalog:'
         version: 5.7.2
@@ -243,6 +277,24 @@ packages:
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
+
+  '@t3-oss/env-core@0.11.1':
+    resolution: {integrity: sha512-MaxOwEoG1ntCFoKJsS7nqwgcxLW1SJw238AJwfJeaz3P/8GtkxXZsPPolsz1AdYvUTbe3XvqZ/VCdfjt+3zmKw==}
+    peerDependencies:
+      typescript: '>=5.0.0'
+      zod: ^3.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@t3-oss/env-nextjs@0.11.1':
+    resolution: {integrity: sha512-rx2XL9+v6wtOqLNJbD5eD8OezKlQD1BtC0WvvtHwBgK66jnF5+wGqtgkKK4Ygie1LVmoDClths2T4tdFmRvGrQ==}
+    peerDependencies:
+      typescript: '>=5.0.0'
+      zod: ^3.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
@@ -1859,6 +1911,9 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
+
 snapshots:
 
   '@babel/code-frame@7.26.2':
@@ -2019,6 +2074,19 @@ snapshots:
       fastq: 1.18.0
 
   '@rtsao/scc@1.1.0': {}
+
+  '@t3-oss/env-core@0.11.1(typescript@5.7.2)(zod@3.24.1)':
+    dependencies:
+      zod: 3.24.1
+    optionalDependencies:
+      typescript: 5.7.2
+
+  '@t3-oss/env-nextjs@0.11.1(typescript@5.7.2)(zod@3.24.1)':
+    dependencies:
+      '@t3-oss/env-core': 0.11.1(typescript@5.7.2)(zod@3.24.1)
+      zod: 3.24.1
+    optionalDependencies:
+      typescript: 5.7.2
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
@@ -3907,3 +3975,5 @@ snapshots:
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@3.24.1: {}
