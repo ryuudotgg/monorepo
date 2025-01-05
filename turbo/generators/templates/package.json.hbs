@@ -12,10 +12,14 @@
     "build": "tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
+  "prettier": "@purr/prettier-config",
   "devDependencies": {
+    "@purr/prettier-config": "workspace:*",
     "@purr/tsconfig": "workspace:*",
+    "prettier": "catalog:",
     "typescript": "catalog:"
   }
 }

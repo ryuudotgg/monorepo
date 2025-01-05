@@ -10,6 +10,14 @@
     },
     "//#clean": {
       "cache": false
+    },
+    "format": {
+      "outputs": [".cache/.prettiercache"],
+      "outputLogs": "new-only"
+    },
+    "format:fix": {
+      "outputs": [".cache/.prettiercache"],
+      "outputLogs": "new-only"
     }
   },
   "globalEnv": ["ENABLE_EXPERIMENTAL_COREPACK"],
