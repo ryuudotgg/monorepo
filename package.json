@@ -2,6 +2,9 @@
   "name": "create-purr-app",
   "license": "MIT",
   "packageManager": "pnpm@9.15.2",
+  "devDependencies": {
+    "typescript": "catalog:"
+  },
   "engines": {
     "node": ">=22.12.0",
     "pnpm": "^9.15.2"
