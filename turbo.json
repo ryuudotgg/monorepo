@@ -18,6 +18,14 @@
     "format:fix": {
       "outputs": [".cache/.prettiercache"],
       "outputLogs": "new-only"
+    },
+    "lint": {
+      "dependsOn": ["^topo"],
+      "outputs": [".cache/.eslintcache"]
+    },
+    "lint:fix": {
+      "dependsOn": ["^topo"],
+      "outputs": [".cache/.eslintcache"]
     }
   },
   "globalEnv": ["ENABLE_EXPERIMENTAL_COREPACK"],
