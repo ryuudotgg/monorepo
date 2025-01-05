@@ -10,7 +10,8 @@
     "format:fix": "turbo run format --continue -- --write --cache --cache-location .cache/.prettiercache",
     "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
     "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
-    "prepare": "husky"
+    "prepare": "husky",
+    "typecheck": "turbo run typecheck"
   },
   "prettier": "@purr/prettier-config",
   "devDependencies": {

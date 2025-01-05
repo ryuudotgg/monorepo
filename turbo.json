@@ -26,6 +26,10 @@
     "lint:fix": {
       "dependsOn": ["^topo"],
       "outputs": [".cache/.eslintcache"]
+    },
+    "typecheck": {
+      "dependsOn": ["^topo"],
+      "outputs": [".cache/tsbuildinfo.json"]
     }
   },
   "globalEnv": ["ENABLE_EXPERIMENTAL_COREPACK"],
