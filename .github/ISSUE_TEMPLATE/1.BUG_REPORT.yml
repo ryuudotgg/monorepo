@@ -1,0 +1,67 @@
+name: Report an Issue
+description: Report an issue you discovered in Purr App.
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you want to make a feature or documentation request, please open a discussion in [discussions](https://github.com/***REMOVED***/create-purr-app/discussions/new?category=ideas) instead.
+
+        You should search for existing issues before opening a new one, if one exists, please upvote it instead. We will prioritize issues with more upvotes.
+
+  - type: checkboxes
+    attributes:
+      label: Preliminary Checks
+      options:
+        - label: I have searched existing issues and confirmed this is not a duplicate.
+          required: true
+        - label: I am using the latest version of Purr App.
+          required: true
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: To Reproduce
+      description: A step-by-step description of how to reproduce the issue. Screenshots can be provided in the issue body below. If using code blocks, make sure that [syntax highlighting is correct](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) and double check that the rendered preview is not broken.
+      placeholder: |
+        1. Start Purr App
+        2. Click X
+        3. Y Happens
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Current vs. Expected Behavior
+      description: |
+        A clear and concise description of what the bug is (e.g., screenshots, logs, etc.), and what you expected to happen. **Skipping this/failure to provide complete information of the bug will result in the issue being closed.**
+      placeholder: "After following the steps above, I expected Purr App to do A, but it did B instead."
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Your Environment Information
+      description: You can use `npx envinfo` to get this information. Do not provide more than necessary as defined in the template.
+      value: |
+        ## System
+          - OS: macOS 15.2
+          - CPU: (8) arm64 Apple M1
+          - Memory: 50.00 MB / 16.00 GB
+          - Shell: 5.9 - /bin/zsh
+
+        ## Binaries
+          - Node: 22.12.0
+          - PNPM: 9.15.2
+
+        ## Browsers
+          - Safari: 18.2
+          - Arc (Chromium): 1.73.0 (56815)
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: |
+        Any extra information that might help us investigate. Is the issue only happening in a specific browser? etc.
