@@ -1,0 +1,39 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.purr.gg/DargW5gB3W5Z.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.purr.gg/EWwq3GD8sJH3.png">
+    <img alt="Purr" src="https://cdn.purr.gg/EWwq3GD8sJH3.png" width="160">
+  </picture>
+</p>
+
+<p align="center">
+  A modern starter for your next big thing.
+</p>
+
+<p align="center">
+  <a href="https://create.purr.gg">Website</a>
+  ·
+  <a href="https://create.purr.gg/docs">Documentation</a>
+</p>
+
+## What & Why?
+
+Purr App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, modify, or replace any component to suit your tastes.
+
+## Documentation
+
+Visit our [Documentation](https://create.purr.gg/docs) to view the full documentation.
+
+## Support
+
+- 🌟 Star this repo to show support :3
+- 🎯 Report issues on [GitHub](https://github.com/nemanjastanic/create-purr-app/issues)
+- 💬 Open a discussion on [GitHub](https://github.com/nemanjastanic/create-purr-app/discussions) for help
+
+## Versioning
+
+We use [SemVer](http://semver.org) for versioning. For available versions, see the [tags on this repository](https://github.com/nemanjastanic/create-purr-app/tags).
+
+## Authors
+
+- Nemanja Stanić ([@nemanjastanic](https://github.com/nemanjastanic))
