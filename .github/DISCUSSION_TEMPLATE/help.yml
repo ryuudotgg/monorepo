@@ -1,0 +1,12 @@
+body:
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Summary
+      description: What do you need help with?
+
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Any screenshots, error messages, or dependency details that may be related?
