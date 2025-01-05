@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE">
+  <a href="LICENSE.md">
     <img src="https://img.shields.io/github/license/nemanjastanic/create-purr-app?style=for-the-badge&labelColor=000000" alt="MIT License">
   </a>
   <a href="https://discord.gg/YaarU42KxQ">
@@ -73,7 +73,7 @@ We use [SemVer](http://semver.org) for versioning. For available versions, see t
 
 ## License
 
-This project is licensed under an MIT license. See [LICENSE](LICENSE) for more details.
+This project is licensed under an MIT license. See [LICENSE.md](LICENSE.md) for more details.
 
 ## Authors
 
