@@ -6,16 +6,17 @@ on:
   issue_comment:
     types: [created]
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 permissions:
   issues: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   triage:
     name: Nissuer
     runs-on: ubuntu-latest
+
     steps:
       - uses: balazsorban44/nissuer@1.10.0
         with:
