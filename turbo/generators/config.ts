@@ -40,6 +40,11 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: "add",
+        path: "packages/{{ name }}/tsconfig.json",
+        templateFile: "templates/tsconfig.json.hbs",
+      },
+      {
+        type: "add",
         path: "packages/{{ name }}/src/index.ts",
         template: "export const name = '{{ name }}';",
       },
