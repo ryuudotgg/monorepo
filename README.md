@@ -16,6 +16,15 @@
   <a href="https://create.purr.gg/docs">Documentation</a>
 </p>
 
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-mit-green?style=for-the-badge&labelColor=000000" alt="MIT License">
+  </a>
+  <a href="https://discord.gg/YaarU42KxQ">
+    <img src="https://img.shields.io/discord/1131068064637649048?style=for-the-badge&labelColor=000000&color=5865F2&label=Discord" alt="Discord Community">
+  </a>
+</p>
+
 ## What & Why?
 
 Purr App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, modify, or replace any component to suit your tastes.
@@ -33,6 +42,10 @@ Visit our [Documentation](https://create.purr.gg/docs) to view the full document
 ## Versioning
 
 We use [SemVer](http://semver.org) for versioning. For available versions, see the [tags on this repository](https://github.com/nemanjastanic/create-purr-app/tags).
+
+## License
+
+This project is licensed under an MIT license. See [LICENSE](LICENSE) for more details.
 
 ## Authors
 
