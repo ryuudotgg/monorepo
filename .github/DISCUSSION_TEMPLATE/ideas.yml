@@ -1,0 +1,34 @@
+body:
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Goals
+      description: A short list of what the feature request aims to address?
+      value: |
+        1.
+        2.
+        3.
+
+  - type: textarea
+    attributes:
+      label: Non-Goals
+      description: A short list of what the feature request _does not_ aim to address?
+      value: |
+        1.
+        2.
+        3.
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Background
+      description: Discuss existing solutions or similar features in other tools, why do you think this feature is needed? Are there current alternatives?
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Proposal
+      description: How should this feature be implemented? Are you interested in contributing?
