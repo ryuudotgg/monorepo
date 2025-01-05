@@ -1,0 +1,7 @@
+packages:
+  - apps/*
+  - packages/*
+  - tooling/*
+
+catalog:
+  typescript: ^5.7.2
