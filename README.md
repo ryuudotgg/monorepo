@@ -39,6 +39,14 @@ Visit our [Documentation](https://create.purr.gg/docs) to view the full document
 - 🎯 Report issues on [GitHub](https://github.com/***REMOVED***/create-purr-app/issues)
 - 💬 Open a discussion on [GitHub](https://github.com/***REMOVED***/create-purr-app/discussions) for help
 
+## Contributing
+
+We welcome and highly appreciate contributions! However, before you jump right into it, we would like you to review our [Contributing Guidelines](CONTRIBUTING.md) to make sure you hve a smooth experience.
+
+### Good First Issues
+
+We have a list of [good first issues](https://github.com/***REMOVED***/purr/issues?q=is:open+is:issue+label:%22good+first+issue%22) that contain bugs that have a relatively limited scope. This is a great place for newcomers and beginners to get started, gain experience, and get familiar with our contribution process.
+
 ## Versioning
 
 We use [SemVer](http://semver.org) for versioning. For available versions, see the [tags on this repository](https://github.com/***REMOVED***/create-purr-app/tags).
