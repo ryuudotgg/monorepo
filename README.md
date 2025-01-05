@@ -78,3 +78,7 @@ This project is licensed under an MIT license. See [LICENSE.md](LICENSE.md) for 
 ## Authors
 
 - ***REMOVED*** ([@***REMOVED***](https://github.com/***REMOVED***))
+
+## Security
+
+If you believe you have found a security vulnerability, please report it to us as described in our [Security Policy](SECURITY.md).
