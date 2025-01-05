@@ -14,5 +14,7 @@
     { "pattern": "packages/*/" },
     { "pattern": "tooling/*/" }
   ],
-  "prettier.ignorePath": ".gitignore"
+  "prettier.ignorePath": ".gitignore",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
