@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question / Discuss a Topic
+    url: https://github.com/nemanjastanic/create-purr-app/discussions
+    about: Ask questions or discuss topics related to Purr with other users.
+  - name: Feature / Documentation Request
+    url: https://github.com/nemanjastanic/create-purr-app/discussions/new?category=ideas
+    about: You may open a feature or documentation request in discussions.
