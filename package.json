@@ -6,8 +6,11 @@
     "clean": "git clean -xdf .turbo node_modules",
     "clean:workspaces": "turbo run clean"
   },
+  "prettier": "@purr/prettier-config",
   "devDependencies": {
+    "@purr/prettier-config": "workspace:*",
     "@turbo/gen": "^2.3.3",
+    "prettier": "catalog:",
     "turbo": "^2.3.3",
     "typescript": "catalog:"
   },
