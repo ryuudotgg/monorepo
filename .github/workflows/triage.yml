@@ -1,0 +1,27 @@
+name: Triage Issues
+
+on:
+  issues:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  issues: write
+
+jobs:
+  triage:
+    name: Nissuer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: balazsorban44/nissuer@1.10.0
+        with:
+          comment-unhelpful-weight: 0.5
+          label-comments: |
+            {
+              "good first issue": ".github/comments/good-first-issue.md",
+              "resolved": ".github/comments/resolved.md"
+            }
