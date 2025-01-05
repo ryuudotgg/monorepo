@@ -2,7 +2,12 @@
   "name": "create-purr-app",
   "license": "MIT",
   "packageManager": "pnpm@9.15.2",
+  "scripts": {
+    "clean": "git clean -xdf .turbo node_modules",
+    "clean:workspaces": "turbo run clean"
+  },
   "devDependencies": {
+    "turbo": "^2.3.3",
     "typescript": "catalog:"
   },
   "engines": {
