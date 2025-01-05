@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-mit-green?style=for-the-badge&labelColor=000000" alt="MIT License">
+    <img src="https://img.shields.io/github/license/nemanjastanic/create-purr-app?style=for-the-badge&labelColor=000000" alt="MIT License">
   </a>
   <a href="https://discord.gg/YaarU42KxQ">
     <img src="https://img.shields.io/discord/1131068064637649048?style=for-the-badge&labelColor=000000&color=5865F2&label=Discord" alt="Discord Community">
@@ -28,6 +28,22 @@
 ## What & Why?
 
 Purr App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, modify, or replace any component to suit your tastes.
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org) + [Expo](https://expo.dev)
+- **Authentication:** [BetterAuth](https://better-auth.com)
+- **Database:** [Drizzle ORM](https://orm.drizzle.team) + [MySQL](https://mysql.com)
+- **Key Value Store:** [Upstash](https://upstash.com)
+- **API:** [tRPC](https://trpc.io)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **Components:** [Radix UI](https://radix-ui.com/primitives)
+- **Deployment:** [Vercel](https://vercel.com)
+- **Analytics:** [PostHog](https://posthog.com)
+- **Monitoring:** [Sentry](https://sentry.io) + [BetterStack](https://betterstack.com)
+- **Security:** [Arcjet](https://arcjet.com)
+- **Testing:** [Vitest](https://vitest.dev)
+- **Development:** [Turbo](https://turbo.build) + [PNPM](https://pnpm.io)
 
 ## Documentation
 
