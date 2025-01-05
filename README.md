@@ -39,6 +39,10 @@ Visit our [Documentation](https://create.purr.gg/docs) to view the full document
 - 🎯 Report issues on [GitHub](https://github.com/nemanjastanic/create-purr-app/issues)
 - 💬 Open a discussion on [GitHub](https://github.com/nemanjastanic/create-purr-app/discussions) for help
 
+## Code of Conduct
+
+We have a [Code of Conduct](CODE_OF_CONDUCT.md) in place to ensure a welcoming and inclusive environment for all contributors. You are **highly encouraged** to read and adhere to it to avoid repercussions.
+
 ## Contributing
 
 We welcome and highly appreciate contributions! However, before you jump right into it, we would like you to review our [Contributing Guidelines](CONTRIBUTING.md) to make sure you hve a smooth experience.
