@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "//#clean": {
+      "cache": false
+    }
+  },
+  "globalEnv": ["ENABLE_EXPERIMENTAL_COREPACK"],
+  "globalPassThroughEnv": ["CI", "NODE_ENV", "npm_lifecycle_event"]
+}
