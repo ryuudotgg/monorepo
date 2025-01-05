@@ -7,7 +7,7 @@ Ensure you have the following installed:
 - Node.js
   - Version: [.nvmrc](../.nvmrc)
 - PNPM
-  - Version: [package.json#packageManager](../package.json#L4)
+  - Version: [package.json#packageManager](../package.json#L5)
 
 ## Development Environment
 
