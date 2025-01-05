@@ -1,5 +1,5 @@
-import type { PlopTypes } from "@turbo/gen";
 import { execSync } from "node:child_process";
+import type { PlopTypes } from "@turbo/gen";
 
 interface PackageJson {
   name: string;
@@ -35,6 +35,11 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: "add",
+        path: "packages/{{ name }}/eslint.config.js",
+        templateFile: "templates/eslint.config.js.hbs",
+      },
+      {
+        type: "add",
         path: "packages/{{ name }}/package.json",
         templateFile: "templates/package.json.hbs",
       },
@@ -60,7 +65,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
               const name = isDev ? dep.slice(0, -4) : dep;
 
               const version = await fetch(
-                `https://registry.npmjs.org/-/package/${name}/dist-tags`
+                `https://registry.npmjs.org/-/package/${name}/dist-tags`,
               )
                 .then((res) => res.json())
                 .then((json) => json.latest);
@@ -84,7 +89,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         if ("name" in answers && typeof answers.name === "string") {
           execSync("pnpm install", { stdio: "inherit" });
           execSync(
-            `pnpm prettier --write packages/${answers.name}/** --list-different`
+            `pnpm prettier --write packages/${answers.name}/** --list-different`,
           );
 
           return "Scaffolded";
