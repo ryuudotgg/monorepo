@@ -15,7 +15,7 @@
     "@eslint/compat": "^1.2.4",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-turbo": "^2.3.3",
-    "typescript-eslint": "^8.19.0"
+    "typescript-eslint": "^8.19.1"
   },
   "devDependencies": {
     "@purr/prettier-config": "workspace:*",
