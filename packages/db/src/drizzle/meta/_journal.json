@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1736469712641,
+      "tag": "0000_crazy_captain_universe",
+      "breakpoints": true
+    }
+  ]
+}

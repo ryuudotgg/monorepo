@@ -1,0 +1,39 @@
+{
+  "name": "@purr/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./helpers": {
+      "types": "./dist/src/helpers/index.d.ts",
+      "default": "./src/helpers/index.ts"
+    },
+    "./types": {
+      "types": "./dist/src/types/index.d.ts",
+      "default": "./src/types/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": "@purr/prettier-config",
+  "dependencies": {
+    "@purr/env": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
+    "nanoid": "^5.0.9",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@purr/eslint-config": "workspace:*",
+    "@purr/prettier-config": "workspace:*",
+    "@purr/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
