@@ -30,7 +30,7 @@
     "@purr/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@vercel/analytics": "^1.4.1",
-    "posthog-js": "^1.203.2",
+    "posthog-js": "^1.205.0",
     "posthog-node": "^4.3.2",
     "react": "catalog:react19",
     "server-only": "^0.0.1",
