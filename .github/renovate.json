@@ -13,7 +13,15 @@
   },
   "osvVulnerabilityAlerts": true,
   "packageRules": [
-    { "enabled": false, "matchPackageNames": ["/^@purr//"] },
+    {
+      "matchPackageNames": ["/^@purr//"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["/mysql/"],
+      "matchManagers": ["docker-compose"],
+      "enabled": false
+    },
     {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
