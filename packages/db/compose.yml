@@ -1,0 +1,36 @@
+services:
+  database:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: "planetscale"
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    command:
+      [
+        "--max_connections=1000",
+        "--default-authentication-plugin=mysql_native_password",
+      ]
+    ports:
+      - "3307:3306"
+    volumes:
+      - "database:/var/lib/mysql"
+
+  planetscale:
+    image: ghcr.io/mattrobenolt/ps-http-sim:latest
+    command:
+      [
+        "-mysql-no-pass",
+        "-listen-port=3900",
+        "-mysql-dbname=planetscale",
+        "-mysql-addr=database",
+      ]
+    ports:
+      - "3900:3900"
+    depends_on:
+      - "database"
+    links:
+      - "database"
+
+volumes:
+  database:

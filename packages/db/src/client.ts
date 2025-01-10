@@ -1,0 +1,10 @@
+import { Client } from "@planetscale/database";
+import { drizzle } from "drizzle-orm/planetscale-serverless";
+
+import { env } from "../env";
+import * as schema from "./schema";
+
+const client = new Client({ url: env.DATABASE_URL });
+const db = drizzle({ client, schema, casing: "snake_case" });
+
+export { db };
