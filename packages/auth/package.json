@@ -1,0 +1,41 @@
+{
+  "name": "@purr/auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "react-server": "./src/index.rsc.ts",
+      "default": "./src/index.ts"
+    },
+    "./react": "./src/react.ts",
+    "./env": "./env.ts"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@purr/prettier-config",
+  "dependencies": {
+    "@purr/db": "workspace:*",
+    "@purr/env": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
+    "@trpc/server": "^10.45.2",
+    "@vercel/functions": "^1.5.2",
+    "better-auth": "^1.1.10",
+    "next": "catalog:next",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@purr/eslint-config": "workspace:*",
+    "@purr/prettier-config": "workspace:*",
+    "@purr/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
