@@ -1,6 +1,8 @@
 import type { BetterAuthOptions } from "better-auth";
+import { geolocation, ipAddress } from "@vercel/functions";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { nextCookies } from "better-auth/next-js";
+import { magicLink } from "better-auth/plugins/magic-link";
 import { passkey } from "better-auth/plugins/passkey";
 import { z } from "zod";
 
@@ -14,6 +16,7 @@ import {
   users,
   verifications,
 } from "@purr/db/schema";
+import { sendSignIn, sendSignUp } from "@purr/emails";
 
 import type { Session } from ".";
 import { env } from "../env";
@@ -41,6 +44,20 @@ export const authConfig = {
 
   plugins: [
     passkey({ rpID: "purr", rpName: "Purr", origin: env.AUTH_BASE_URL }),
+    magicLink({
+      sendMagicLink: async ({ email, token }, request) => {
+        const { city, country } = request ? geolocation(request) : {};
+        const ip = request ? ipAddress(request) : undefined;
+
+        const [user] = await db
+          .select()
+          .from(users)
+          .where(eq(users.email, email));
+
+        if (user) await sendSignIn({ user, token, city, country, ip });
+        else await sendSignUp({ email, token, city, country, ip });
+      },
+    }),
 
     // This must remain the last item of the array.
     nextCookies(),
