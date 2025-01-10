@@ -1,0 +1,32 @@
+{
+  "name": "@purr/validators",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": "@purr/prettier-config",
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@purr/eslint-config": "workspace:*",
+    "@purr/prettier-config": "workspace:*",
+    "@purr/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
