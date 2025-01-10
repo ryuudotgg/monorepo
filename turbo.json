@@ -15,6 +15,11 @@
     "//#clean": {
       "cache": false
     },
+    "dev": {
+      "dependsOn": ["^dev"],
+      "cache": false,
+      "persistent": false
+    },
     "format": {
       "outputs": [".cache/.prettiercache"],
       "outputLogs": "new-only"
@@ -47,11 +52,13 @@
     "AUTH_GOOGLE_SECRET",
     "AUTH_SECRET",
     "DATABASE_URL",
+    "EDGE_CONFIG",
     "ENABLE_EXPERIMENTAL_COREPACK",
     "KV_REST_API_READ_ONLY_TOKEN",
     "KV_REST_API_TOKEN",
     "KV_REST_API_URL",
     "KV_URL",
+    "LAUNCHDARKLY_CLIENT_ID",
     "NEXT_PUBLIC_POSTHOG_HOST",
     "NEXT_PUBLIC_POSTHOG_KEY",
     "PORT",

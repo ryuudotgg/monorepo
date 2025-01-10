@@ -1,0 +1,42 @@
+{
+  "name": "@purr/flags",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./access": {
+      "types": "./dist/src/access.d.ts",
+      "default": "./src/access.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": "@purr/prettier-config",
+  "dependencies": {
+    "@launchdarkly/vercel-server-sdk": "^1.3.21",
+    "@purr/auth": "workspace:*",
+    "@purr/env": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
+    "@vercel/edge-config": "^1.4.0",
+    "@vercel/flags": "^2.6.3",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@purr/eslint-config": "workspace:*",
+    "@purr/prettier-config": "workspace:*",
+    "@purr/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
