@@ -22,7 +22,7 @@
     "@purr/db": "workspace:*",
     "@purr/env": "workspace:*",
     "@purr/shared": "workspace:*",
-    "@react-email/components": "^0.0.31",
+    "@react-email/components": "^0.0.32",
     "@t3-oss/env-nextjs": "catalog:",
     "resend": "^4.0.1",
     "zod": "catalog:"
