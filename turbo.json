@@ -32,6 +32,10 @@
       "outputs": [".cache/tsbuildinfo.json"]
     }
   },
-  "globalEnv": ["ENABLE_EXPERIMENTAL_COREPACK"],
+  "globalEnv": [
+    "ENABLE_EXPERIMENTAL_COREPACK",
+    "NEXT_PUBLIC_POSTHOG_HOST",
+    "NEXT_PUBLIC_POSTHOG_KEY"
+  ],
   "globalPassThroughEnv": ["CI", "NODE_ENV", "npm_lifecycle_event"]
 }
