@@ -1,34 +1,30 @@
 {
-  "name": "@purr/auth",
+  "name": "@purr/emails",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "exports": {
     ".": {
-      "react-server": "./src/index.rsc.ts",
+      "types": "./dist/src/index.d.ts",
       "default": "./src/index.ts"
-    },
-    "./react": "./src/react.ts",
-    "./env": "./env.ts"
+    }
   },
   "scripts": {
+    "build": "tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "prettier": "@purr/prettier-config",
   "dependencies": {
     "@purr/db": "workspace:*",
-    "@purr/emails": "workspace:*",
     "@purr/env": "workspace:*",
+    "@purr/shared": "workspace:*",
+    "@react-email/components": "^0.0.31",
     "@t3-oss/env-nextjs": "catalog:",
-    "@trpc/server": "^10.45.2",
-    "@vercel/functions": "^1.5.2",
-    "better-auth": "^1.1.10",
-    "next": "catalog:next",
-    "react": "catalog:react19",
-    "react-dom": "catalog:react19",
+    "resend": "^4.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
