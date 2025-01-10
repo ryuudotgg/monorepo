@@ -1,12 +1,20 @@
 {
-  "name": "@purr/env",
+  "name": "@purr/analytics",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./src/index.ts"
+    "./posthog/client": {
+      "types": "./dist/src/posthog/client.d.ts",
+      "default": "./src/posthog/client.tsx"
+    },
+    "./posthog/server": {
+      "types": "./dist/src/posthog/server.d.ts",
+      "default": "./src/posthog/server.ts"
+    },
+    "./vercel": {
+      "types": "./dist/src/vercel.d.ts",
+      "default": "./src/vercel.ts"
     }
   },
   "scripts": {
@@ -19,13 +27,21 @@
   },
   "prettier": "@purr/prettier-config",
   "dependencies": {
+    "@purr/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
+    "@vercel/analytics": "^1.4.1",
+    "posthog-js": "^1.203.2",
+    "posthog-node": "^4.3.2",
+    "react": "catalog:react19",
+    "server-only": "^0.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@purr/eslint-config": "workspace:*",
     "@purr/prettier-config": "workspace:*",
     "@purr/tsconfig": "workspace:*",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
