@@ -5,6 +5,10 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".cache/tsbuildinfo.json", "dist/**"]
+    },
     "clean": {
       "cache": false
     },
@@ -20,20 +24,21 @@
       "outputLogs": "new-only"
     },
     "lint": {
-      "dependsOn": ["^topo"],
+      "dependsOn": ["^topo", "^build"],
       "outputs": [".cache/.eslintcache"]
     },
     "lint:fix": {
-      "dependsOn": ["^topo"],
+      "dependsOn": ["^topo", "^build"],
       "outputs": [".cache/.eslintcache"]
     },
     "typecheck": {
-      "dependsOn": ["^topo"],
+      "dependsOn": ["^topo", "^build"],
       "outputs": [".cache/tsbuildinfo.json"]
     }
   },
   "globalEnv": [
     "ARCJET_KEY",
+    "DATABASE_URL",
     "ENABLE_EXPERIMENTAL_COREPACK",
     "KV_REST_API_READ_ONLY_TOKEN",
     "KV_REST_API_TOKEN",
