@@ -209,6 +209,31 @@ importers:
         specifier: 'catalog:'
         version: 5.7.2
 
+  packages/validators:
+    dependencies:
+      zod:
+        specifier: 'catalog:'
+        version: 3.24.1
+    devDependencies:
+      '@purr/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@purr/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@purr/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
+      eslint:
+        specifier: 'catalog:'
+        version: 9.17.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.4.2
+      typescript:
+        specifier: 'catalog:'
+        version: 5.7.2
+
   tooling/eslint:
     dependencies:
       '@eslint/compat':
