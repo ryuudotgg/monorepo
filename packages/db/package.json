@@ -40,7 +40,7 @@
     "@purr/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "drizzle-orm": "^0.38.3",
-    "drizzle-zod": "^0.5.1",
+    "drizzle-zod": "^0.6.1",
     "zod": "catalog:"
   },
   "devDependencies": {
