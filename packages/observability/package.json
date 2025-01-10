@@ -1,0 +1,50 @@
+{
+  "name": "@purr/observability",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./status": {
+      "types": "./dist/src/status/index.d.ts",
+      "default": "./src/status/index.ts"
+    },
+    "./error": {
+      "types": "./dist/src/error.d.ts",
+      "default": "./src/error.ts"
+    },
+    "./log": {
+      "types": "./dist/src/log.d.ts",
+      "default": "./src/log.ts"
+    },
+    "./env": {
+      "types": "./dist/env.d.ts",
+      "default": "./env.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": "@purr/prettier-config",
+  "dependencies": {
+    "@logtail/next": "^0.1.7",
+    "@purr/env": "workspace:*",
+    "@sentry/nextjs": "^8.47.0",
+    "@t3-oss/env-nextjs": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@purr/auth": "workspace:*",
+    "@purr/eslint-config": "workspace:*",
+    "@purr/prettier-config": "workspace:*",
+    "@purr/tsconfig": "workspace:*",
+    "@vercel/functions": "^1.5.2",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
