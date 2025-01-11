@@ -32,10 +32,10 @@ export function SignIn({ user, token, city, country, ip }: SignInProps) {
   return (
     <Html lang="en" dir="ltr">
       <Head>
-        <title>Verify your email to sign in to Purr</title>
+        <title>Verify your email to sign in to Ryuu</title>
       </Head>
       <Body>
-        <Preview>Verify your email to sign in to Purr</Preview>
+        <Preview>Verify your email to sign in to Ryuu</Preview>
         <Section>
           <Row>
             <Column align="center">
@@ -63,11 +63,11 @@ export function SignIn({ user, token, city, country, ip }: SignInProps) {
                             <div>
                               <Img
                                 src={String(
-                                  new URL("/assets/purr.png", baseUrl),
+                                  new URL("/assets/ryuu.png", baseUrl),
                                 )}
                                 width={48}
                                 height={48}
-                                alt="Purr"
+                                alt="Create Ryuu App"
                               />
                             </div>
                             <Heading
@@ -80,7 +80,7 @@ export function SignIn({ user, token, city, country, ip }: SignInProps) {
                                 padding: "0",
                               }}
                             >
-                              Verify your email to sign in to <b>Purr</b>
+                              Verify your email to sign in to <b>Ryuu</b>
                             </Heading>
                           </Column>
                         </Row>

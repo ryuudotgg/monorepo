@@ -43,7 +43,12 @@ export const authConfig = {
   baseURL: env.AUTH_BASE_URL,
 
   plugins: [
-    passkey({ rpID: "purr", rpName: "Purr", origin: env.AUTH_BASE_URL }),
+    passkey({
+      rpID: "ryuu",
+      rpName: "Create Ryuu App",
+      origin: env.AUTH_BASE_URL,
+    }),
+
     magicLink({
       sendMagicLink: async ({ email, token }, request) => {
         const { city, country } = request ? geolocation(request) : {};

@@ -39,8 +39,8 @@ Community leaders have the right and responsibility to remove, edit, or reject c
 
 This Code of Conduct applies within all community spaces, including but not limited to:
 
-- The Purr GitHub repository
-- The Purr Discord community
+- The Create Ryuu App GitHub repository
+- The Create Ryuu App Discord community
 - Official documentation and communication channels
 - Community events and meetups
 - Code review discussions and pull requests

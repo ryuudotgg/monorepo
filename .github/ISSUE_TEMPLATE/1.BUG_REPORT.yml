@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        If you want to make a feature or documentation request, please open a discussion in [discussions](https://github.com/nemanjastanic/create-purr-app/discussions/new?category=ideas) instead.
+        If you want to make a feature or documentation request, please open a discussion in [discussions](https://github.com/ryuudotgg/create-ryuu-app/discussions/new?category=ideas) instead.
 
         You should search for existing issues before opening a new one, if one exists, please upvote it instead. We will prioritize issues with more upvotes.
 

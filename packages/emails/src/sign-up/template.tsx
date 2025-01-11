@@ -29,10 +29,10 @@ export function SignUp({ token, city, country, ip }: SignUpProps) {
   return (
     <Html lang="en" dir="ltr">
       <Head>
-        <title>Verify your email to sign up for Purr</title>
+        <title>Verify your email to sign up for Ryuu</title>
       </Head>
       <Body>
-        <Preview>Verify your email to sign up for Purr</Preview>
+        <Preview>Verify your email to sign up for Ryuu</Preview>
         <Section>
           <Row>
             <Column align="center">
@@ -60,11 +60,11 @@ export function SignUp({ token, city, country, ip }: SignUpProps) {
                             <div>
                               <Img
                                 src={String(
-                                  new URL("/assets/purr.png", baseUrl),
+                                  new URL("/assets/ryuu.png", baseUrl),
                                 )}
                                 width={48}
                                 height={48}
-                                alt="Purr"
+                                alt="Ryuu"
                               />
                             </div>
                             <Heading
@@ -77,7 +77,7 @@ export function SignUp({ token, city, country, ip }: SignUpProps) {
                                 padding: "0",
                               }}
                             >
-                              Verify your email to sign up for <b>Purr</b>
+                              Verify your email to sign up for <b>Ryuu</b>
                             </Heading>
                           </Column>
                         </Row>
