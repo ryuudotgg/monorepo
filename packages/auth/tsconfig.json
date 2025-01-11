@@ -1,5 +1,5 @@
 {
-  "extends": "@purr/tsconfig/base.json",
+  "extends": "@ryuu/tsconfig/base.json",
   "include": ["./src", "./*.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@purr/auth",
+  "name": "@ryuu/auth",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,11 +17,11 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@purr/db": "workspace:*",
-    "@purr/emails": "workspace:*",
-    "@purr/env": "workspace:*",
+    "@ryuu/db": "workspace:*",
+    "@ryuu/emails": "workspace:*",
+    "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@trpc/server": "^10.45.2",
     "@vercel/functions": "^1.5.2",
@@ -32,9 +32,9 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@purr/eslint-config": "workspace:*",
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

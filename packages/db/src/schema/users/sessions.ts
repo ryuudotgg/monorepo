@@ -9,7 +9,7 @@ import {
 } from "drizzle-orm/mysql-core";
 import { z } from "zod";
 
-import { nanoidLength, nanoidZod } from "@purr/shared/helpers";
+import { nanoidLength, nanoidZod } from "@ryuu/shared/helpers";
 
 import { users } from ".";
 import { dates, nanoid } from "../../helpers";

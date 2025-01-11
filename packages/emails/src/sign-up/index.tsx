@@ -22,7 +22,7 @@ function sendSignUp({
   return resend.emails.send({
     from: env.RESEND_FROM,
     to: email,
-    subject: "Sign up for Purr",
+    subject: "Sign up for Ryuu",
     react: <SignUp token={token} city={city} country={country} ip={ip} />,
   });
 }

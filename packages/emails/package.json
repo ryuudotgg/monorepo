@@ -1,5 +1,5 @@
 {
-  "name": "@purr/emails",
+  "name": "@ryuu/emails",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,20 +17,20 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@purr/db": "workspace:*",
-    "@purr/env": "workspace:*",
-    "@purr/shared": "workspace:*",
     "@react-email/components": "^0.0.32",
+    "@ryuu/db": "workspace:*",
+    "@ryuu/env": "workspace:*",
+    "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "resend": "^4.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@purr/eslint-config": "workspace:*",
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
