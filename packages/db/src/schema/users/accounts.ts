@@ -8,7 +8,7 @@ import {
   varchar,
 } from "drizzle-orm/mysql-core";
 
-import { nanoidLength } from "@purr/shared/helpers";
+import { nanoidLength } from "@ryuu/shared/helpers";
 
 import { users } from ".";
 import { dates, nanoid } from "../../helpers";

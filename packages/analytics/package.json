@@ -1,5 +1,5 @@
 {
-  "name": "@purr/analytics",
+  "name": "@ryuu/analytics",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -25,9 +25,9 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@purr/env": "workspace:*",
+    "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@vercel/analytics": "^1.4.1",
     "posthog-js": "^1.205.0",
@@ -37,9 +37,9 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@purr/eslint-config": "workspace:*",
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
     "eslint": "catalog:",

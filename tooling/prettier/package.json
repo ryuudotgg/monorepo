@@ -1,5 +1,5 @@
 {
-  "name": "@purr/prettier-config",
+  "name": "@ryuu/prettier-config",
   "version": "0.1.0",
   "type": "module",
   "exports": {
@@ -10,14 +10,14 @@
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "typecheck": "tsc --noEmit"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "^0.6.9"
   },
   "devDependencies": {
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "typescript": "catalog:"
   }
 }

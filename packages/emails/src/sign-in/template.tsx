@@ -13,7 +13,7 @@ import {
   Text,
 } from "@react-email/components";
 
-import type { users } from "@purr/db/schema";
+import type { users } from "@ryuu/db/schema";
 
 import { baseUrl } from "../constants";
 

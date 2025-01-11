@@ -1,6 +1,6 @@
-# Contributing to Purr App
+# Contributing to Create Ryuu App
 
-Thanks for your interest in contributing to Purr App! We're excited to have you join us. This document outlines the process and guidelines for contributing.
+Thanks for your interest in contributing to Create Ryuu App! We're excited to have you join us. This document outlines the process and guidelines for contributing.
 
 ## Getting Started
 

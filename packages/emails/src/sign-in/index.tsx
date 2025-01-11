@@ -1,6 +1,6 @@
 import type { CreateEmailResponse } from "resend";
 
-import type { users } from "@purr/db/schema";
+import type { users } from "@ryuu/db/schema";
 
 import { resend } from "..";
 import { env } from "../../env";

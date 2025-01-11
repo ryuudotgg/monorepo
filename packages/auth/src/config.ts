@@ -6,17 +6,17 @@ import { magicLink } from "better-auth/plugins/magic-link";
 import { passkey } from "better-auth/plugins/passkey";
 import { z } from "zod";
 
-import { eq } from "@purr/db";
-import { db } from "@purr/db/client";
-import { usernameZod } from "@purr/db/helpers";
+import { eq } from "@ryuu/db";
+import { db } from "@ryuu/db/client";
+import { usernameZod } from "@ryuu/db/helpers";
 import {
   accounts,
   passkeys,
   sessions,
   users,
   verifications,
-} from "@purr/db/schema";
-import { sendSignIn, sendSignUp } from "@purr/emails";
+} from "@ryuu/db/schema";
+import { sendSignIn, sendSignUp } from "@ryuu/emails";
 
 import type { Session } from ".";
 import { env } from "../env";
