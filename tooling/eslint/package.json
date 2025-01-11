@@ -1,5 +1,5 @@
 {
-  "name": "@purr/eslint-config",
+  "name": "@ryuu/eslint-config",
   "version": "0.1.0",
   "type": "module",
   "exports": {
@@ -10,7 +10,7 @@
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "typecheck": "tsc --noEmit"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
     "@eslint/compat": "^1.2.5",
     "eslint-plugin-import": "^2.31.0",
@@ -18,8 +18,8 @@
     "typescript-eslint": "^8.19.1"
   },
   "devDependencies": {
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

@@ -1,5 +1,5 @@
 {
-  "name": "@purr/tsconfig",
+  "name": "@ryuu/tsconfig",
   "version": "0.1.0",
   "files": [
     "*.json"

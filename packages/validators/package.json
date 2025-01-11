@@ -1,5 +1,5 @@
 {
-  "name": "@purr/validators",
+  "name": "@ryuu/validators",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,14 +17,14 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@purr/eslint-config": "workspace:*",
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

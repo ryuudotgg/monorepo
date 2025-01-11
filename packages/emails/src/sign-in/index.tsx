@@ -1,6 +1,6 @@
 import type { CreateEmailResponse } from "resend";
 
-import type { users } from "@purr/db/schema";
+import type { users } from "@ryuu/db/schema";
 
 import { resend } from "..";
 import { env } from "../../env";
@@ -24,7 +24,7 @@ async function sendSignIn({
   return resend.emails.send({
     from: env.RESEND_FROM,
     to: user.email,
-    subject: "Sign in to Purr",
+    subject: "Sign in to Ryuu",
     react: (
       <SignIn user={user} token={token} city={city} country={country} ip={ip} />
     ),

@@ -9,7 +9,7 @@ import {
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-import { nanoidZod } from "@purr/shared/helpers";
+import { nanoidZod } from "@ryuu/shared/helpers";
 
 import { dates, nanoid, omitDates, username, usernameZod } from "../../helpers";
 import { accounts } from "./accounts";

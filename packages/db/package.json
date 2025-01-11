@@ -1,5 +1,5 @@
 {
-  "name": "@purr/db",
+  "name": "@ryuu/db",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -33,20 +33,20 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
     "with-env": "dotenv -e ../../.env --"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
     "@planetscale/database": "^1.19.0",
-    "@purr/env": "workspace:*",
-    "@purr/shared": "workspace:*",
+    "@ryuu/env": "workspace:*",
+    "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "drizzle-orm": "^0.38.3",
     "drizzle-zod": "^0.5.1",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@purr/eslint-config": "workspace:*",
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.30.1",
     "eslint": "catalog:",

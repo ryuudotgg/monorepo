@@ -1,7 +1,7 @@
 import type { Geo } from "@vercel/functions";
 import { captureException } from "@sentry/nextjs";
 
-import type { Session } from "@purr/auth";
+import type { Session } from "@ryuu/auth";
 
 import { log } from "./log";
 

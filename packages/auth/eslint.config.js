@@ -1,4 +1,4 @@
-import baseConfig, { restrictEnvAccess } from "@purr/eslint-config/base";
+import baseConfig, { restrictEnvAccess } from "@ryuu/eslint-config/base";
 
 /** @type {import('typescript-eslint').Config} */
 export default [{ ignores: [] }, ...baseConfig, ...restrictEnvAccess];

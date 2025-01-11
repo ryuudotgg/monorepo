@@ -14,7 +14,7 @@
   "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
-      "matchPackageNames": ["/^@purr//"],
+      "matchPackageNames": ["/^@ryuu//"],
       "enabled": false
     },
     {

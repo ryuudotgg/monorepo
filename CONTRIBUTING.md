@@ -1,6 +1,6 @@
-# Contributing to Purr App
+# Contributing to Create Ryuu App
 
-Thanks for your interest in contributing to Purr App! We're excited to have you join us. This document outlines the process and guidelines for contributing.
+Thanks for your interest in contributing to Create Ryuu App! We're excited to have you join us. This document outlines the process and guidelines for contributing.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ Thanks for your interest in contributing to Purr App! We're excited to have you 
 2. Clone Your Fork:
 
 ```bash
-git clone git@github.com:YOUR_USERNAME/create-purr-app.git
+git clone git@github.com:YOUR_USERNAME/create-ryuu-app.git
 ```
 
 3. Install Dependencies:
@@ -73,6 +73,6 @@ For any new features or changes:
 
 ## Need Help?
 
-- Ask for help on [GitHub](https://github.com/***REMOVED***/create-purr-app/discussions)
-- Check existing issues on [GitHub](https://github.com/***REMOVED***/create-purr-app/issues)
-- Review Purr's [Documentation](https://create.purr.gg/docs)
+- Ask for help on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/discussions)
+- Check existing issues on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/issues)
+- Review Create Ryuu App's [Documentation](https://create.ryuu.gg/docs)
