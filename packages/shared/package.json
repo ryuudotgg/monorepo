@@ -1,5 +1,5 @@
 {
-  "name": "@purr/shared",
+  "name": "@ryuu/shared",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -21,17 +21,17 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
-  "prettier": "@purr/prettier-config",
+  "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@purr/env": "workspace:*",
+    "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "nanoid": "^5.0.9",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@purr/eslint-config": "workspace:*",
-    "@purr/prettier-config": "workspace:*",
-    "@purr/tsconfig": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

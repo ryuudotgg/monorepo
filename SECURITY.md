@@ -4,4 +4,4 @@ If you believe you have discovered a security vulnerability, please **do NOT ope
 
 We take all legitimate reports seriously and will investigate them promptly. We are committed to working with security researchers to resolve issues quickly.
 
-You can report vulnerabilities by creating an advisory directly in [GitHub](https://github.com/***REMOVED***/create-purr-app/security/advisories/new), or by emailing our security team at [security@purr.gg](mailto:security@purr.gg).
+You can report vulnerabilities by creating an advisory directly in [GitHub](https://github.com/ryuudotgg/create-ryuu-app/security/advisories/new), or by emailing our security team at [security@ryuu.gg](mailto:security@ryuu.gg).

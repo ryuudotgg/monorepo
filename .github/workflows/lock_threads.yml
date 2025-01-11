@@ -16,7 +16,7 @@ jobs:
   action:
     name: Lock Threads
     runs-on: ubuntu-latest
-    if: github.repository_owner == '***REMOVED***'
+    if: github.repository_owner == 'ryuudotgg'
 
     steps:
       - uses: dessant/lock-threads@v5

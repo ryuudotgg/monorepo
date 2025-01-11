@@ -2,7 +2,7 @@
 
 ## Before Creating a PR
 
-1. Create an issue on [GitHub](https://github.com/***REMOVED***/create-purr-app/issues) for discussion (if it doesn't exist)
+1. Create an issue on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/issues) for discussion (if it doesn't exist)
 2. Fork the repository
 3. Create a new branch
 4. Write tests for new features

@@ -3,7 +3,7 @@ import { decrypt } from "@vercel/flags";
 import { unstable_flag as flag } from "@vercel/flags/next";
 import { geolocation, ipAddress, waitUntil } from "@vercel/functions";
 
-import { auth } from "@purr/auth";
+import { auth } from "@ryuu/auth";
 
 import { launchDarkly } from "./launchdarkly";
 

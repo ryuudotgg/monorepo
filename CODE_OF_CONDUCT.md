@@ -39,15 +39,15 @@ Community leaders have the right and responsibility to remove, edit, or reject c
 
 This Code of Conduct applies within all community spaces, including but not limited to:
 
-- The Purr GitHub repository
-- The Purr Discord community
+- The Create Ryuu App GitHub repository
+- The Create Ryuu App Discord community
 - Official documentation and communication channels
 - Community events and meetups
 - Code review discussions and pull requests
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at [coc@purr.gg](mailto:coc@purr.gg). All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at [coc@ryuu.gg](mailto:coc@ryuu.gg). All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
