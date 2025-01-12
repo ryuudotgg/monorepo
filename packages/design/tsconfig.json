@@ -1,0 +1,14 @@
+{
+  "extends": "@ryuu/tsconfig/internal-package.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "rootDir": ".",
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@ryuu/design/*": ["./src/*"]
+    }
+  },
+  "include": ["./src", "./*.ts"],
+  "exclude": ["./node_modules"]
+}

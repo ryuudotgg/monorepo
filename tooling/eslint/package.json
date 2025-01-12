@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "exports": {
-    "./base": "./base.js"
+    "./base": "./base.js",
+    "./nextjs": "./nextjs.js",
+    "./react": "./react.js"
   },
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules",
@@ -13,7 +15,12 @@
   "prettier": "@ryuu/prettier-config",
   "dependencies": {
     "@eslint/compat": "^1.2.5",
+    "@next/eslint-plugin-next": "catalog:next",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-compiler": "beta",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-turbo": "^2.3.3",
     "typescript-eslint": "^8.19.1"
   },

@@ -1,0 +1,67 @@
+[data-rmiz-ghost] {
+  @apply pointer-events-none absolute;
+}
+
+[data-rmiz-btn-zoom],
+[data-rmiz-btn-unzoom] {
+  @apply m-0 h-10 w-10 touch-manipulation appearance-none rounded-full border-none bg-black/70 p-[9px] text-white shadow;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+[data-rmiz-btn-zoom]:not(:focus):not(:active) {
+  @apply clip-0 clip-path-inset-50 pointer-events-none absolute h-[1px] w-[1px] overflow-hidden whitespace-nowrap;
+}
+
+[data-rmiz-btn-zoom] {
+  @apply absolute cursor-zoom-in;
+  inset: 10px 10px auto auto;
+}
+
+[data-rmiz-btn-unzoom] {
+  @apply absolute z-[1] cursor-zoom-out;
+  inset: 20px 20px auto auto;
+}
+
+[data-rmiz-content="found"] img,
+[data-rmiz-content="found"] svg,
+[data-rmiz-content="found"] [role="img"],
+[data-rmiz-content="found"] [data-zoom] {
+  @apply cursor-inherit;
+}
+
+[data-rmiz-modal]::backdrop {
+  @apply hidden;
+}
+
+[data-rmiz-modal][open] {
+  @apply fixed m-0 h-screen max-h-none w-screen max-w-none overflow-hidden border-0 bg-transparent p-0;
+}
+
+[data-rmiz-modal-overlay] {
+  @apply absolute inset-0 transition-colors duration-300;
+}
+
+[data-rmiz-modal-overlay="hidden"] {
+  @apply bg-white/0;
+}
+
+[data-rmiz-modal-overlay="visible"] {
+  @apply bg-white;
+}
+
+[data-rmiz-modal-content] {
+  @apply relative h-full w-full;
+}
+
+[data-rmiz-modal-img] {
+  @apply absolute origin-top-left cursor-zoom-out transition-transform duration-300;
+  image-rendering: high-quality;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-rmiz-modal-overlay],
+  [data-rmiz-modal-img] {
+    @apply duration-[0.01ms] !important;
+  }
+}
