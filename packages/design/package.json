@@ -67,7 +67,7 @@
     "@ryuu/prettier-config": "workspace:*",
     "@ryuu/tsconfig": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
-    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "catalog:react19",
     "eslint": "catalog:",
     "postcss": "^8.4.49",
