@@ -183,8 +183,10 @@ function checkTypeAndSize(
 }
 
 function base64MimeType(encoded: string): string {
-  const result = encoded.match(/data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+).*,.*/);
-  return result && result.length > 1 ? result[1]! : "unknown";
+  const pattern = /^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+)(?:[^]*)/;
+  const result = encoded.match(pattern);
+
+  return result?.[1] ? result[1] : "unknown";
 }
 
 function isBase64(str: string): boolean {

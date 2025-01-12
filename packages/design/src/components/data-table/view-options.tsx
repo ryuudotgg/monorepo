@@ -25,7 +25,9 @@ function DataTableViewOptions<TData>({
   ref,
   table,
   ...props
-}: React.ComponentProps<typeof DropdownMenuContent> & { table: Table<TData> }) {
+}: React.ComponentProps<"div"> & {
+  table: Table<TData>;
+}) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
