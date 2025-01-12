@@ -412,7 +412,7 @@ importers:
         specifier: 'catalog:'
         version: 4.0.0-beta.9
       '@tailwindcss/typography':
-        specifier: ^0.5.15
+        specifier: ^0.5.16
         version: 0.5.16(tailwindcss@4.0.0-beta.9)
       '@types/react':
         specifier: catalog:react19
