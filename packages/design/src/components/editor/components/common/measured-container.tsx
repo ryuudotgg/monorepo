@@ -10,16 +10,18 @@ interface MeasuredContainerProps<T extends React.ElementType> {
   as: T;
   name: string;
   children?: React.ReactNode;
+  ref?: React.Ref<HTMLElement>;
 }
 
 function MeasuredContainer<T extends React.ElementType>({
   as: Component,
-  ref,
   name,
   children,
+  ref,
   style = {},
   ...props
-}: React.ComponentProps<T> & MeasuredContainerProps<T>) {
+}: MeasuredContainerProps<T> &
+  Omit<React.ComponentProps<T>, keyof MeasuredContainerProps<T>>) {
   const innerRef = React.useRef<HTMLElement>(null);
   const rect = useContainerSize(innerRef.current);
 
