@@ -1,0 +1,4 @@
+.tiptap-editor .ProseMirror > p.is-editor-empty::before {
+  @apply pointer-events-none float-left h-0 text-[var(--mt-secondary)];
+  content: attr(data-placeholder);
+}
