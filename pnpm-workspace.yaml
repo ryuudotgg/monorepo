@@ -7,6 +7,10 @@ catalog:
   "@t3-oss/env-nextjs": ^0.11.1
   "@types/node": ^22.10.5
 
+  "@trpc/client": &trpc ^11.0.0-rc.700
+  "@trpc/react-query": *trpc
+  "@trpc/server": *trpc
+
   "@arcjet/next": &arcjet ^1.0.0-alpha.34
   "@arcjet/decorate": *arcjet
 
