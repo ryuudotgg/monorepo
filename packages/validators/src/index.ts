@@ -1,1 +1,1 @@
-export const name = "validators";
+export * from "./pagination";
