@@ -24,7 +24,7 @@ const Link = TiptapLink.extend({
 
   addOptions() {
     return {
-      ...this.parent?.(),
+      ...this.parent(),
       openOnClick: false,
       HTMLAttributes: { class: "link" },
     };
@@ -34,7 +34,7 @@ const Link = TiptapLink.extend({
     const { editor } = this;
 
     return [
-      ...(this.parent?.() || []),
+      ...(this.parent?.() ?? []),
       new Plugin({
         props: {
           handleKeyDown(_: EditorView, event: KeyboardEvent) {
@@ -49,7 +49,10 @@ const Link = TiptapLink.extend({
           handleClick(view, pos) {
             const { schema, doc, tr } = view.state;
 
-            const range = getMarkRange(doc.resolve(pos), schema.marks.link!);
+            const range = schema.marks.link
+              ? getMarkRange(doc.resolve(pos), schema.marks.link)
+              : undefined;
+
             if (!range) return;
 
             const { from, to } = range;

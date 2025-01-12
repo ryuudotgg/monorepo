@@ -22,9 +22,9 @@ function LinkEditBlock({
   className,
 }: React.ComponentProps<"div"> & LinkEditorProps) {
   const formRef = React.useRef<HTMLDivElement>(null);
-  const [url, setUrl] = React.useState(defaultUrl || "");
-  const [text, setText] = React.useState(defaultText || "");
-  const [isNewTab, setIsNewTab] = React.useState(defaultIsNewTab || false);
+  const [url, setUrl] = React.useState(defaultUrl ?? "");
+  const [text, setText] = React.useState(defaultText ?? "");
+  const [isNewTab, setIsNewTab] = React.useState(defaultIsNewTab ?? false);
 
   const handleFormSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -41,7 +41,8 @@ function LinkEditBlock({
       });
   };
 
-  React.useImperativeHandle(ref, () => formRef.current as HTMLDivElement);
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  React.useImperativeHandle(ref, () => formRef.current!);
 
   return (
     <div ref={formRef}>

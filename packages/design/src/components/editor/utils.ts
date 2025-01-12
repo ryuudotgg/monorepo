@@ -2,21 +2,21 @@ import type { Editor } from "@tiptap/react";
 
 import type { TiptapProps } from "./tiptap";
 
-type ShortcutKeyResult = {
+interface ShortcutKeyResult {
   symbol: string;
   readable: string;
-};
+}
 
-export type FileError = {
+export interface FileError {
   file: File | string;
   reason: "type" | "size" | "invalidBase64" | "base64NotAllowed";
-};
+}
 
-export type FileValidationOptions = {
+export interface FileValidationOptions {
   allowedMimeTypes: string[];
   maxFileSize?: number;
   allowBase64: boolean;
-};
+}
 
 type FileInput = File | { src: string | File; alt?: string; title?: string };
 
@@ -38,7 +38,7 @@ const shortcutKeyMap: Record<string, ShortcutKeyResult> = {
 };
 
 export function getShortcutKey(key: string): ShortcutKeyResult {
-  return shortcutKeyMap[key.toLowerCase()] || { symbol: key, readable: key };
+  return shortcutKeyMap[key.toLowerCase()] ?? { symbol: key, readable: key };
 }
 
 export function getShortcutKeys(keys: string[]): ShortcutKeyResult[] {
@@ -170,7 +170,7 @@ function checkTypeAndSize(
 ): { isValidType: boolean; isValidSize: boolean } {
   const mimeType = input instanceof File ? input.type : base64MimeType(input);
   const size =
-    input instanceof File ? input.size : atob(input.split(",")[1]!).length;
+    input instanceof File ? input.size : atob(input.split(",")[1] ?? "").length;
 
   const isValidType =
     allowedMimeTypes.length === 0 ||
@@ -184,16 +184,16 @@ function checkTypeAndSize(
 
 function base64MimeType(encoded: string): string {
   const pattern = /^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+)(?:[^]*)/;
-  const result = encoded.match(pattern);
+  const result = pattern.exec(encoded);
 
   return result?.[1] ? result[1] : "unknown";
 }
 
 function isBase64(str: string): boolean {
   if (str.startsWith("data:")) {
-    const matches = str.match(/^data:[^;]+;base64,(.+)$/);
+    const matches = /^data:[^;]+;base64,(.+)$/.exec(str);
 
-    if (matches && matches[1]) str = matches[1];
+    if (matches?.[1]) str = matches[1];
     else return false;
   }
 

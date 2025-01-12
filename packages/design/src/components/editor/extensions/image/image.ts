@@ -92,7 +92,7 @@ function handleDataUrl(src: string): { blob: Blob; extension: string } {
   const [header, base64Data] = src.split(",");
 
   const mimeType = header?.split(":")[1]?.split(";")[0];
-  const extension = mimeType?.split("/")[1]!;
+  const extension = mimeType?.split("/")[1] ?? "";
 
   const byteCharacters = atob(base64Data ?? "");
   const byteArray = new Uint8Array(byteCharacters.length);
@@ -112,7 +112,7 @@ async function handleImageUrl(
   if (!response.ok) throw new Error("Failed to fetch image");
 
   const blob = await response.blob();
-  const extension = blob.type.split(/\/|\+/)[1]!;
+  const extension = blob.type.split(/\/|\+/)[1] ?? "";
 
   return { blob, extension };
 }
@@ -123,11 +123,7 @@ async function fetchImageBlob(
   return src.startsWith("data:") ? handleDataUrl(src) : handleImageUrl(src);
 }
 
-async function saveImage(
-  blob: Blob,
-  name: string,
-  extension: string,
-): Promise<void> {
+function saveImage(blob: Blob, name: string, extension: string): void {
   const imageURL = URL.createObjectURL(blob);
   const link = document.createElement("a");
 
@@ -146,12 +142,12 @@ async function downloadImage(
   options: CustomImageOptions,
 ): Promise<void> {
   const { src, alt } = props;
-  const potentialName = alt || "image";
+  const potentialName = alt ?? "image";
 
   try {
     const { blob, extension } = await fetchImageBlob(src);
 
-    await saveImage(blob, potentialName, extension);
+    saveImage(blob, potentialName, extension);
     options.onActionSuccess?.({ ...props, action: "download" });
   } catch (error) {
     handleError(error, { ...props, action: "download" }, options.onActionError);
@@ -197,7 +193,7 @@ const Image = TiptapImage.extend<CustomImageOptions>({
 
   addOptions() {
     return {
-      ...this.parent?.(),
+      ...this.parent(),
       allowedMimeTypes: [],
       maxFileSize: 0,
       uploadFn: undefined,
@@ -268,21 +264,21 @@ const Image = TiptapImage.extend<CustomImageOptions>({
         },
 
       downloadImage: (attrs) => () => {
-        const downloadFunc = this.options.downloadImage || downloadImage;
+        const downloadFunc = this.options.downloadImage ?? downloadImage;
         void downloadFunc({ ...attrs, action: "download" }, this.options);
 
         return true;
       },
 
       copyImage: (attrs) => () => {
-        const copyImageFunc = this.options.copyImage || copyImage;
+        const copyImageFunc = this.options.copyImage ?? copyImage;
         void copyImageFunc({ ...attrs, action: "copyImage" }, this.options);
 
         return true;
       },
 
       copyLink: (attrs) => () => {
-        const copyLinkFunc = this.options.copyLink || copyLink;
+        const copyLinkFunc = this.options.copyLink ?? copyLink;
         void copyLinkFunc({ ...attrs, action: "copyLink" }, this.options);
 
         return true;
@@ -338,7 +334,8 @@ const Image = TiptapImage.extend<CustomImageOptions>({
           if (node.type.name === "image") {
             const attrs = node.attrs;
 
-            if (attrs.src.startsWith("blob:")) URL.revokeObjectURL(attrs.src);
+            if (String(attrs.src).startsWith("blob:"))
+              URL.revokeObjectURL(String(attrs.src));
 
             this.options.onImageRemoved?.(attrs);
           }

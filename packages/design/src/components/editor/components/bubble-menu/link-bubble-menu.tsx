@@ -26,7 +26,7 @@ function LinkBubbleMenu({ editor }: LinkBubbleMenuProps) {
 
   const updateLinkState = () => {
     const { from, to } = editor.state.selection;
-    const { href, target } = editor.getAttributes("link");
+    const { href, target } = editor.getAttributes("link") as LinkAttributes;
 
     const text = editor.state.doc.textBetween(from, to, " ");
 
@@ -53,7 +53,7 @@ function LinkBubbleMenu({ editor }: LinkBubbleMenuProps) {
       .extendMarkRange("link")
       .insertContent({
         type: "text",
-        text: text || url,
+        text: text ?? url,
         marks: [
           {
             type: "link",

@@ -10,13 +10,13 @@ interface UseImageActionsProps {
   onViewClick: (value: boolean) => void;
 }
 
-export type ImageActionHandlers = {
+export interface ImageActionHandlers {
   onView?: () => void;
   onDownload?: () => void;
   onCopy?: () => void;
   onCopyLink?: () => void;
   onRemoveImg?: () => void;
-};
+}
 
 function useImageActions({
   src,
@@ -30,12 +30,12 @@ function useImageActions({
 
     onDownload: () =>
       editor.commands.downloadImage({
-        src: node.attrs.src,
-        alt: node.attrs.alt,
+        src: String(node.attrs.src),
+        alt: String(node.attrs.alt),
       }),
 
-    onCopy: () => editor.commands.copyImage({ src: node.attrs.src }),
-    onCopyLink: () => editor.commands.copyLink({ src: node.attrs.src }),
+    onCopy: () => editor.commands.copyImage({ src: String(node.attrs.src) }),
+    onCopyLink: () => editor.commands.copyLink({ src: String(node.attrs.src) }),
 
     onRemoveImg: () => {
       editor.commands.command(({ tr, dispatch }) => {

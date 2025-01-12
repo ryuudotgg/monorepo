@@ -95,7 +95,7 @@ function ToolbarSection({
               size={size}
               variant={variant}
             >
-              {dropdownIcon || <CaretDownIcon className="size-5" />}
+              {dropdownIcon ?? <CaretDownIcon className="size-5" />}
             </ToolbarButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="start" className="w-full">

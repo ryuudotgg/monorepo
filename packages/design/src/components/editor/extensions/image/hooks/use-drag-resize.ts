@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 
 type ResizeDirection = "left" | "right";
-export type ElementDimensions = { width: number; height: number };
+export interface ElementDimensions {
+  width: number;
+  height: number;
+}
 
-type HookParams = {
+interface HookParams {
   initialWidth?: number;
   initialHeight?: number;
   contentWidth?: number;
@@ -13,7 +16,7 @@ type HookParams = {
   minHeight: number;
   maxWidth: number;
   onDimensionsChange?: (dimensions: ElementDimensions) => void;
-};
+}
 
 function useDragResize({
   initialWidth,

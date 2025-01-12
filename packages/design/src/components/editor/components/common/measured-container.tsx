@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import * as React from "react";
 
 import { useContainerSize } from "../../../../hooks/use-container-size";
@@ -19,7 +23,7 @@ function MeasuredContainer<T extends React.ElementType>({
   const innerRef = React.useRef<HTMLElement>(null);
   const rect = useContainerSize(innerRef.current);
 
-  React.useImperativeHandle(ref, () => innerRef.current as HTMLElement);
+  React.useImperativeHandle(ref, () => innerRef.current!);
 
   const customStyle = {
     [`--${name}-width`]: `${rect.width}px`,

@@ -1,8 +1,7 @@
-import type { Editor, Extension } from "@tiptap/core";
-import type { NodeViewProps } from "@tiptap/react";
+import type { Editor, Extension, NodeViewProps } from "@tiptap/core";
+import type { Node as ProsemirrorNode } from "@tiptap/pm/model";
 import * as React from "react";
 import { InfoCircledIcon, TrashIcon } from "@radix-ui/react-icons";
-import { Node as ProsemirrorNode } from "@tiptap/pm/model";
 import { NodeViewWrapper } from "@tiptap/react";
 import { Controlled as ControlledZoom } from "react-medium-image-zoom";
 
@@ -43,18 +42,28 @@ const normalizeUploadResponse = (
   id: typeof response === "string" ? randomId() : response.id,
 });
 
-type ImageExtension = Extension & {
+interface ImageExtension extends Extension {
   name: string;
-  options?: {
-    uploadFn?: (file: File, editor: any) => Promise<UploadReturnType>;
+  options: {
+    uploadFn: (file: File, editor: Editor) => Promise<UploadReturnType>;
   };
-};
+}
 
 interface ImageViewBlockProps extends NodeViewProps {
   editor: Editor;
-  node: ProsemirrorNode;
+  node: ProsemirrorNode & {
+    attrs: {
+      id?: string;
+      src?: string;
+      alt?: string;
+      width?: number;
+      height?: number;
+      title?: string;
+      fileName?: string;
+    };
+  };
   selected: boolean;
-  updateAttributes: (attrs: Record<string, any>) => void;
+  updateAttributes: (attrs: Record<string, unknown>) => void;
 }
 
 function ImageViewBlock({
@@ -72,14 +81,17 @@ function ImageViewBlock({
 
   const uploadAttemptedRef = React.useRef<boolean>(false);
 
-  const initSrc = typeof initialSrc === "string" ? initialSrc : initialSrc.src;
+  const { src: initSrc } = (
+    typeof initialSrc === "string" ? { src: initialSrc } : initialSrc
+  ) as { src: string };
+
   const [imageState, setImageState] = React.useState<ImageState>({
     src: initSrc,
     isServerUploading: false,
     imageLoaded: false,
     isZoomed: false,
     error: false,
-    naturalSize: { width: initialWidth, height: initialHeight },
+    naturalSize: { width: Number(initialWidth), height: Number(initialHeight) },
   });
 
   const containerRef = React.useRef<HTMLDivElement | null>(null);
@@ -89,15 +101,30 @@ function ImageViewBlock({
 
   const aspectRatio =
     imageState.naturalSize.width / imageState.naturalSize.height;
-
   const maxWidth = MAX_HEIGHT * aspectRatio;
-  const containerMaxWidth = containerRef.current
-    ? parseFloat(
-        getComputedStyle(containerRef.current).getPropertyValue(
-          "--editor-width",
-        ),
-      )
-    : Infinity;
+
+  const [containerMaxWidth, setContainerMaxWidth] =
+    React.useState<number>(Infinity);
+
+  React.useEffect(() => {
+    const element = containerRef.current;
+    if (!element) return;
+
+    const updateWidth = () => {
+      const width = parseFloat(
+        getComputedStyle(element).getPropertyValue("--editor-width"),
+      );
+
+      setContainerMaxWidth(width || Infinity);
+    };
+
+    const resizeObserver = new ResizeObserver(updateWidth);
+    resizeObserver.observe(element);
+
+    updateWidth();
+
+    return () => resizeObserver.disconnect();
+  }, []);
 
   const { isLink, onView, onDownload, onCopy, onCopyLink, onRemoveImg } =
     useImageActions({
@@ -117,8 +144,8 @@ function ImageViewBlock({
   } = useDragResize({
     gridInterval: 0.1,
 
-    initialWidth: initialWidth ?? imageState.naturalSize.width,
-    initialHeight: initialHeight ?? imageState.naturalSize.height,
+    initialWidth: Number(initialWidth ?? imageState.naturalSize.width),
+    initialHeight: Number(initialHeight ?? imageState.naturalSize.height),
 
     contentWidth: imageState.naturalSize.width,
     contentHeight: imageState.naturalSize.height,
@@ -153,7 +180,8 @@ function ImageViewBlock({
       setImageState((prev) => ({ ...prev, isServerUploading: true }));
       const response = await fetch(initSrc);
       const blob = await response.blob();
-      const file = new File([blob], fileName, { type: blob.type });
+
+      const file = new File([blob], String(fileName), { type: blob.type });
 
       const url = await uploadFn(file, editor);
       const normalizedData = normalizeUploadResponse(url);
@@ -164,8 +192,8 @@ function ImageViewBlock({
         isServerUploading: false,
       }));
 
-      updateAttributes(normalizedData);
-    } catch (error) {
+      updateAttributes(normalizedData as unknown as Record<string, unknown>);
+    } catch {
       setImageState((prev) => ({
         ...prev,
         error: true,
@@ -192,7 +220,7 @@ function ImageViewBlock({
   };
 
   React.useEffect(() => {
-    handleImage();
+    void handleImage();
   }, [editor, fileName, initSrc, updateAttributes]);
 
   const handleResizePointerDown =
@@ -271,8 +299,8 @@ function ImageViewBlock({
                       imageLoaded: true,
                     }))
                   }
-                  alt={node.attrs.alt || ""}
-                  title={node.attrs.title || ""}
+                  alt={node.attrs.alt}
+                  title={node.attrs.title}
                   id={node.attrs.id}
                   onLoad={(event: React.SyntheticEvent<HTMLImageElement>) => {
                     const img = event.target as HTMLImageElement;

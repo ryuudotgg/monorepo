@@ -167,7 +167,8 @@ interface SectionThreeProps extends VariantProps<typeof toggleVariants> {
 
 function SectionThree({ editor, size, variant }: SectionThreeProps) {
   const color =
-    editor.getAttributes("textStyle")?.color ?? "hsl(var(--foreground))";
+    (editor.getAttributes("textStyle").color as string | undefined) ??
+    "hsl(var(--foreground))";
 
   const [selectedColor, setSelectedColor] = React.useState(color);
 

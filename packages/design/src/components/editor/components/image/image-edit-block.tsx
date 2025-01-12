@@ -19,11 +19,11 @@ function ImageEditBlock({ editor, close }: ImageEditBlockProps) {
     close();
   };
 
-  const handleFile = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (!files?.length) return;
 
-    const insertImages = async () => {
+    const insertImages = () => {
       const contentBucket = [];
       const filesArray = Array.from(files);
 
@@ -31,7 +31,7 @@ function ImageEditBlock({ editor, close }: ImageEditBlockProps) {
       editor.commands.setImages(contentBucket);
     };
 
-    await insertImages();
+    insertImages();
     handleClose();
   };
 

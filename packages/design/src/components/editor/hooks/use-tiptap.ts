@@ -89,7 +89,7 @@ function createExtensions(placeholder: string) {
       },
 
       onImageRemoved({ id, src }) {
-        console.log("Image Removed", { id, src });
+        console.log("Image Removed", { id: String(id), src: String(src) });
       },
 
       onValidationError(errors) {
@@ -144,14 +144,15 @@ function createExtensions(placeholder: string) {
         }
       },
 
-      onPaste(editor, files) {
-        files.forEach(async (file) => {
+      async onPaste(editor, files) {
+        for (const file of files) {
           const src = await fileToBase64(file);
+
           editor.commands.insertContent({
             type: "image",
             attrs: { src },
           });
-        });
+        }
       },
 
       onValidationError(errors) {

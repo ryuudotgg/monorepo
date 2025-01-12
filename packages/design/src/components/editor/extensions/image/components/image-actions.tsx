@@ -86,12 +86,12 @@ function ActionButton({
 
 type ActionKey = "onView" | "onDownload" | "onCopy" | "onCopyLink";
 
-const ActionItems: Array<{
+const ActionItems: {
   key: ActionKey;
   icon: React.ReactNode;
   tooltip: string;
   isLink?: boolean;
-}> = [
+}[] = [
   {
     key: "onView",
     icon: <SizeIcon className="size-4" />,

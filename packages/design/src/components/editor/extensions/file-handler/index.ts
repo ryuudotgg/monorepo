@@ -25,7 +25,7 @@ function FileHandlePlugin(options: FileHandlePluginOptions) {
   } = options;
 
   return new Plugin({
-    key: key || new PluginKey("fileHandler"),
+    key: key ?? new PluginKey("fileHandler"),
 
     props: {
       handleDrop(view, event) {

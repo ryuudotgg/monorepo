@@ -2,7 +2,7 @@
 
 import "@tanstack/react-table";
 
-import type { Table } from "@tanstack/react-table";
+import type { RowData, Table } from "@tanstack/react-table";
 import * as React from "react";
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { MixerHorizontalIcon } from "@radix-ui/react-icons";
@@ -16,7 +16,8 @@ import {
 } from "@ryuu/design/components/ui/dropdown-menu";
 
 declare module "@tanstack/react-table" {
-  interface ColumnMeta<TData, TValue> {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface ColumnMeta<TData extends RowData, TValue> {
     name?: string;
   }
 }
