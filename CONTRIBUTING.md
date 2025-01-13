@@ -44,7 +44,7 @@ We follow a structured process for contributions. See our [Pull Request Guide](c
 - 🏃 Turborepo for high-performance build system
 - 🔒 Environment variable validation using t3-env
 - 📝 ESLint & Prettier for consistent code style
-- 🧪 Testing setup with Vitest & Codecov
+- 🧪 Testing setup with Vitest
 - 🚀 CI/CD with GitHub Actions
 
 ## Code Style
@@ -76,3 +76,7 @@ For any new features or changes:
 - Ask for help on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/discussions)
 - Check existing issues on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/issues)
 - Review Create Ryuu App's [Documentation](https://create.ryuu.gg/docs)
+
+## License
+
+By contributing to Create Ryuu App, you agree that your contributions will be licensed under its MIT license.
