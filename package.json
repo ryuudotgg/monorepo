@@ -2,7 +2,7 @@
   "name": "create-ryuu-app",
   "private": true,
   "license": "MIT",
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "build": "turbo run build",
     "clean": "git clean -xdf .turbo node_modules",
@@ -28,6 +28,6 @@
   },
   "engines": {
     "node": ">=22.13.0",
-    "pnpm": "^9.15.3"
+    "pnpm": "^9.15.4"
   }
 }
