@@ -77,7 +77,7 @@ This project is licensed under an MIT license. See [LICENSE.md](LICENSE.md) for 
 
 ## Authors
 
-- Nemanja Stanić ([@ryuudotgg](https://github.com/ryuudotgg))
+- Ryuu ([@ryuudotgg](https://github.com/ryuudotgg))
 
 ## Security
 
