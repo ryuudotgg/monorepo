@@ -23,6 +23,60 @@ cp .env.example .env
 pnpm dev
 ```
 
+## Structure
+
+```text
+.vscode
+  └─ Recommended Extensions & Settings
+packages
+  ├─ analytics
+  |   ├─ Product Analytics with PostHog
+  |   └─ Web Analytics with Vercel
+  ├─ auth
+  |   └─ BetterAuth
+  ├─ cache
+  |   ├─ Upstash
+  |   └─ Vercel KV
+  ├─ db
+  |   ├─ MySQL
+  |   ├─ PlanetScale
+  |   └─ Drizzle ORM
+  ├─ design
+  |   ├─ Radix UI
+  |   ├─ Tiptap
+  |   └─ Tailwind CSS
+  ├─ emails
+  |   ├─ Resend
+  |   └─ React Email Templates
+  ├─ env
+  |   └─ Shared Environment Variables
+  ├─ flags
+  |   └─ Vercel Edge Config
+  |   └─ LaunchDarkly
+  ├─ observability
+  |   ├─ Error Monitoring with Sentry
+  |   └─ Logging with BetterStack
+  ├─ security
+  |   └─ Arcjet
+  ├─ shared
+  |   ├─ Constants
+  |   ├─ Helpers
+  |   └─ Types
+  ├─ trpc
+  |   └─ API Routes & Procedures
+  └─ validators
+      └─ Data Validation using Zod
+tooling
+  ├─ eslint
+  |   └─ ESLint Configuration
+  ├─ github
+  |   └─ GitHub Action Steps
+  ├─ prettier
+  |   └─ Prettier Configuration
+  └─ typescript
+      └─ TypeScript Configuration
+```
+
 ## Code Style
 
 ### TypeScript
@@ -40,7 +94,7 @@ pnpm dev
 #### Example
 
 ```typescript
-export function MyComponent({
+function MyComponent({
   title,
   onClick 
 }: {
@@ -49,4 +103,6 @@ export function MyComponent({
 }) {
   return <button onClick={onClick}>{title}</button>;
 }
+
+export { MyComponent };
 ```
