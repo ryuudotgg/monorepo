@@ -29,6 +29,7 @@
     }
   ],
   "rangeStrategy": "bump",
+  "rebaseWhen": "behind-base-branch",
   "vulnerabilityAlerts": {
     "vulnerabilityFixStrategy": "highest"
   }
