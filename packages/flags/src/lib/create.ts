@@ -1,49 +1,70 @@
+import type { LDSingleKindContext } from "@launchdarkly/vercel-server-sdk";
 import type { FlagOverridesType } from "@vercel/flags";
 import { decrypt } from "@vercel/flags";
-import { unstable_flag as flag } from "@vercel/flags/next";
+import { flag } from "@vercel/flags/next";
 import { geolocation, ipAddress, waitUntil } from "@vercel/functions";
 
 import { auth } from "@ryuu/auth";
 
 import { launchDarkly } from "./launchdarkly";
 
+export interface Entities {
+  user:
+    | {
+        key: string;
+        username: string;
+        email: string;
+        avatar?: string;
+      }
+    | { key: string; anonymous: true };
+
+  geolocation: {
+    ip?: string;
+    city?: string;
+    country?: string;
+  };
+}
+
 const create = (key: string, defaultValue = false) =>
-  flag({
+  flag<boolean, Entities>({
     key,
     defaultValue,
-    async decide({ headers, cookies }) {
+
+    async identify({ headers }) {
       const { user } = (await auth.getSession({ headers })) ?? {};
 
       const ip = ipAddress({ headers });
       const { city, country } = geolocation({ headers });
 
+      return {
+        user: user?.id
+          ? {
+              key: user.id,
+              username: user.username,
+              email: user.email,
+              avatar: user.image ?? undefined,
+            }
+          : { key: ip ?? "anonymous", anonymous: true },
+
+        geolocation: { ip, city, country },
+      };
+    },
+
+    async decide({ entities, cookies }) {
       const overrideCookie = cookies.get("vercel-flag-overrides")?.value;
       const overrides = overrideCookie
         ? await decrypt<FlagOverridesType>(overrideCookie)
         : undefined;
 
       const isEnabled =
-        overrides?.[key] ??
+        Boolean(overrides?.[key]) ||
         (await launchDarkly.boolVariation(
           key,
           {
             kind: "user",
-            country,
-            city,
-            ip,
-
-            ...(user?.id
-              ? {
-                  key: user.id,
-                  username: user.username,
-                  email: user.email,
-                  avatar: user.image ?? undefined,
-                }
-              : {
-                  key: ip ?? "anonymous",
-                  anonymous: true,
-                }),
-          },
+            ...entities?.user,
+            ...entities?.geolocation,
+          } as LDSingleKindContext,
           defaultValue,
         ));
 
