@@ -1,3 +1,4 @@
+import type { OpenApiMeta } from "trpc-to-openapi";
 import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
@@ -49,16 +50,20 @@ export const createTRPCContext = async (opts: { headers: Headers }) => {
  * - SuperJSON Transformer
  * - Error Formatting
  */
-const t = initTRPC.context<typeof createTRPCContext>().create({
-  transformer: superjson,
-  errorFormatter: ({ shape, error }) => ({
-    ...shape,
-    data: {
-      ...shape.data,
-      zodError: error.cause instanceof ZodError ? error.cause.flatten() : null,
-    },
-  }),
-});
+const t = initTRPC
+  .context<typeof createTRPCContext>()
+  .meta<OpenApiMeta>()
+  .create({
+    transformer: superjson,
+    errorFormatter: ({ shape, error }) => ({
+      ...shape,
+      data: {
+        ...shape.data,
+        zodError:
+          error.cause instanceof ZodError ? error.cause.flatten() : null,
+      },
+    }),
+  });
 
 /**
  * Server-side Caller
@@ -119,6 +124,7 @@ export const protectedProcedure = (
   t.procedure.use(timingMiddleware).use(({ ctx, next }) => {
     if (!ctx.user)
       throw new TRPCError({ code: "UNAUTHORIZED", message: "Unauthorized" });
+
     if (
       roles?.length &&
       !roles.includes(ctx.user.role as (typeof users.role.enumValues)[number])

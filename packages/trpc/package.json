@@ -27,6 +27,7 @@
     "@ryuu/validators": "workspace:*",
     "@trpc/server": "catalog:",
     "superjson": "2.2.2",
+    "trpc-to-openapi": "^2.1.2",
     "zod": "catalog:"
   },
   "devDependencies": {

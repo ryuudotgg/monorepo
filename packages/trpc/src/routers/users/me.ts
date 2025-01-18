@@ -39,6 +39,16 @@ const schema = {
 
 export const meRouter = {
   get: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "GET",
+        path: "/users/me",
+        summary: "Get Me",
+        description: "Get the currently authenticated user.",
+        tags: ["Me"],
+        protect: true,
+      },
+    })
     .input(z.undefined())
     .output(schema.output)
     .query(async ({ ctx }) => {
@@ -58,6 +68,16 @@ export const meRouter = {
     }),
 
   update: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "PATCH",
+        path: "/users/me",
+        summary: "Update Me",
+        description: "Update the currently authenticated user.",
+        tags: ["Me"],
+        protect: true,
+      },
+    })
     .input(updateUsers.omit({ userId: true }))
     .output(schema.output)
     .mutation(async ({ ctx, input }) => {
@@ -90,6 +110,16 @@ export const meRouter = {
     }),
 
   delete: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "DELETE",
+        path: "/users/me",
+        summary: "Delete Me",
+        description: "Delete the currently authenticated user.",
+        tags: ["Me"],
+        protect: true,
+      },
+    })
     .input(z.undefined())
     .output(schema.output)
     .mutation(async ({ ctx }) => {
