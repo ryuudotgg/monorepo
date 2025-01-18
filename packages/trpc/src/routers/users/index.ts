@@ -45,6 +45,15 @@ const schema = {
 
 export const usersRouter = {
   all: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "GET",
+        path: "/users",
+        summary: "Get a list of all public users.",
+        tags: ["Users"],
+        protect: true,
+      },
+    })
     .input(paginationSchema)
     .output(z.array(schema.output))
     .query(async ({ ctx, input }) => {
@@ -103,6 +112,16 @@ export const usersRouter = {
     }),
 
   byId: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "GET",
+        path: "/users/{userId}",
+        summary: "User by ID",
+        description: "Get a user by their ID.",
+        tags: ["Users"],
+        protect: true,
+      },
+    })
     .input(z.object({ userId: nanoidZod }))
     .output(schema.output)
     .query(async ({ ctx, input: { userId } }) => {
@@ -127,6 +146,16 @@ export const usersRouter = {
     }),
 
   byUsername: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "GET",
+        path: "/users/username/{username}",
+        summary: "User by Username",
+        description: "Get a user by their username.",
+        tags: ["Users"],
+        protect: true,
+      },
+    })
     .input(z.object({ username: usernameZod }))
     .output(schema.output)
     .query(async ({ ctx, input: { username } }) => {

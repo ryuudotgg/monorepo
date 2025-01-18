@@ -35,6 +35,16 @@ const schema = {
 
 export const sessionsRouter = {
   all: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "GET",
+        path: "/users/me/sessions",
+        summary: "All Sessions",
+        description: "Get all sessions for the currently authenticated user.",
+        tags: ["Sessions"],
+        protect: true,
+      },
+    })
     .input(paginationSchema)
     .output(z.array(schema.output))
     .query(async ({ ctx, input }) => {
@@ -92,6 +102,16 @@ export const sessionsRouter = {
     }),
 
   byId: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "GET",
+        path: "/users/me/sessions/{sessionId}",
+        summary: "Session by ID",
+        description: "Get a session for the currently authenticated user.",
+        tags: ["Sessions"],
+        protect: true,
+      },
+    })
     .input(z.object({ sessionId: nanoidZod }))
     .output(schema.output)
     .query(async ({ ctx, input: { sessionId } }) => {
@@ -113,6 +133,16 @@ export const sessionsRouter = {
     }),
 
   delete: protectedProcedure()
+    .meta({
+      openapi: {
+        method: "DELETE",
+        path: "/users/me/sessions/{sessionId}",
+        summary: "Delete Session",
+        description: "Delete a session for the currently authenticated user.",
+        tags: ["Sessions"],
+        protect: true,
+      },
+    })
     .input(z.object({ sessionId: nanoidZod }))
     .output(schema.output)
     .mutation(async ({ ctx, input: { sessionId } }) => {
