@@ -28,7 +28,7 @@
     "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@vercel/edge-config": "^1.4.0",
-    "@vercel/flags": "^2.6.3",
+    "@vercel/flags": "^3.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
