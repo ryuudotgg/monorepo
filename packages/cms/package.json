@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "basehub",
-    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "clean": "git clean -xdf .cache .turbo .basehub node_modules",
     "dev": "basehub dev",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
