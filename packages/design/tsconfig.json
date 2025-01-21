@@ -1,13 +1,8 @@
 {
-  "extends": "@ryuu/tsconfig/internal-package.json",
+  "extends": "@ryuu/tsconfig/nextjs.json",
   "compilerOptions": {
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "jsx": "preserve",
-    "rootDir": ".",
-    "plugins": [{ "name": "next" }],
-    "paths": {
-      "@ryuu/design/*": ["./src/*"]
-    }
+    "baseUrl": ".",
+    "paths": { "@ryuu/design/*": ["./src/*"] }
   },
   "include": ["./src", "./*.ts"],
   "exclude": ["./node_modules"]

@@ -1,6 +1,6 @@
 {
   "extends": "@ryuu/tsconfig/nextjs.json",
   "compilerOptions": { "baseUrl": "." },
-  "include": ["./src", "./*.ts", "../blob/env.ts"],
+  "include": ["./src", "./*.ts"],
   "exclude": ["node_modules"]
 }
