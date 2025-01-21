@@ -30,10 +30,12 @@
     "zod": "catalog:"
   },
   "devDependencies": {
+    "@ryuu/eslint-config": "workspace:*",
     "@ryuu/prettier-config": "workspace:*",
     "@ryuu/tsconfig": "workspace:*",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
+    "eslint": "catalog:",
     "next": "catalog:next",
     "prettier": "catalog:",
     "typescript": "catalog:"
