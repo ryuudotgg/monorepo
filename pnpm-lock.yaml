@@ -95,8 +95,8 @@ importers:
         specifier: ^1.207.0
         version: 1.207.0
       posthog-node:
-        specifier: ^4.4.0
-        version: 4.4.0
+        specifier: ^4.4.1
+        version: 4.4.1
       react:
         specifier: catalog:react19
         version: 19.0.0
@@ -763,7 +763,7 @@ importers:
         version: 7.37.4(eslint@9.18.0(jiti@2.4.2))
       eslint-plugin-react-compiler:
         specifier: beta
-        version: 19.0.0-beta-e552027-20250112(eslint@9.18.0(jiti@2.4.2))
+        version: 19.0.0-beta-decd7b8-20250118(eslint@9.18.0(jiti@2.4.2))
       eslint-plugin-react-hooks:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.18.0(jiti@2.4.2))
@@ -4038,8 +4038,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-compiler@19.0.0-beta-e552027-20250112:
-    resolution: {integrity: sha512-VjkIXHouCYyJHgk5HmZ1LH+fAK5CX+ULRX9iNYtwYJ+ljbivFhIT+JJyxNT/USQpCeS2Dt5ahjFeeMv0RRwTww==}
+  eslint-plugin-react-compiler@19.0.0-beta-decd7b8-20250118:
+    resolution: {integrity: sha512-qfs+Xo+VcYPbbVLI2tCP+KBGwm0oksAhjFJO1GwOvP+4b18LLcPZu7xopRhUTOaNd+nn1vOp9EQLZC1wMNxSrQ==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -5243,8 +5243,8 @@ packages:
   posthog-js@1.207.0:
     resolution: {integrity: sha512-Sx+xamhg1/iKGAtUNh3uAUtAAza4j/yBhxcfUxfqR++WrZdw0V6nmh7LSfVNl7+QVl2qmiPSoZA7z+5ojaWDDQ==}
 
-  posthog-node@4.4.0:
-    resolution: {integrity: sha512-4FEFBuc4FDFkTEiCSIo7DFV0jpprlqfR/SzjVgg7E2rRvfxTW4J47IvCwSCo5C9lBeV0ujDubY/YArHG37aJIw==}
+  posthog-node@4.4.1:
+    resolution: {integrity: sha512-o9G9sSvwWITrfSJgIUrPLJd//AYPGJNu5D+pSLxqiBvhUeicc/i639FvU0DPr1OsHiLDE2zHNMmLpa0mw4kBCg==}
     engines: {node: '>=15.0.0'}
 
   preact@10.25.4:
@@ -9612,7 +9612,7 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-react-compiler@19.0.0-beta-e552027-20250112(eslint@9.18.0(jiti@2.4.2)):
+  eslint-plugin-react-compiler@19.0.0-beta-decd7b8-20250118(eslint@9.18.0(jiti@2.4.2)):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/parser': 7.26.5
@@ -10898,7 +10898,7 @@ snapshots:
       preact: 10.25.4
       web-vitals: 4.2.4
 
-  posthog-node@4.4.0:
+  posthog-node@4.4.1:
     dependencies:
       axios: 1.7.9
     transitivePeerDependencies:
