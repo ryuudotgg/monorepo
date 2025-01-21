@@ -53,3 +53,6 @@ dist/
 
 # react email
 .react-email
+
+# BaseHub
+.basehub
