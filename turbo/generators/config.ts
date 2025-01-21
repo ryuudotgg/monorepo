@@ -40,6 +40,11 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: "add",
+        path: "packages/{{ name }}/env.ts",
+        templateFile: "templates/env.ts.hbs",
+      },
+      {
+        type: "add",
         path: "packages/{{ name }}/package.json",
         templateFile: "templates/package.json.hbs",
       },
@@ -62,21 +67,51 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 
             for (const dep of answers.deps.split(" ").filter(Boolean).sort()) {
               const isDev = dep.endsWith("@dev");
-              const name = isDev ? dep.slice(0, -4) : dep;
+              const depString = isDev ? dep.slice(0, -4) : dep;
 
-              const version = await fetch(
-                `https://registry.npmjs.org/-/package/${name}/dist-tags`,
-              )
-                .then((res) => res.json())
-                .then((json) => json.latest);
+              const CATALOG_PREFIX = "@catalog:";
 
-              if (isDev) {
-                if (!pkg.devDependencies) pkg.devDependencies = {};
-                pkg.devDependencies[dep] = `^${version}`;
-              } else {
-                if (!pkg.dependencies) pkg.dependencies = {};
-                pkg.dependencies[dep] = `^${version}`;
+              if (depString.includes(CATALOG_PREFIX)) {
+                const catalogIndex = depString.lastIndexOf(CATALOG_PREFIX);
+
+                const target = isDev ? "devDependencies" : "dependencies";
+
+                const name = depString.slice(0, catalogIndex);
+                const catalogName = depString.slice(
+                  catalogIndex + CATALOG_PREFIX.length,
+                );
+
+                if (!pkg[target]) pkg[target] = {};
+                pkg[target][name] = `catalog:${catalogName}`;
+
+                continue;
               }
+
+              const target = isDev ? "devDependencies" : "dependencies";
+              if (!pkg[target]) pkg[target] = {};
+
+              const lastAtIndex = depString.lastIndexOf("@");
+              const isScoped = depString.startsWith("@");
+              const scopeEndIndex = depString.indexOf("/");
+
+              let name: string;
+              let version: string | null = null;
+
+              if (isScoped && lastAtIndex > scopeEndIndex) {
+                name = depString.slice(0, lastAtIndex);
+                version = depString.slice(lastAtIndex + 1);
+              } else if (!isScoped && lastAtIndex > -1) {
+                name = depString.slice(0, lastAtIndex);
+                version = depString.slice(lastAtIndex + 1);
+              } else name = depString;
+
+              pkg[target][name] = version
+                ? `^${version}`
+                : `^${await fetch(
+                    `https://registry.npmjs.org/-/package/${name}/dist-tags`,
+                  )
+                    .then((res) => res.json())
+                    .then((json) => json.latest)}`;
             }
 
             return JSON.stringify(pkg, null, 2);
