@@ -1,0 +1,41 @@
+{
+  "name": "@ryuu/cms",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts",
+      "types": "./dist/src/index.d.ts"
+    },
+    "./components/*": {
+      "default": "./src/components/*.tsx",
+      "types": "./dist/src/components/*.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "basehub",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "basehub dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": "@ryuu/prettier-config",
+  "dependencies": {
+    "@ryuu/env": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
+    "basehub": "^8.1.0",
+    "react": "catalog:react19",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "next": "catalog:next",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
