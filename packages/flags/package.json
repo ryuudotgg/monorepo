@@ -23,7 +23,7 @@
   },
   "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@launchdarkly/vercel-server-sdk": "^1.3.21",
+    "@launchdarkly/vercel-server-sdk": "^1.3.22",
     "@ryuu/auth": "workspace:*",
     "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
