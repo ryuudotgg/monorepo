@@ -264,8 +264,8 @@ importers:
         specifier: 'catalog:'
         version: 0.11.1(typescript@5.7.3)(zod@3.24.1)
       basehub:
-        specifier: ^8.1.2
-        version: 8.1.2(@babel/runtime@7.26.0)(@types/react@19.0.7)(react@19.0.0)(typescript@5.7.3)
+        specifier: ^8.1.6
+        version: 8.1.6(@babel/runtime@7.26.0)(@types/react@19.0.7)(react@19.0.0)(typescript@5.7.3)
       react:
         specifier: catalog:react19
         version: 19.0.0
@@ -3732,8 +3732,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  basehub@8.1.2:
-    resolution: {integrity: sha512-TCtC0bdE+dNT7IYvULU+ZDeWEVXnNnaMpoQ6sa3lsfrIbuxQRpszxF8eEEnN6EHG6avYJ5evKdZwqaxlka5gGg==}
+  basehub@8.1.6:
+    resolution: {integrity: sha512-iBPJK2z2bmWJzziS+fB3UgPKiy5APP6ptzF8YywDEyiCkyKDBrTBry/fvKwTL0H/rWtC4gRTFlmpsZxU4KVwFQ==}
     hasBin: true
 
   basic-ftp@5.0.5:
@@ -9844,7 +9844,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  basehub@8.1.2(@babel/runtime@7.26.0)(@types/react@19.0.7)(react@19.0.0)(typescript@5.7.3):
+  basehub@8.1.6(@babel/runtime@7.26.0)(@types/react@19.0.7)(react@19.0.0)(typescript@5.7.3):
     dependencies:
       '@basehub/genql': 9.0.0-canary.10
       '@basehub/mutation-api-helpers': 2.0.7
