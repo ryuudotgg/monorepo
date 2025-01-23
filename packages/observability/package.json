@@ -37,7 +37,7 @@
   "dependencies": {
     "@logtail/next": "^0.1.7",
     "@ryuu/env": "workspace:*",
-    "@sentry/nextjs": "^8.50.0",
+    "@sentry/nextjs": "^8.51.0",
     "@t3-oss/env-nextjs": "catalog:",
     "zod": "catalog:"
   },
