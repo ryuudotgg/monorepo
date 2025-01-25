@@ -404,43 +404,43 @@ importers:
         specifier: ^8.20.6
         version: 8.20.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tiptap/extension-code-block-lowlight':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/extension-code-block@2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/pm@2.11.3))(@tiptap/pm@2.11.3)(highlight.js@11.11.1)(lowlight@3.3.0)
       '@tiptap/extension-color':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/extension-text-style@2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3)))
       '@tiptap/extension-heading':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))
       '@tiptap/extension-horizontal-rule':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/pm@2.11.3)
       '@tiptap/extension-image':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))
       '@tiptap/extension-link':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/pm@2.11.3)
       '@tiptap/extension-placeholder':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/pm@2.11.3)
       '@tiptap/extension-text-style':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))
       '@tiptap/extension-typography':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))
       '@tiptap/extension-underline':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))
       '@tiptap/pm':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3
       '@tiptap/react':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))(@tiptap/pm@2.11.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tiptap/starter-kit':
-        specifier: ^2.11.2
+        specifier: ^2.11.3
         version: 2.11.3
       '@vercel/speed-insights':
         specifier: ^1.1.0
