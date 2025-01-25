@@ -884,7 +884,7 @@ importers:
         specifier: 'catalog:'
         version: 3.4.2
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.10
+        specifier: ^0.6.11
         version: 0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.4.2))(prettier@3.4.2)
     devDependencies:
       '@ryuu/tsconfig':
