@@ -8,9 +8,9 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [
-        ".cache/tsbuildinfo.json",
         ".next/**",
         "!.next/cache/**",
+        ".cache/tsbuildinfo.json",
         ".basehub/**",
         "dist/**"
       ]
