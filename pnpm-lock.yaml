@@ -19,7 +19,7 @@ catalogs:
       specifier: ^4.0.0
       version: 4.0.0
     '@trpc/server':
-      specifier: ^11.0.0-rc.700
+      specifier: ^11.0.0-rc.729
       version: 11.0.0-rc.729
     eslint:
       specifier: ^9.17.0
