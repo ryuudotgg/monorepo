@@ -1,5 +1,4 @@
-// TODO: https://github.com/tailwindlabs/tailwindcss/discussions/14491
-// import "./styles/index.css";
+import "./styles/index.css";
 
 import type { Content, Editor } from "@tiptap/react";
 import { EditorContent } from "@tiptap/react";
