@@ -45,10 +45,10 @@ catalogs:
       version: 15.1.6
   react19:
     '@types/react':
-      specifier: ^19.0.2
+      specifier: ^19.0.8
       version: 19.0.8
     '@types/react-dom':
-      specifier: ^19.0.2
+      specifier: ^19.0.3
       version: 19.0.3
     react:
       specifier: ^19.0.0

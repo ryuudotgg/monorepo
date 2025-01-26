@@ -31,5 +31,5 @@ catalogs:
   react19:
     react: &react ^19.0.0
     react-dom: *react
-    "@types/react": &react-types ^19.0.2
-    "@types/react-dom": *react-types
+    "@types/react": ^19.0.8
+    "@types/react-dom": ^19.0.3
