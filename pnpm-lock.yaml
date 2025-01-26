@@ -7,10 +7,10 @@ settings:
 catalogs:
   default:
     '@arcjet/decorate':
-      specifier: ^1.0.0-alpha.34
+      specifier: ^1.0.0-beta.1
       version: 1.0.0-beta.1
     '@arcjet/next':
-      specifier: ^1.0.0-alpha.34
+      specifier: ^1.0.0-beta.1
       version: 1.0.0-beta.1
     '@t3-oss/env-nextjs':
       specifier: ^0.12.0
