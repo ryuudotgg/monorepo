@@ -1,6 +1,7 @@
 {
   "extends": ["//"],
   "tasks": {
+    "build": { "cache": false },
     "lint": { "dependsOn": ["build"] },
     "lint:fix": { "dependsOn": ["build"] },
     "typecheck": { "dependsOn": ["build"] }
