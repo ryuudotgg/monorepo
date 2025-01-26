@@ -38,10 +38,10 @@ catalogs:
       version: 3.24.1
   next:
     '@next/eslint-plugin-next':
-      specifier: ^15.1.3
+      specifier: ^15.1.6
       version: 15.1.6
     next:
-      specifier: ^15.1.3
+      specifier: ^15.1.6
       version: 15.1.6
   react19:
     '@types/react':
