@@ -11,7 +11,7 @@ catalog:
   "@trpc/react-query": *trpc
   "@trpc/server": *trpc
 
-  "@arcjet/next": &arcjet ^1.0.0-alpha.34
+  "@arcjet/next": &arcjet ^1.0.0-beta.1
   "@arcjet/decorate": *arcjet
 
   tailwindcss: &tailwind ^4.0.0
