@@ -30,7 +30,7 @@
     "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@vercel/analytics": "^1.4.1",
-    "posthog-js": "^1.210.2",
+    "posthog-js": "^1.211.0",
     "posthog-node": "^4.4.1",
     "react": "catalog:react19",
     "server-only": "^0.0.1",
