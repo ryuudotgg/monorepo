@@ -42,8 +42,8 @@ export const userRelations = relations(users, ({ many }) => ({
 export const createUsers = createInsertSchema(users, {
   username: usernameZod,
 
-  email: (schema) => schema.email.email(),
-  image: (schema) => schema.image.url(),
+  email: (schema) => schema.email(),
+  image: (schema) => schema.url(),
 })
   .omit({ id: true, emailVerified: true, role: true })
   .omit(omitDates);
