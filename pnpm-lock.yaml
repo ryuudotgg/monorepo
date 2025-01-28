@@ -264,8 +264,8 @@ importers:
         specifier: 'catalog:'
         version: 0.12.0(typescript@5.7.3)(zod@3.24.1)
       basehub:
-        specifier: ^8.1.7
-        version: 8.1.7(@babel/runtime@7.26.7)(@types/react@19.0.8)(react@19.0.0)(typescript@5.7.3)
+        specifier: ^8.1.9
+        version: 8.1.9(@babel/runtime@7.26.7)(@types/react@19.0.8)(react@19.0.0)(typescript@5.7.3)
       react:
         specifier: catalog:react19
         version: 19.0.0
@@ -1072,9 +1072,6 @@ packages:
 
   '@basehub/genql@9.0.0-canary.10':
     resolution: {integrity: sha512-YdYWfKEsUsgEGvvKvt7H/9469cPeXJODrTKCdmt6OPEtY71Mpa9vg1mqALleiHkVinBeFHr+IEhbqIi5eYYL6w==}
-
-  '@basehub/mutation-api-helpers@2.0.7':
-    resolution: {integrity: sha512-i2WRtQnAkQ1Lowkwl6tkMIQ42AfZ2qs71zR/JYV6wxvl52011sXTMdf8V8jn/X/SZf7M4rR4KU9Bj8FA0DJPBA==}
 
   '@better-auth/utils@0.2.3':
     resolution: {integrity: sha512-Ap1GaSmo6JYhJhxJOpUB0HobkKPTNzfta+bLV89HfpyCAHN7p8ntCrmNFHNAVD0F6v0mywFVEUg1FUhNCc81Rw==}
@@ -3746,8 +3743,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  basehub@8.1.7:
-    resolution: {integrity: sha512-rgUhPj33m6oY4j2G1uDoPda9tkoev8HxyhwiWwqHTaMlSSwdgVefZyATcLh8298/HQx9DytA6BTuSrWyPqiYmA==}
+  basehub@8.1.9:
+    resolution: {integrity: sha512-EaKIaBqlRXA3Y5e5GrlXiZh3tENHWGr9ZmzPLEWv6+8seYcChmKHs7J/TgUtgoufvqcCVrO56F6GisEhs4jlwg==}
     hasBin: true
 
   basic-ftp@5.0.5:
@@ -7226,8 +7223,6 @@ snapshots:
     transitivePeerDependencies:
       - enquirer
 
-  '@basehub/mutation-api-helpers@2.0.7': {}
-
   '@better-auth/utils@0.2.3':
     dependencies:
       uncrypto: 0.1.3
@@ -9862,10 +9857,9 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  basehub@8.1.7(@babel/runtime@7.26.7)(@types/react@19.0.8)(react@19.0.0)(typescript@5.7.3):
+  basehub@8.1.9(@babel/runtime@7.26.7)(@types/react@19.0.8)(react@19.0.0)(typescript@5.7.3):
     dependencies:
       '@basehub/genql': 9.0.0-canary.10
-      '@basehub/mutation-api-helpers': 2.0.7
       '@radix-ui/react-slot': 1.1.1(@types/react@19.0.8)(react@19.0.0)
       '@shikijs/transformers': 1.17.7
       '@xmldom/xmldom': 0.9.7
