@@ -46,7 +46,7 @@
     "@ryuu/eslint-config": "workspace:*",
     "@ryuu/prettier-config": "workspace:*",
     "@ryuu/tsconfig": "workspace:*",
-    "@vercel/functions": "^1.5.2",
+    "@vercel/functions": "^1.6.0",
     "eslint": "catalog:",
     "next": "catalog:next",
     "prettier": "catalog:",

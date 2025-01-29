@@ -150,8 +150,8 @@ importers:
         specifier: ^10.45.2
         version: 10.45.2
       '@vercel/functions':
-        specifier: ^1.5.2
-        version: 1.5.2
+        specifier: ^1.6.0
+        version: 1.6.0
       better-auth:
         specifier: ^1.1.14
         version: 1.1.14
@@ -664,8 +664,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@vercel/functions':
-        specifier: ^1.5.2
-        version: 1.5.2
+        specifier: ^1.6.0
+        version: 1.6.0
       eslint:
         specifier: 'catalog:'
         version: 9.19.0(jiti@2.4.2)
@@ -3448,8 +3448,8 @@ packages:
       react-dom:
         optional: true
 
-  '@vercel/functions@1.5.2':
-    resolution: {integrity: sha512-9XuynFoM/J1X+LSahgjhuAZCbZ96vm9mpXapCkSS1MX890U7zLh7n2RW/2KLNuxsXt8u8h2dOCw+Njtg+7pXgQ==}
+  '@vercel/functions@1.6.0':
+    resolution: {integrity: sha512-R6FKQrYT5MZs5IE1SqeCJWxMuBdHawFcCZboKKw8p7s+6/mcd55Gx6tWmyKnQTyrSEA04NH73Tc9CbqpEle8RA==}
     engines: {node: '>= 16'}
     peerDependencies:
       '@aws-sdk/credential-provider-web-identity': '*'
@@ -9542,7 +9542,7 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@vercel/functions@1.5.2': {}
+  '@vercel/functions@1.6.0': {}
 
   '@vercel/kv@3.0.0':
     dependencies:
