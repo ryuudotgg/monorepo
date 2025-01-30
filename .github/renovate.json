@@ -21,15 +21,11 @@
       "matchPackageNames": ["/mysql/"],
       "matchManagers": ["docker-compose"],
       "enabled": false
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true
     }
   ],
   "rangeStrategy": "bump",
   "rebaseWhen": "behind-base-branch",
+  "reviewers": ["ryuudotgg"],
   "vulnerabilityAlerts": {
     "vulnerabilityFixStrategy": "highest"
   }
