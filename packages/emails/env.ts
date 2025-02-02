@@ -1,7 +1,7 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
-import shared from "@ryuu/env";
+import { env as shared } from "@ryuu/env";
 
 export const env = createEnv({
   extends: [shared],

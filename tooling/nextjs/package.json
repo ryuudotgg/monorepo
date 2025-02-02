@@ -1,0 +1,21 @@
+{
+  "name": "@ryuu/nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./index.ts",
+    "./instrumentation": "./instrumentation.ts"
+  },
+  "dependencies": {
+    "@logtail/next": "^0.1.7",
+    "@next/bundle-analyzer": "catalog:next",
+    "@ryuu/blob": "workspace:*",
+    "@ryuu/observability": "workspace:*",
+    "@sentry/nextjs": "^8.53.0",
+    "@vercel/toolbar": "^0.1.30",
+    "next-secure-headers": "^2.2.0"
+  },
+  "devDependencies": {
+    "next": "catalog:next"
+  }
+}

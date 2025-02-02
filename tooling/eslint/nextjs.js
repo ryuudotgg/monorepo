@@ -8,6 +8,8 @@ export default [
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs["core-web-vitals"].rules,
+
+      "@typescript-eslint/require-await": "off",
     },
   },
 ];

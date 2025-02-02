@@ -29,5 +29,6 @@
   "engines": {
     "node": ">=22.13.1",
     "pnpm": "^10.1.0"
-  }
+  },
+  "version": "link"
 }

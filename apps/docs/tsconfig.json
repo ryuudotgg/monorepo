@@ -1,0 +1,12 @@
+{
+  "extends": "@ryuu/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~/assets/*": ["./public/assets/*"]
+    }
+  },
+  "include": [".", ".next/types/**/*.ts", "../../.vscode/(docs)"],
+  "exclude": ["node_modules"]
+}
