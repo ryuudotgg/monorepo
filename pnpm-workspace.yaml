@@ -7,15 +7,15 @@ catalog:
   "@t3-oss/env-nextjs": ^0.12.0
   "@types/node": ^22.13.0
 
-  "@trpc/client": &trpc ^11.0.0-rc.730
-  "@trpc/react-query": *trpc
-  "@trpc/server": *trpc
+  "@trpc/client": ^11.0.0-rc.730
+  "@trpc/react-query": ^11.0.0-rc.730
+  "@trpc/server": ^11.0.0-rc.730
 
-  "@arcjet/next": &arcjet ^1.0.0-beta.1
-  "@arcjet/decorate": *arcjet
+  "@arcjet/next": ^1.0.0-beta.1
+  "@arcjet/decorate": ^1.0.0-beta.1
 
-  tailwindcss: &tailwind ^4.0.2
-  "@tailwindcss/postcss": *tailwind
+  tailwindcss: ^4.0.2
+  "@tailwindcss/postcss": ^4.0.2
 
   eslint: ^9.19.0
   prettier: ^3.4.2
@@ -24,12 +24,12 @@ catalog:
 
 catalogs:
   next:
-    next: &next ^15.1.6
-    "@next/eslint-plugin-next": *next
-    "@next/bundle-analyzer": *next
+    next: ^15.1.6
+    "@next/eslint-plugin-next": ^15.1.6
+    "@next/bundle-analyzer": ^15.1.6
 
   react19:
-    react: &react ^19.0.0
-    react-dom: *react
+    react: ^19.0.0
+    react-dom: ^19.0.0
     "@types/react": ^19.0.8
     "@types/react-dom": ^19.0.3
