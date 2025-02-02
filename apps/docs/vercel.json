@@ -4,9 +4,9 @@
   "framework": "nextjs",
   "cleanUrls": true,
   "trailingSlash": false,
-  "buildCommand": "cd ../../ && pnpm build --filter @ryuu/docs",
-  "installCommand": "cd ../../ && pnpm install --filter @ryuu/docs --frozen-lockfile",
-  "devCommand": "cd ../../ && pnpm dev --filter @ryuu/docs",
+  "buildCommand": "cd ../../ && pnpm build --filter @ryuu/docs...",
+  "installCommand": "cd ../../ && pnpm install --filter @ryuu/docs... --frozen-lockfile",
+  "devCommand": "cd ../../ && pnpm dev --filter @ryuu/docs...",
   "rewrites": [
     {
       "source": "/ingest/static/:path*",
