@@ -177,7 +177,7 @@ importers:
         specifier: ^1.215.1
         version: 1.215.1
       posthog-node:
-        specifier: ^4.3.2
+        specifier: ^4.4.1
         version: 4.4.1
       react:
         specifier: catalog:react19
