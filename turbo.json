@@ -5,6 +5,9 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
+    "analyze": {
+      "dependsOn": ["^analyze"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [
