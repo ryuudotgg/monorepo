@@ -4,6 +4,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.1.0",
   "scripts": {
+    "analyze": "turbo run analyze",
     "build": "turbo run build",
     "clean": "git clean -xdf .turbo node_modules",
     "clean:workspaces": "turbo run clean",
@@ -29,5 +30,6 @@
   "engines": {
     "node": ">=22.13.1",
     "pnpm": "^10.1.0"
-  }
+  },
+  "version": "link"
 }

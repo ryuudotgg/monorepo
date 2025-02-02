@@ -5,6 +5,9 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
+    "analyze": {
+      "dependsOn": ["^analyze"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [
@@ -67,6 +70,7 @@
     "KV_REST_API_URL",
     "KV_URL",
     "LAUNCHDARKLY_CLIENT_ID",
+    "NEXT_PUBLIC_BLOB_URL",
     "NEXT_PUBLIC_POSTHOG_HOST",
     "NEXT_PUBLIC_POSTHOG_KEY",
     "NEXT_PUBLIC_SENTRY_DSN",

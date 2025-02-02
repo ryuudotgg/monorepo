@@ -24,4 +24,4 @@ const env = createEnv({
     !!process.env.CI || process.env.npm_lifecycle_event === "lint",
 });
 
-export default env;
+export { env };

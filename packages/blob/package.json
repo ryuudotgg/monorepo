@@ -11,6 +11,10 @@
     "./client": {
       "types": "./dist/src/client.d.ts",
       "default": "./src/client.ts"
+    },
+    "./env": {
+      "types": "./dist/env.d.ts",
+      "default": "./env.ts"
     }
   },
   "scripts": {

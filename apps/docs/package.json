@@ -1,0 +1,53 @@
+{
+  "name": "@ryuu/docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "analyze": "ANALYZE=true pnpm build",
+    "build": "pnpm with-env next build",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "pnpm with-env next dev --turbo --port 3002",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "start": "pnpm with-env next start --port 3002",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "prettier": "@ryuu/prettier-config",
+  "dependencies": {
+    "@ryuu/analytics": "workspace:*",
+    "@ryuu/cms": "workspace:*",
+    "@ryuu/nextjs": "workspace:*",
+    "@ryuu/observability": "workspace:*",
+    "@vercel/speed-insights": "^1.1.0",
+    "@vercel/toolbar": "^0.1.30",
+    "fumadocs-core": "^15.0.0",
+    "fumadocs-ui": "^15.0.0",
+    "next": "catalog:next",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
+  },
+  "devDependencies": {
+    "@ryuu/design": "workspace:*",
+    "@ryuu/env": "workspace:*",
+    "@ryuu/eslint-config": "workspace:*",
+    "@ryuu/nextjs": "workspace:*",
+    "@ryuu/prettier-config": "workspace:*",
+    "@ryuu/tsconfig": "workspace:*",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
