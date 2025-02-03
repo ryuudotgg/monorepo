@@ -2,6 +2,8 @@ import type { BetterStackResponse } from "./types";
 import { env } from "../../env";
 
 async function get() {
+  if (!env.BETTERSTACK_UPTIME_API_KEY) throw new Error("Missing API Key");
+
   const response = await fetch(
     "https://uptime.betterstack.com/api/v2/monitors",
     { headers: { Authorization: `Bearer ${env.BETTERSTACK_UPTIME_API_KEY}` } },

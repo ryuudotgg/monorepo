@@ -9,7 +9,7 @@ export const env = createEnv({
   shared: {},
 
   server: {
-    BETTERSTACK_UPTIME_API_KEY: z.string().trim().min(1),
+    BETTERSTACK_UPTIME_API_KEY: z.string().trim().min(1).optional(),
 
     SENTRY_ORG: z.string().trim().min(1),
     SENTRY_PROJECT: z.string().trim().min(1),
