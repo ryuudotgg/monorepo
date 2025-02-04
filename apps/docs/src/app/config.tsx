@@ -4,6 +4,7 @@ import Logo from "~/assets/logo.svg";
 
 export const config = {
   nav: {
+    url: "/quick-start",
     title: (
       <>
         <Logo className="size-6" />

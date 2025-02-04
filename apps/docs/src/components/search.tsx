@@ -24,7 +24,9 @@ function Search({
   const results = search.result?.found
     ? search.result.hits.flatMap((hit) => {
         const items: SortedResult[] = [];
-        const url = hit.document.slug ? `/${hit.document.slug}` : "/";
+        const url = hit.document.slug
+          ? `/${hit.document.slug}`
+          : "/quick-start";
 
         items.push({
           id: hit._key,

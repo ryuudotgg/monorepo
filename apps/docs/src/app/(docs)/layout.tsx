@@ -1,6 +1,8 @@
 import type { PageTree } from "fumadocs-core/server";
+import type { IconName } from "lucide-react/dynamic";
 import type { ReactNode } from "react";
-import { DocsLayout } from "fumadocs-ui/layouts/docs";
+import { DocsLayout } from "fumadocs-ui/layouts/notebook";
+import { DynamicIcon, dynamicIconImports } from "lucide-react/dynamic";
 
 import { Pump } from "@ryuu/cms/components/pump";
 
@@ -13,7 +15,7 @@ function Layout({ children }: { children: ReactNode }) {
       queries={[
         {
           documentation: {
-            items: { _slug: true, _title: true, category: true },
+            items: { _slug: true, _title: true, category: true, icon: true },
           },
         },
       ]}
@@ -26,7 +28,7 @@ function Layout({ children }: { children: ReactNode }) {
         for (const item of documentation.items) {
           let idx = items.length;
 
-          if (item.category && item.category !== "Root") {
+          if (item.category) {
             idx = items.findIndex((parent) => parent.name === item.category);
 
             if (idx === -1) {
@@ -42,17 +44,21 @@ function Layout({ children }: { children: ReactNode }) {
           items.splice(idx, 0, {
             type: "page",
             name: item._title,
-            url: item._slug === "index" ? "/" : `/${item._slug}`,
+            url: `/${item._slug}`,
+            icon:
+              item.icon &&
+              Object.keys(dynamicIconImports).includes(
+                item.icon as IconName,
+              ) ? (
+                <DynamicIcon name={item.icon as IconName} size={24} />
+              ) : undefined,
           });
         }
 
         return (
           <DocsLayout
-            tree={{
-              name: "Documentation",
-              children: items,
-            }}
             {...config}
+            tree={{ name: "Documentation", children: items }}
           >
             {children}
           </DocsLayout>

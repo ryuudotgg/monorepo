@@ -20,8 +20,9 @@ async function Page(props: { params: Promise<{ slug: string }> }) {
           documentation: {
             __args: { filter: { _sys_slug: { eq: params.slug } } },
             item: {
-              richText: { json: { content: true, toc: true } },
               _title: true,
+              _sys: { lastModifiedAt: true },
+              richText: { json: { content: true, toc: true } },
             },
           },
         },
@@ -35,6 +36,8 @@ async function Page(props: { params: Promise<{ slug: string }> }) {
 
         return (
           <DocsPage
+            lastUpdate={new Date(page._sys.lastModifiedAt)}
+            tableOfContent={{ style: "clerk" }}
             toc={
               page.richText?.json.toc[0]
                 ? parseToc(page.richText.json.toc[0])
@@ -42,15 +45,8 @@ async function Page(props: { params: Promise<{ slug: string }> }) {
             }
           >
             <DocsTitle>{page._title}</DocsTitle>
-            <DocsBody className="text-sm">
-              <RichText
-                content={[
-                  {
-                    type: "text",
-                    text: "Create Ryuu App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, modify, or replace any component to suit your tastes.",
-                  },
-                ]}
-              />
+            <DocsBody className="text-fd-foreground/80">
+              <RichText content={page.richText?.json.content} />
             </DocsBody>
           </DocsPage>
         );
