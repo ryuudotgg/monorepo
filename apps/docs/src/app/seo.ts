@@ -6,8 +6,6 @@ export const viewport: Viewport = {
   width: "device-width",
   height: "device-height",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
@@ -39,8 +37,8 @@ export const metadata: Metadata = {
 
   metadataBase: baseUrl,
   alternates: {
-    canonical: "/",
-    languages: { en: "/" },
+    canonical: "/quick-start",
+    languages: { en: "/quick-start" },
   },
 
   openGraph: {
@@ -49,7 +47,7 @@ export const metadata: Metadata = {
     url: String(baseUrl),
     locale: "en",
 
-    title: "Create Ryuu App",
+    title: "Docs – Create Ryuu App",
     siteName: "Create Ryuu App",
     description: "A modern starter for your next big thing.",
 
@@ -66,7 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Create Ryuu App",
+    title: "Docs – Create Ryuu App",
     description: "A modern starter for your next big thing.",
 
     site: "@ryuudotgg",
@@ -100,7 +98,7 @@ export const metadata: Metadata = {
   },
 
   appleWebApp: {
-    title: "Create Ryuu App",
+    title: "Docs – Create Ryuu App",
     statusBarStyle: "black-translucent",
     startupImage: [
       "/launch-768x1004.png",
