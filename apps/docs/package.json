@@ -28,7 +28,7 @@
     "@ryuu/observability": "workspace:*",
     "@vercel/speed-insights": "^1.1.0",
     "@vercel/toolbar": "^0.1.30",
-    "fumadocs-core": "^15.0.2",
+    "fumadocs-core": "^15.0.3",
     "fumadocs-ui": "^15.0.2",
     "next": "catalog:next",
     "react": "catalog:react19",
