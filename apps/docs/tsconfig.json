@@ -7,6 +7,6 @@
       "~/assets/*": ["./public/assets/*"]
     }
   },
-  "include": [".", ".next/types/**/*.ts", "../../.vscode/(docs)"],
+  "include": [".", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
