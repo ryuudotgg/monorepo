@@ -27,7 +27,7 @@
 
 ## What & Why?
 
-Create Ryuu App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, modify, or replace any component to suit your tastes.
+Create Ryuu App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, remove, or modify any component to suit your tastes.
 
 ## Tech Stack
 

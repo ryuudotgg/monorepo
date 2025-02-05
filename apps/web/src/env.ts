@@ -1,15 +1,16 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
+import { env as analytics } from "@ryuu/analytics/env";
 import { env as shared } from "@ryuu/env";
 
 export const env = createEnv({
-  extends: [shared],
+  extends: [shared, analytics],
 
   shared: {},
 
   server: {
-    PORT: z.coerce.number().default(3002).optional(),
+    PORT: z.coerce.number().default(3000).optional(),
   },
 
   client: {},
