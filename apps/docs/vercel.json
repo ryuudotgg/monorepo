@@ -20,5 +20,12 @@
       "source": "/ingest/decide",
       "destination": "https://eu.i.posthog.com/decide"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/quick-start",
+      "permanent": true
+    }
   ]
 }
