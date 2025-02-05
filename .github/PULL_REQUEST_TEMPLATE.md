@@ -17,6 +17,7 @@ You may also add review comments to explain logic behind a change to the reviewe
 
 ### Checklist
 - [ ] I have added/updated tests
+- [ ] I have updated the documentation
 - [ ] I have added appropriate labels to this PR
 
 Closes RYUU-123

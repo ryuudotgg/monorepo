@@ -1,6 +1,12 @@
 import type { Metadata, Viewport } from "next";
 
-import { baseUrl } from "~/lib/base-url";
+import { env } from "~/env";
+
+const baseUrl = new URL(
+  env.VERCEL
+    ? `https://create.ryuu.gg`
+    : `http://localhost:${env.PORT ?? 3000}`,
+);
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -37,8 +43,8 @@ export const metadata: Metadata = {
 
   metadataBase: baseUrl,
   alternates: {
-    canonical: "/quick-start",
-    languages: { en: "/quick-start" },
+    canonical: "/",
+    languages: { en: "/" },
   },
 
   openGraph: {

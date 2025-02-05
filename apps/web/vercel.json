@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "docs",
+  "framework": "nextjs",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "buildCommand": "cd ../../ && pnpm build --filter @ryuu/web...",
+  "installCommand": "cd ../../ && pnpm install --filter @ryuu/web... --frozen-lockfile",
+  "devCommand": "cd ../../ && pnpm dev --filter @ryuu/web..."
+}

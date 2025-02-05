@@ -15,6 +15,10 @@
     "./vercel": {
       "types": "./dist/src/vercel.d.ts",
       "default": "./src/vercel.ts"
+    },
+    "./env": {
+      "types": "./dist/env.d.ts",
+      "default": "./env.ts"
     }
   },
   "scripts": {

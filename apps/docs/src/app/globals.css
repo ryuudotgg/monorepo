@@ -1,6 +1,0 @@
-@import "@ryuu/design/styles";
-@import "fumadocs-ui/css/black.css";
-@import "fumadocs-ui/css/preset.css";
-
-@source "../../src";
-@source '../../../../node_modules/fumadocs-ui/dist/**/*.js';
