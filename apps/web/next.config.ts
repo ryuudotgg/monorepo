@@ -12,7 +12,7 @@ let nextConfig: NextConfig = {
   serverExternalPackages: ["oxc-transform"],
 
   async rewrites() {
-    const posthogRegion = env.NEXT_PUBLIC_POSTHOG_HOST.includes(".eu.")
+    const posthogRegion = env.NEXT_PUBLIC_POSTHOG_HOST?.includes(".eu.")
       ? "eu"
       : "us";
 
