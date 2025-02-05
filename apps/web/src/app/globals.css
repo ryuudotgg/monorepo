@@ -1,7 +1,6 @@
 @import "@ryuu/design/styles";
 
 @import "fumadocs-ui/css/preset.css";
-@import "fumadocs-twoslash/twoslash.css";
 
 @source "../../src";
 @source '../../../../node_modules/fumadocs-ui/dist/**/*.js';
