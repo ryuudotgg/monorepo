@@ -14,7 +14,7 @@
     "build": "pnpm with-env next build",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "pnpm with-env next dev --turbo",
-    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path .gitignore",
     "postinstall": "fumadocs-mdx",
     "lint": "eslint",
     "start": "pnpm with-env next start",

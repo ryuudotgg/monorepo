@@ -8,5 +8,5 @@
     }
   },
   "include": [".", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", ".source/**"]
+  "exclude": ["node_modules"]
 }
