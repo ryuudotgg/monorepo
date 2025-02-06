@@ -16,6 +16,7 @@
     "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
     "lint:ws": "pnpm dlx sherif@latest",
     "prepare": "husky",
+    "start": "turbo run start --continue",
     "typecheck": "turbo run typecheck"
   },
   "prettier": "@ryuu/prettier-config",
@@ -30,6 +31,5 @@
   "engines": {
     "node": ">=22.13.1",
     "pnpm": "^10.2.0"
-  },
-  "version": "link"
+  }
 }
