@@ -65,8 +65,8 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
   );
 }
 
-export function generateStaticParams(): { slug: string[] }[] {
-  return source.generateParams();
+export function generateStaticParams(): { slugs: string[] }[] {
+  return source.generateParams("slugs");
 }
 
 export default Page;

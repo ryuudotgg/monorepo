@@ -44,6 +44,11 @@
       "dependsOn": ["^topo", "^build"],
       "outputs": [".cache/.eslintcache"]
     },
+    "start": {
+      "dependsOn": ["^start"],
+      "cache": false,
+      "persistent": false
+    },
     "typecheck": {
       "dependsOn": ["^topo", "^build"],
       "outputs": [".cache/tsbuildinfo.json"]
