@@ -30,6 +30,7 @@ const config = {
     { files: "*.json.hbs", options: { parser: "json" } },
     { files: "*.js.hbs", options: { parser: "babel" } },
     { files: "*.ts.hbs", options: { parser: "babel" } },
+    { files: "*.mdx", options: { requirePragma: true } },
   ],
 };
 

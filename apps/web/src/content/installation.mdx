@@ -17,13 +17,19 @@ If you prefer to clone the repository, and update the remote manually, you can d
 
 <Tabs items={["HTTPS", "SSH", "GitHub CLI"]} persist>
   <Tab value="HTTPS">
-    ```bash git clone https://github.com/ryuudotgg/create-ryuu-app.git ```
+    ```bash
+    git clone https://github.com/ryuudotgg/create-ryuu-app.git
+    ```
   </Tab>
   <Tab value="SSH">
-    ```bash git clone git@github.com:ryuudotgg/create-ryuu-app.git ```
+    ```bash
+    git clone git@github.com:ryuudotgg/create-ryuu-app.git
+    ```
   </Tab>
   <Tab value="GitHub CLI">
-    ```bash gh repo clone ryuudotgg/create-ryuu-app ```
+    ```bash
+    gh repo clone ryuudotgg/create-ryuu-app
+    ```
   </Tab>
 </Tabs>
 
@@ -38,13 +44,27 @@ We'll assume you've created a database and set the correct environment variables
 <Tabs
   groupId="package-manager"
   items={["npm", "pnpm", "yarn", "bun"]}
-  persist
-  defaultIndex={1}
 >
-  <Tab value="npm">```bash npm --workspace db run migrate ```</Tab>
-  <Tab value="pnpm">```bash pnpm --filter db migrate ```</Tab>
-  <Tab value="yarn">```bash yarn workspace db migrate ```</Tab>
-  <Tab value="bun">```bash bun --filter db migrate ```</Tab>
+  <Tab value="npm">
+    ```bash
+    npm --workspace db run migrate
+    ```
+  </Tab>
+  <Tab value="pnpm">
+    ```bash
+    pnpm --filter db migrate
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn workspace db migrate
+    ```
+  </Tab>
+  <Tab value="bun">
+    ```bash
+    bun --filter db migrate
+    ```
+  </Tab>
 </Tabs>
 
 ## Development
@@ -57,10 +77,26 @@ If you've set everything up correctly, you can run the development server by run
   persist
   defaultIndex={1}
 >
-  <Tab value="npm">```bash npm run dev ```</Tab>
-  <Tab value="pnpm">```bash pnpm dev ```</Tab>
-  <Tab value="yarn">```bash yarn dev ```</Tab>
-  <Tab value="bun">```bash bun dev ```</Tab>
+  <Tab value="npm">
+    ```bash
+    npm run dev
+    ```
+  </Tab>
+  <Tab value="pnpm">
+    ```bash
+    pnpm dev
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn dev
+    ```
+  </Tab>
+  <Tab value="bun">
+    ```bash
+    bun dev
+    ```
+  </Tab>
 </Tabs>
 
 ### Endpoints
