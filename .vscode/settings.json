@@ -20,8 +20,5 @@
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "[mdx]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
