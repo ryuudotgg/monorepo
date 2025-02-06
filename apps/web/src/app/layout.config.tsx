@@ -5,7 +5,7 @@ import Logo from "~/assets/logo.svg";
 
 export const config = {
   nav: {
-    url: "/docs",
+    url: "/",
     transparentMode: "top",
     title: (
       <>

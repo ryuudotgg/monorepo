@@ -28,7 +28,7 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
   if (!page) notFound();
 
   const path = `apps/web/src/content/${page.file.path}`;
-  const { body: Mdx, toc, lastModified } = await page.data.load();
+  const { body: MDX, toc, lastModified } = await page.data.load();
 
   return (
     <DocsPage
@@ -41,7 +41,7 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
       <DocsBody className="text-fd-foreground/80">
-        <Mdx
+        <MDX
           components={{
             ...defaultComponents,
             blockquote: Callout,

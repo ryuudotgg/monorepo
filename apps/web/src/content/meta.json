@@ -2,5 +2,11 @@
   "title": "Create Ryuu App",
   "description": "A modern starter for your next big thing.",
   "root": true,
-  "pages": ["---Guide---", "index", "..."]
+  "pages": [
+    "---Guide---",
+    "index",
+    "---Setup---",
+    "prerequisites",
+    "installation"
+  ]
 }
