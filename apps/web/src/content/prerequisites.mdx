@@ -1,0 +1,53 @@
+---
+title: Prerequisites
+description: How to configure your development environment.
+---
+
+## Package Manager
+
+We default to using [pnpm](https://pnpm.io) as our package manager, but you can replace it with [npm](https://npmjs.com), [yarn](https://yarnpkg.com), or [bun](https://bun.sh).
+
+## Accounts
+
+We rely on various SaaS services to provide the infrastructure for this project. You will need to create accounts for the following services then update your [environment variables](/docs/env).
+
+<Accordions type="single">
+  <Accordion title="Arcjet" id="arcjet">
+    We use [Arcjet](https://arcjet.com) for [application security](/docs/security).
+  </Accordion>
+  <Accordion title="BaseHub" id="basehub">
+    We use [BaseHub](https://basehub.com) as a [CMS](/docs/cms).
+  </Accordion>
+  <Accordion title="Better Auth" id="better-auth">
+    We use [Better Auth](https://better-auth.com) for [authentication](/docs/authentication).
+  </Accordion>
+  <Accordion title="Better Stack" id="betterstack">
+    We use [Better Stack](https://betterstack.com) for observability.
+
+    - [Better Stack Telemetry](https://betterstack.com/telemetry), for [logging](/docs/observability/logging).
+    - [Better Stack Uptime](https://betterstack.com/uptime), for [uptime monitoring](/docs/observability/uptime).
+  </Accordion>
+  <Accordion title="LaunchDarkly" id="launchdarkly">
+    We use [LaunchDarkly](https://launchdarkly.com) for [feature flags](/docs/flags).
+  </Accordion>
+  <Accordion title="PlanetScale" id="planetscale">
+    We use [PlanetScale](https://planetscale.com) for a [database](/docs/database).
+  </Accordion>
+  <Accordion title="PostHog" id="posthog">
+    We use [PostHog](https://posthog.com) for [product analytics](/docs/analytics/product).
+  </Accordion>
+  <Accordion title="Resend" id="resend">
+    We use [Resend](https://resend.com) for [transactional emails](/docs/emails).
+  </Accordion>
+  <Accordion title="Sentry" id="sentry">
+    We use [Sentry](https://sentry.io) for [application monitoring](/docs/observability/monitoring).
+  </Accordion>
+  <Accordion title="Vercel" id="vercel">
+    We use [Vercel](https://vercel.com) for various services:
+
+    - [Vercel Analytics](https://vercel.com/analytics), for [web analytics](/docs/analytics/web).
+    - [Vercel Blob](https://vercel.com/storage/blob), for [object storage](/docs/blob).
+    - [Vercel Edge Config](https://vercel.com/storage/edge-config), for [feature flags](/docs/flags).
+    - [Vercel KV](https://vercel.com/marketplace/upstash) (or directly [Upstash](https://upstash.com)), for a [key-value store](/docs/cache).
+  </Accordion>
+</Accordions>

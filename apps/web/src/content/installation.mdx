@@ -1,0 +1,106 @@
+---
+title: Installation
+description: How to setup and install Create Ryuu App.
+---
+
+## Installation
+
+As on now, we do not have a CLI to install Create Ryuu App. You can do either of the following:
+
+### Use as Template
+
+You can head over to our [GitHub repository](https://github.com/ryuudotgg/create-ryuu-app) and create a new repository from the template.
+
+### Clone the Repository
+
+If you prefer to clone the repository, and update the remote manually, you can do so by running the following command:
+
+<Tabs items={["HTTPS", "SSH", "GitHub CLI"]} persist>
+  <Tab value="HTTPS">
+    ```bash
+    git clone https://github.com/ryuudotgg/create-ryuu-app.git
+    ```
+  </Tab>
+  <Tab value="SSH">
+    ```bash
+    git clone git@github.com:ryuudotgg/create-ryuu-app.git
+    ```
+  </Tab>
+  <Tab value="GitHub CLI">
+    ```bash
+    gh repo clone ryuudotgg/create-ryuu-app
+    ```
+  </Tab>
+</Tabs>
+
+## Environment Variables
+
+You'll need to create a `.env` file in the root of the project before proceeding. You can read more about environment variables [here](/docs/env).
+
+## Database
+
+We'll assume you've created a database and set the correct environment variables. You will need to scaffold the database by running the migrations located in `packages/db/src/drizzle`:
+
+<Tabs
+  groupId="package-manager"
+  items={["npm", "pnpm", "yarn", "bun"]}
+>
+  <Tab value="npm">
+    ```bash
+    npm --workspace db run migrate
+    ```
+  </Tab>
+  <Tab value="pnpm">
+    ```bash
+    pnpm --filter db migrate
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn workspace db migrate
+    ```
+  </Tab>
+  <Tab value="bun">
+    ```bash
+    bun --filter db migrate
+    ```
+  </Tab>
+</Tabs>
+
+## Development
+
+If you've set everything up correctly, you can run the development server by running the following command:
+
+<Tabs
+  groupId="package-manager"
+  items={["npm", "pnpm", "yarn", "bun"]}
+  persist
+  defaultIndex={1}
+>
+  <Tab value="npm">
+    ```bash
+    npm run dev
+    ```
+  </Tab>
+  <Tab value="pnpm">
+    ```bash
+    pnpm dev
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn dev
+    ```
+  </Tab>
+  <Tab value="bun">
+    ```bash
+    bun dev
+    ```
+  </Tab>
+</Tabs>
+
+### Endpoints
+
+You can find the applications running at the following endpoints:
+
+- Web: http://localhost:3000
