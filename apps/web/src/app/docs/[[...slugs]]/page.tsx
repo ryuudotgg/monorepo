@@ -27,7 +27,7 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
   const page = source.getPage(params.slugs);
   if (!page) notFound();
 
-  const path = `apps/web/src/content/${page.file.path}`;
+  const path = `apps/web/src/content/docs/${page.file.path}`;
   const { body: MDX, toc, lastModified } = await page.data.load();
 
   return (
@@ -36,7 +36,12 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
       full={page.data.full}
       lastUpdate={lastModified}
       tableOfContent={{ style: "clerk", single: false }}
-      editOnGithub={{ owner: "ryuudotgg", repo: "create-ryuu-app", path }}
+      editOnGithub={{
+        owner: "ryuudotgg",
+        repo: "create-ryuu-app",
+        sha: "main",
+        path,
+      }}
     >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>

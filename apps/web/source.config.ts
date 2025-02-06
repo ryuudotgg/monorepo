@@ -8,7 +8,7 @@ import { defineConfig, defineDocs, metaSchema } from "fumadocs-mdx/config";
 import { z } from "zod";
 
 export const docs = defineDocs({
-  dir: "src/content",
+  dir: "src/content/docs",
   docs: { async: true },
   meta: {
     schema: metaSchema.extend({
