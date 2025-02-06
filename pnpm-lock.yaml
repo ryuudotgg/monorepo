@@ -19,8 +19,8 @@ catalogs:
       specifier: ^4.0.3
       version: 4.0.3
     '@trpc/server':
-      specifier: ^11.0.0-rc.730
-      version: 11.0.0-rc.730
+      specifier: ^11.0.0-rc.741
+      version: 11.0.0-rc.741
     '@types/node':
       specifier: ^22.13.1
       version: 22.13.1
@@ -866,13 +866,13 @@ importers:
         version: link:../validators
       '@trpc/server':
         specifier: 'catalog:'
-        version: 11.0.0-rc.730(typescript@5.7.3)
+        version: 11.0.0-rc.741(typescript@5.7.3)
       superjson:
         specifier: 2.2.2
         version: 2.2.2
       trpc-to-openapi:
         specifier: ^2.1.3
-        version: 2.1.3(@trpc/server@11.0.0-rc.730(typescript@5.7.3))(zod-openapi@4.2.3(zod@3.24.1))(zod@3.24.1)
+        version: 2.1.3(@trpc/server@11.0.0-rc.741(typescript@5.7.3))(zod-openapi@4.2.3(zod@3.24.1))(zod@3.24.1)
       zod:
         specifier: 'catalog:'
         version: 3.24.1
@@ -4324,8 +4324,8 @@ packages:
   '@trpc/server@10.45.2':
     resolution: {integrity: sha512-wOrSThNNE4HUnuhJG6PfDRp4L2009KDVxsd+2VYH8ro6o/7/jwYZ8Uu5j+VaW+mOmc8EHerHzGcdbGNQSAUPgg==}
 
-  '@trpc/server@11.0.0-rc.730':
-    resolution: {integrity: sha512-pRdPGqU1LkIq6kZ1ST9fmFaFnsl7IZ6h3eEIG6cbAkUHha/oTlmDXZZAIpunBPQ1ugi5uwFClvfTY8ZapemBKA==}
+  '@trpc/server@11.0.0-rc.741':
+    resolution: {integrity: sha512-EfZIzROiHqyrshCAyUNxvboZKZEA5L3rzlnluFs29d3e31FOwFGhV4Wq2rXCKSc+9SP+b1nHHqyzSP/UBaW3Cg==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -12043,7 +12043,7 @@ snapshots:
 
   '@trpc/server@10.45.2': {}
 
-  '@trpc/server@11.0.0-rc.730(typescript@5.7.3)':
+  '@trpc/server@11.0.0-rc.741(typescript@5.7.3)':
     dependencies:
       typescript: 5.7.3
 
@@ -16669,9 +16669,9 @@ snapshots:
 
   trough@2.2.0: {}
 
-  trpc-to-openapi@2.1.3(@trpc/server@11.0.0-rc.730(typescript@5.7.3))(zod-openapi@4.2.3(zod@3.24.1))(zod@3.24.1):
+  trpc-to-openapi@2.1.3(@trpc/server@11.0.0-rc.741(typescript@5.7.3))(zod-openapi@4.2.3(zod@3.24.1))(zod@3.24.1):
     dependencies:
-      '@trpc/server': 11.0.0-rc.730(typescript@5.7.3)
+      '@trpc/server': 11.0.0-rc.741(typescript@5.7.3)
       co-body: 6.2.0
       h3: 1.14.0
       openapi3-ts: 4.4.0
