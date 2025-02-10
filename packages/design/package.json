@@ -51,7 +51,7 @@
     "@tiptap/pm": "^2.11.5",
     "@tiptap/react": "^2.11.5",
     "@tiptap/starter-kit": "^2.11.5",
-    "@vercel/speed-insights": "^1.1.0",
+    "@vercel/speed-insights": "^1.2.0",
     "@vercel/toolbar": "^0.1.30",
     "change-case": "^5.4.4",
     "class-variance-authority": "^0.7.1",
