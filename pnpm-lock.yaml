@@ -602,7 +602,7 @@ importers:
         version: 9.20.0(jiti@2.4.2)
       postcss:
         specifier: ^8.5.1
-        version: 8.5.1
+        version: 8.5.2
       prettier:
         specifier: 'catalog:'
         version: 3.5.0
@@ -2634,8 +2634,8 @@ packages:
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
-  '@opentelemetry/api-logs@0.53.0':
-    resolution: {integrity: sha512-8HArjKx+RaAI8uEIgcORbZIPklyh1YLjPSBus8hjRmvLi6DeFzgOcdZ7KwPabKj8mXF8dX0hyfAyGfycz0DbFw==}
+  '@opentelemetry/api-logs@0.56.0':
+    resolution: {integrity: sha512-Wr39+94UNNG3Ei9nv3pHd4AJ63gq5nSemMRpCd8fPwDL9rN3vK26lzxfH27mw16XzOSO+TpyQwBAMaLxaPWG0g==}
     engines: {node: '>=14'}
 
   '@opentelemetry/api-logs@0.57.1':
@@ -2796,8 +2796,8 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.7.0
 
-  '@opentelemetry/instrumentation@0.53.0':
-    resolution: {integrity: sha512-DMwg0hy4wzf7K73JJtl95m/e0boSoWhH07rfvHvYzQtBD3Bmv0Wc1x733vyZBqmFm8OjJD0/pfiUg1W3JjFX0A==}
+  '@opentelemetry/instrumentation@0.56.0':
+    resolution: {integrity: sha512-2KkGBKE+FPXU1F0zKww+stnlUxUTlBvLCiWdP63Z9sqXYeNI/ziNzsxAp4LAdUcTQmXjw1IWgvm5CAb/BHy99w==}
     engines: {node: '>=14'}
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
@@ -5066,8 +5066,8 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  crossws@0.3.3:
-    resolution: {integrity: sha512-/71DJT3xJlqSnBr83uGJesmVHSzZEvgxHt/fIKxBAAngqMHmnBWQNxCphVxxJ2XL3xleu5+hJD6IQ3TglBedcw==}
+  crossws@0.3.4:
+    resolution: {integrity: sha512-uj0O1ETYX1Bh6uSgktfPvwDiPYGQ3aI4qVsaC/LWpkIzGj1nUYm5FK3K+t11oOlpN01lGbprFCH4wBlKdJjVgw==}
 
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
@@ -7191,8 +7191,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.1:
-    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+  postcss@8.5.2:
+    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
     engines: {node: ^10 || ^12 || >=14}
 
   postgres-array@2.0.0:
@@ -10032,7 +10032,7 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@opentelemetry/api-logs@0.53.0':
+  '@opentelemetry/api-logs@0.56.0':
     dependencies:
       '@opentelemetry/api': 1.9.0
 
@@ -10251,10 +10251,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@opentelemetry/instrumentation@0.53.0(@opentelemetry/api@1.9.0)':
+  '@opentelemetry/instrumentation@0.56.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/api-logs': 0.53.0
+      '@opentelemetry/api-logs': 0.56.0
       '@types/shimmer': 1.2.0
       import-in-the-middle: 1.13.0
       require-in-the-middle: 7.5.1
@@ -10396,7 +10396,7 @@ snapshots:
   '@prisma/instrumentation@6.2.1(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/instrumentation': 0.53.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/instrumentation': 0.56.0(@opentelemetry/api@1.9.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -11508,7 +11508,7 @@ snapshots:
       '@tailwindcss/node': 4.0.6
       '@tailwindcss/oxide': 4.0.6
       lightningcss: 1.29.1
-      postcss: 8.5.1
+      postcss: 8.5.2
       tailwindcss: 4.0.6
 
   '@tailwindcss/typography@0.5.16(tailwindcss@4.0.6)':
@@ -12746,7 +12746,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  crossws@0.3.3:
+  crossws@0.3.4:
     dependencies:
       uncrypto: 0.1.3
 
@@ -13850,7 +13850,7 @@ snapshots:
   h3@1.15.0:
     dependencies:
       cookie-es: 1.2.2
-      crossws: 0.3.3
+      crossws: 0.3.4
       defu: 6.1.4
       destr: 2.0.3
       iron-webcrypto: 1.2.1
@@ -15424,7 +15424,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.1:
+  postcss@8.5.2:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
@@ -15872,7 +15872,7 @@ snapshots:
     dependencies:
       debug: 4.4.0
       module-details-from-path: 1.0.3
-      resolve: 1.22.10
+      resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
 
