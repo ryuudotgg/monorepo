@@ -19,7 +19,7 @@ catalogs:
       specifier: ^4.0.5
       version: 4.0.5
     '@trpc/server':
-      specifier: ^11.0.0-rc.748
+      specifier: ^11.0.0-rc.749
       version: 11.0.0-rc.749
     '@types/node':
       specifier: ^22.13.1
