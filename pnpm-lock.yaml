@@ -110,8 +110,8 @@ importers:
         specifier: ^15.0.6
         version: 15.0.6(@types/react@19.0.8)(next@15.1.6(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       fumadocs-docgen:
-        specifier: ^1.3.6
-        version: 1.3.6(typescript@5.7.3)
+        specifier: ^1.3.7
+        version: 1.3.7(typescript@5.7.3)
       fumadocs-mdx:
         specifier: ^11.5.3
         version: 11.5.3(@fumadocs/mdx-remote@1.2.0(acorn@8.14.0)(fumadocs-core@15.0.6(@types/react@19.0.8)(next@15.1.6(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(next@15.1.6(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0))(acorn@8.14.0)(fumadocs-core@15.0.6(@types/react@19.0.8)(next@15.1.6(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(next@15.1.6(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
@@ -5760,8 +5760,8 @@ packages:
       react-dom:
         optional: true
 
-  fumadocs-docgen@1.3.6:
-    resolution: {integrity: sha512-W/ddPpy5JYdn7bBZTxqvqRcU2+SiHvj/v6dALWWBYMSizCkNl84zWX78NLBMVoIwxYWvj5lupK86G22teCUDeA==}
+  fumadocs-docgen@1.3.7:
+    resolution: {integrity: sha512-GzlxZoEsY2WQVPMMoaSqzrSmxNtUpGvCutcd2he+jfrV+Hu+Xc8LVymI6meH99vv3HkftUsCHUsfkaQrV7Aa2A==}
 
   fumadocs-mdx@11.5.3:
     resolution: {integrity: sha512-aPRKPo48tfpCdzXEKcaNfMJo33WvrwiTgLTeHUJpLFV1LYnb+Wloa7wBchqyL6lA/5hm1L43HduCK8BCWdK0BA==}
@@ -13590,8 +13590,9 @@ snapshots:
       - '@types/react'
       - supports-color
 
-  fumadocs-docgen@1.3.6(typescript@5.7.3):
+  fumadocs-docgen@1.3.7(typescript@5.7.3):
     dependencies:
+      estree-util-to-js: 2.0.0
       estree-util-value-to-estree: 3.3.2
       fumadocs-typescript: 3.0.3(typescript@5.7.3)
       hast-util-to-estree: 3.1.1
