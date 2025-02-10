@@ -14,8 +14,8 @@ catalog:
   "@arcjet/next": ^1.0.0-beta.2
   "@arcjet/decorate": ^1.0.0-beta.2
 
-  tailwindcss: ^4.0.5
-  "@tailwindcss/postcss": ^4.0.5
+  tailwindcss: ^4.0.6
+  "@tailwindcss/postcss": ^4.0.6
 
   eslint: ^9.20.0
   prettier: ^3.5.0
