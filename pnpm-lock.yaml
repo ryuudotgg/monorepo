@@ -192,8 +192,8 @@ importers:
         specifier: ^1.4.1
         version: 1.4.1(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       posthog-js:
-        specifier: ^1.215.6
-        version: 1.215.6
+        specifier: ^1.216.0
+        version: 1.216.0
       posthog-node:
         specifier: ^4.5.0
         version: 4.5.0
@@ -946,7 +946,7 @@ importers:
         version: 7.37.4(eslint@9.20.0(jiti@2.4.2))
       eslint-plugin-react-compiler:
         specifier: beta
-        version: 19.0.0-beta-714736e-20250131(eslint@9.20.0(jiti@2.4.2))
+        version: 19.0.0-beta-30d8a17-20250209(eslint@9.20.0(jiti@2.4.2))
       eslint-plugin-react-hooks:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.20.0(jiti@2.4.2))
@@ -5509,8 +5509,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-compiler@19.0.0-beta-714736e-20250131:
-    resolution: {integrity: sha512-iTPUaHzvBejGqicSwZLCDBgWBxLzU1Dvqjs31loNoOPRnsey5dcOupaZajECKVvXmB1wcbIWNp6/VR5+dM9d6w==}
+  eslint-plugin-react-compiler@19.0.0-beta-30d8a17-20250209:
+    resolution: {integrity: sha512-D2wohyvsW27KSQV8IhyjL9UhYKs4f7Y8WPIuNOeiYylOaredvb2vW/AAE2m36BWLsn3Q9xRYz1UZj2AXR15w/g==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -7193,8 +7193,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-js@1.215.6:
-    resolution: {integrity: sha512-OWfLYXaGNZDfKnNo9h2jifV1rsqhSfZzHw6/W6IOSk8Cq2nidIPUm89mutk7zbzPPmnVTV8eqPCfhFaoHZZKLw==}
+  posthog-js@1.216.0:
+    resolution: {integrity: sha512-IN9MvcfqFxAGp4o2S+IBIaxJWW4Wbo/6nBxso+KatrVQbQuNfaug4S/5ts/BMDMCMUEOcCNg4XKR+bGKf6Hb/A==}
 
   posthog-node@4.5.0:
     resolution: {integrity: sha512-h1WTHYvgOZ7kBGH0XfKVOVsSyFgCEbgzC2RIw7fetsW6RrSvxPYcaycKUDfqa5EGbvU0SYLbqAeeqNZjPDaznA==}
@@ -13282,7 +13282,7 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-react-compiler@19.0.0-beta-714736e-20250131(eslint@9.20.0(jiti@2.4.2)):
+  eslint-plugin-react-compiler@19.0.0-beta-30d8a17-20250209(eslint@9.20.0(jiti@2.4.2)):
     dependencies:
       '@babel/core': 7.26.8
       '@babel/parser': 7.26.8
@@ -15408,7 +15408,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-js@1.215.6:
+  posthog-js@1.216.0:
     dependencies:
       core-js: 3.40.0
       fflate: 0.4.8
