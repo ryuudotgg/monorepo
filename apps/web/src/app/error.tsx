@@ -8,10 +8,10 @@ import { processError } from "@ryuu/observability/error";
 
 export default function ErrorBoundary({
   error,
-}: Readonly<{
+}: {
   error: Error & { digest?: string };
   reset: () => void;
-}>) {
+}) {
   const { data } = authClient.useSession();
 
   useEffect(() => {
