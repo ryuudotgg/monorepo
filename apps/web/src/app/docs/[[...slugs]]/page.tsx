@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-
 import { notFound } from "next/navigation";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import { Callout } from "fumadocs-ui/components/callout";
@@ -16,7 +12,7 @@ import {
   DocsTitle,
 } from "fumadocs-ui/page";
 
-import { source } from "~/lib/source";
+import { fumadocs } from "~/lib/fumadocs";
 
 export const revalidate = false;
 export const dynamicParams = false;
@@ -24,7 +20,7 @@ export const dynamicParams = false;
 async function Page(props: { params: Promise<{ slugs: string[] }> }) {
   const params = await props.params;
 
-  const page = source.getPage(params.slugs);
+  const page = fumadocs.getPage(params.slugs);
   if (!page) notFound();
 
   const path = `apps/web/src/content/docs/${page.file.path}`;
@@ -66,7 +62,7 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
 }
 
 export function generateStaticParams(): { slugs: string[] }[] {
-  return source.generateParams("slugs");
+  return fumadocs.generateParams("slugs");
 }
 
 export default Page;

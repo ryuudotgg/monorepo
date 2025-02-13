@@ -2,7 +2,7 @@ import {
   index,
   mysqlTable,
   timestamp,
-  uniqueIndex,
+  unique,
   varchar,
 } from "drizzle-orm/mysql-core";
 
@@ -21,11 +21,12 @@ export const verifications = mysqlTable(
     ...dates,
   },
   (verification) => [
-    uniqueIndex("verifications_unique_idx").on(
+    unique("verifications_identifier_value_uk").on(
       verification.identifier,
       verification.value,
     ),
 
+    index("verifications_identifier_idx").on(verification.identifier),
     index("verifications_created_at_idx").on(
       verification.createdAt,
       verification.id,

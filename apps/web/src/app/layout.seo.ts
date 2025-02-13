@@ -1,14 +1,8 @@
 import type { Metadata, Viewport } from "next";
 
-import { env } from "~/env";
+import { baseUrl } from "~/lib/base-url";
 
-const baseUrl = new URL(
-  env.VERCEL
-    ? `https://create.ryuu.gg`
-    : `http://localhost:${env.PORT ?? 3000}`,
-);
-
-export const viewport: Viewport = {
+export const viewport = {
   width: "device-width",
   height: "device-height",
   initialScale: 1,
@@ -17,11 +11,11 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#000000" },
   ],
-};
+} satisfies Viewport;
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
-    default: "Docs – Create Ryuu App",
+    default: "Create Ryuu App",
     template: "%s – Create Ryuu App",
   },
 
@@ -143,4 +137,4 @@ export const metadata: Metadata = {
     "development",
     "framework",
   ],
-};
+} satisfies Metadata;

@@ -1,3 +1,5 @@
+name: ryuu
+
 services:
   database:
     image: mysql:8.0

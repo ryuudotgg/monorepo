@@ -1,23 +1,35 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-
 import type { MetadataRoute } from "next";
 
-import type { Page } from "~/lib/source";
+import { removeTrailingSlash } from "@ryuu/shared/helpers";
+
 import { baseUrl } from "~/lib/base-url";
-import { source } from "~/lib/source";
+import { fumadocs } from "~/lib/fumadocs";
 
 export const revalidate = false;
 
-function getUrl(path: string) {
-  return new URL(path, baseUrl).toString();
+function getUrl(path?: string) {
+  if (!path) return removeTrailingSlash(baseUrl);
+  return removeTrailingSlash(new URL(path, baseUrl));
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  return Promise.all(
-    source.getPages().map(async (page: Page) => {
+  const routes: MetadataRoute.Sitemap = [
+    {
+      url: getUrl(),
+      priority: 1,
+    },
+    {
+      url: getUrl("/sign-in"),
+      priority: 0.5,
+    },
+    {
+      url: getUrl("/sign-up"),
+      priority: 0.5,
+    },
+  ];
+
+  const docs = await Promise.all(
+    fumadocs.getPages().map(async (page) => {
       const { lastModified } = await page.data.load();
 
       return {
@@ -28,4 +40,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       } as MetadataRoute.Sitemap[number];
     }),
   );
+
+  routes.push(...docs);
+
+  return routes;
 }

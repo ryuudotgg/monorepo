@@ -32,7 +32,10 @@ export const users = mysqlTable(
 
     ...dates,
   },
-  (user) => [index("users_created_at_idx").on(user.createdAt, user.id)],
+  (user) => [
+    index("users_email_idx").on(user.email),
+    index("users_created_at_idx").on(user.createdAt, user.id),
+  ],
 );
 
 export const userRelations = relations(users, ({ many }) => ({
