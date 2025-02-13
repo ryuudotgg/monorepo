@@ -7,7 +7,8 @@ const length = 12;
 const pattern = new RegExp(`^[a-z0-9]{${length}}$`);
 const zod = z.string().trim().regex(pattern);
 
-export const nanoid = customAlphabet(alphabet, length);
+// We don't want to allow `size` as an argument.
+export const nanoid = () => customAlphabet(alphabet, length)();
 export {
   alphabet as nanoidAlphabet,
   length as nanoidLength,

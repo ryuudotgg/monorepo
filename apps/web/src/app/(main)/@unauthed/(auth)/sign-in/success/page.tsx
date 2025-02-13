@@ -4,7 +4,7 @@ import AuthHeader from "../../_components/AuthHeader";
 
 export const metadata = { title: "Sign In" } satisfies Metadata;
 
-export default function SignInSuccess() {
+export default function Page() {
   return (
     <div className="relative h-screen">
       <AuthHeader page="sign-in" />

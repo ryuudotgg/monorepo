@@ -7,7 +7,7 @@ import SignInEmailForm from "./form";
 export const runtime: ServerRuntime = "nodejs";
 export const metadata = { title: "Sign In" } satisfies Metadata;
 
-export default function SignInEmail() {
+export default function Page() {
   return (
     <div className="relative h-screen">
       <AuthHeader page="sign-in" />

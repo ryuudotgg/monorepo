@@ -7,7 +7,7 @@ import SignUpEmailForm from "./form";
 export const runtime: ServerRuntime = "nodejs";
 export const metadata = { title: "Sign Up" } satisfies Metadata;
 
-export default function SignUpEmail() {
+export default function Page() {
   return (
     <div className="relative h-screen">
       <AuthHeader page="sign-up" />
