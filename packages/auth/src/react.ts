@@ -7,7 +7,7 @@ import { createAuthClient } from "better-auth/react";
 
 import type { defaultAuth } from ".";
 
-const authClient = createAuthClient({
+export const authClient = createAuthClient({
   plugins: [
     passkeyClient(),
     magicLinkClient(),
@@ -15,7 +15,4 @@ const authClient = createAuthClient({
   ],
 });
 
-type Session = typeof authClient.$Infer.Session;
-
-export { authClient };
-export type { Session };
+export type Session = typeof authClient.$Infer.Session;

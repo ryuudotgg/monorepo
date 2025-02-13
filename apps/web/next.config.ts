@@ -6,7 +6,9 @@ import { withSentry } from "@ryuu/observability/nextjs";
 
 import { env } from "./src/env";
 
-const withMDX = createMDX();
+const withMDX = createMDX({
+  configPath: "./fumadocs.config.ts",
+});
 
 let nextConfig: NextConfig = {
   serverExternalPackages: ["oxc-transform"],

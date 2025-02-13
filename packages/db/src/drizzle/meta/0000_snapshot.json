@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "93b2ffde-db85-4c88-872d-9566984f8224",
+  "id": "9f0f82d1-425a-4430-8665-acde138e2446",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "users": {
@@ -84,6 +84,11 @@
         }
       },
       "indexes": {
+        "users_email_idx": {
+          "name": "users_email_idx",
+          "columns": ["email"],
+          "isUnique": false
+        },
         "users_created_at_idx": {
           "name": "users_created_at_idx",
           "columns": ["created_at", "id"],
@@ -193,6 +198,11 @@
         }
       },
       "indexes": {
+        "accounts_user_id_idx": {
+          "name": "accounts_user_id_idx",
+          "columns": ["user_id"],
+          "isUnique": false
+        },
         "accounts_created_at_idx": {
           "name": "accounts_created_at_idx",
           "columns": ["created_at", "id"],
@@ -303,9 +313,9 @@
         }
       },
       "indexes": {
-        "passkeys_credential_id_idx": {
-          "name": "passkeys_credential_id_idx",
-          "columns": ["credential_id"],
+        "passkeys_user_id_idx": {
+          "name": "passkeys_user_id_idx",
+          "columns": ["user_id"],
           "isUnique": false
         },
         "passkeys_created_at_idx": {
@@ -402,6 +412,11 @@
           "columns": ["token"],
           "isUnique": true
         },
+        "sessions_user_id_idx": {
+          "name": "sessions_user_id_idx",
+          "columns": ["user_id"],
+          "isUnique": false
+        },
         "sessions_created_at_idx": {
           "name": "sessions_created_at_idx",
           "columns": ["created_at", "id"],
@@ -477,10 +492,10 @@
         }
       },
       "indexes": {
-        "verifications_unique_idx": {
-          "name": "verifications_unique_idx",
-          "columns": ["identifier", "value"],
-          "isUnique": true
+        "verifications_identifier_idx": {
+          "name": "verifications_identifier_idx",
+          "columns": ["identifier"],
+          "isUnique": false
         },
         "verifications_created_at_idx": {
           "name": "verifications_created_at_idx",
@@ -495,7 +510,12 @@
           "columns": ["id"]
         }
       },
-      "uniqueConstraints": {},
+      "uniqueConstraints": {
+        "verifications_identifier_value_uk": {
+          "name": "verifications_identifier_value_uk",
+          "columns": ["identifier", "value"]
+        }
+      },
       "checkConstraint": {}
     }
   },

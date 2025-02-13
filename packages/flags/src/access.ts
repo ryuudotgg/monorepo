@@ -3,7 +3,7 @@ import { verifyAccess } from "@vercel/flags";
 
 import * as flags from ".";
 
-async function GET(request: NextRequest): Promise<Response> {
+export async function GET(request: NextRequest): Promise<Response> {
   const access = await verifyAccess(request.headers.get("Authorization"));
   if (!access)
     return new Response(
@@ -27,5 +27,3 @@ async function GET(request: NextRequest): Promise<Response> {
     headers: { "Content-Type": "application/json" },
   });
 }
-
-export { GET };

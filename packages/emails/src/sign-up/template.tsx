@@ -22,6 +22,9 @@ interface SignUpProps {
   ip?: string;
 }
 
+const font =
+  '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif';
+
 export function SignUp({ token, city, country, ip }: SignUpProps) {
   // TODO: Make this page in the web app.
   const url = String(new URL(`/sign-up/confirm/${token}`, baseUrl));
@@ -236,8 +239,3 @@ export function SignUp({ token, city, country, ip }: SignUpProps) {
     </Html>
   );
 }
-
-export default SignUp;
-
-const font =
-  '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif';

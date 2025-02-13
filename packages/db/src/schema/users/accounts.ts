@@ -34,6 +34,7 @@ export const accounts = mysqlTable(
     ...dates,
   },
   (account) => [
+    index("accounts_user_id_idx").on(account.userId),
     index("accounts_created_at_idx").on(account.createdAt, account.id),
 
     foreignKey({

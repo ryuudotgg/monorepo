@@ -1,5 +1,4 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
-import { Book } from "lucide-react";
 
 import Logo from "~/assets/logo.svg";
 
@@ -15,20 +14,6 @@ export const config = {
     ),
   },
   links: [
-    {
-      type: "menu",
-      text: "Documentation",
-      url: "/docs",
-      items: [
-        {
-          icon: <Book />,
-          text: "Getting Started",
-          description:
-            "Learn how to use Create Ryuu App for your next project.",
-          url: "/docs",
-        },
-      ],
-    },
     {
       text: "API Reference",
       url: "https://api.create.ryuu.gg/docs",

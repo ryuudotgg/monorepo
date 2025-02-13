@@ -1,14 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-
 import { createSearchAPI } from "fumadocs-core/search/server";
 
-import { source } from "~/lib/source";
+import { fumadocs } from "~/lib/fumadocs";
 
 export const { GET } = createSearchAPI("advanced", {
   indexes: await Promise.all(
-    source.getPages().map(async (page) => {
+    fumadocs.getPages().map(async (page) => {
       const { structuredData } = await page.data.load();
 
       return {

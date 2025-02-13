@@ -5,6 +5,4 @@ import { env } from "../env";
 import * as schema from "./schema";
 
 const client = new Client({ url: env.DATABASE_URL });
-const db = drizzle({ client, schema, casing: "snake_case" });
-
-export { db };
+export const db = drizzle({ client, schema, casing: "snake_case" });

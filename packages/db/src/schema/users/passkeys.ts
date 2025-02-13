@@ -35,7 +35,7 @@ export const passkeys = mysqlTable(
     ...dates,
   },
   (account) => [
-    index("passkeys_credential_id_idx").on(account.credentialID),
+    index("passkeys_user_id_idx").on(account.userId),
     index("passkeys_created_at_idx").on(account.createdAt, account.id),
 
     foreignKey({

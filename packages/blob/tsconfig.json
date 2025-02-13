@@ -1,5 +1,8 @@
 {
-  "extends": "@ryuu/tsconfig/internal-package.json",
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/internal-package.json"
+  ],
   "include": ["./src", "./*.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,7 +1,7 @@
 import type { BetterStackResponse } from "./types";
 import { env } from "../../env";
 
-async function get() {
+export async function getUptimeStatus() {
   if (!env.BETTERSTACK_UPTIME_API_KEY) throw new Error("Missing API Key");
 
   const response = await fetch(
@@ -14,5 +14,3 @@ async function get() {
   const { data } = (await response.json()) as BetterStackResponse;
   return data;
 }
-
-export { get as getUptimeStatus };

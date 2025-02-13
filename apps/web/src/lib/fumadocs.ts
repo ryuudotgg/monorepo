@@ -1,11 +1,10 @@
-import type { InferMetaType, InferPageType } from "fumadocs-core/source";
 import { createElement } from "react";
 import { loader } from "fumadocs-core/source";
 import { icons } from "lucide-react";
 
 import { docs } from "../../.source";
 
-const source = loader({
+export const fumadocs = loader({
   baseUrl: "/docs",
 
   icon(icon) {
@@ -15,8 +14,3 @@ const source = loader({
 
   source: docs.toFumadocsSource(),
 });
-
-type Page = InferPageType<typeof source>;
-type Meta = InferMetaType<typeof source>;
-
-export { source, type Meta, type Page };

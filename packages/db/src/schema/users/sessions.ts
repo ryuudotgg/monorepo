@@ -31,6 +31,8 @@ export const sessions = mysqlTable(
   },
   (session) => [
     uniqueIndex("sessions_token_uk").on(session.token),
+
+    index("sessions_user_id_idx").on(session.userId),
     index("sessions_created_at_idx").on(session.createdAt, session.id),
 
     foreignKey({

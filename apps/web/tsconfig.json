@@ -1,5 +1,5 @@
 {
-  "extends": "@ryuu/tsconfig/nextjs.json",
+  "extends": ["@ryuu/tsconfig/base.json", "@ryuu/tsconfig/nextjs.json"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -7,6 +7,6 @@
       "~/assets/*": ["./public/assets/*"]
     }
   },
-  "include": [".", ".next/types/**/*.ts"],
+  "include": [".", ".next/types/**/*.ts", "./src/app/.well-known/**/*.ts"],
   "exclude": ["node_modules"]
 }

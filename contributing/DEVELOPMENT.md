@@ -94,7 +94,7 @@ tooling
 #### Example
 
 ```typescript
-function MyComponent({
+export function MyComponent({
   title,
   onClick 
 }: {
@@ -103,6 +103,4 @@ function MyComponent({
 }) {
   return <button onClick={onClick}>{title}</button>;
 }
-
-export { MyComponent };
 ```
