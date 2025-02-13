@@ -1,13 +1,15 @@
-import type { Metadata } from "next";
-import { redirect } from "next/navigation";
+"use client";
 
-export const metadata = { title: "Sign Up" } satisfies Metadata;
+import { useEffect } from "react";
+import { useParams, useRouter } from "next/navigation";
 
-export default async function SignUpConfirm({
-  params,
-}: {
-  params: Promise<{ token: string }>;
-}) {
-  const { token } = await params;
-  redirect(`/api/auth/magic-link/verify?token=${token}`);
+export default function Page() {
+  const params = useParams<{ token: string }>();
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace(`/api/auth/magic-link/verify?token=${params.token}`);
+  }, [params.token, router]);
+
+  return null;
 }

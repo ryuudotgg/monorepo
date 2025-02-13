@@ -5,7 +5,7 @@ import AuthHeader from "../../_components/AuthHeader";
 
 export const metadata = { title: "Sign Up" } satisfies Metadata;
 
-export default function SignUpInvalid() {
+export default function Page() {
   return (
     <div className="relative h-screen">
       <AuthHeader page="sign-up" />

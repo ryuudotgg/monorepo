@@ -22,6 +22,7 @@
     "@ryuu/db": "workspace:*",
     "@ryuu/emails": "workspace:*",
     "@ryuu/env": "workspace:*",
+    "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@trpc/server": "^10.45.2",
     "@vercel/functions": "^2.0.0",

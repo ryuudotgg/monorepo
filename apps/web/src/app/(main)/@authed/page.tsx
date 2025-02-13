@@ -1,4 +1,5 @@
 import { headers } from "next/headers";
+import { redirect } from "next/navigation";
 
 import { auth } from "@ryuu/auth";
 import { Button } from "@ryuu/design/components/ui/button";
@@ -17,7 +18,9 @@ export default function Page() {
         <Button
           formAction={async () => {
             "use server";
+
             await auth.signOut({ headers: await headers() });
+            redirect("/");
           }}
         >
           Sign Out

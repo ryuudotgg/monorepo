@@ -17,6 +17,7 @@ import {
   verifications,
 } from "@ryuu/db/schema";
 import { sendSignIn, sendSignUp } from "@ryuu/emails";
+import { nanoid } from "@ryuu/shared/helpers";
 
 import type { Session } from ".";
 import { env } from "../env";
@@ -132,7 +133,7 @@ export const authConfig = {
   },
 
   account: { accountLinking: { enabled: true } },
-  advanced: { useSecureCookies: isSecureContext, generateId: false },
+  advanced: { useSecureCookies: isSecureContext, generateId: () => nanoid() },
 } satisfies BetterAuthOptions;
 
 export const validateToken = async (token: string): Promise<Session | null> => {
