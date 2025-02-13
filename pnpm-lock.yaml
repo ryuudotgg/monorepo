@@ -735,9 +735,6 @@ importers:
 
   packages/observability:
     dependencies:
-      '@logtail/next':
-        specifier: ^0.1.7
-        version: 0.1.7(next@15.1.7(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       '@ryuu/env':
         specifier: workspace:*
         version: link:../env
@@ -977,9 +974,6 @@ importers:
 
   tooling/nextjs:
     dependencies:
-      '@logtail/next':
-        specifier: ^0.1.7
-        version: 0.1.7(next@15.1.7(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       '@next/bundle-analyzer':
         specifier: catalog:next
         version: 15.1.7
@@ -2545,12 +2539,6 @@ packages:
 
   '@levischuck/tiny-cbor@0.2.11':
     resolution: {integrity: sha512-llBRm4dT4Z89aRsm6u2oEZ8tfwL/2l6BwpZ7JcyieouniDECM5AqNgr/y08zalEIvW3RSK4upYyybDcmjXqAow==}
-
-  '@logtail/next@0.1.7':
-    resolution: {integrity: sha512-1CEBO+C65PGI1THcanwuyLkD8G3w6PLudEgZBY/okCH5cR1FPBJiztkkBkP4wasQfsNJiFkYEmHkFriLM67SfQ==}
-    engines: {node: '>=15'}
-    peerDependencies:
-      next: ^12.1.4 || ^13 || ^14 || ^15
 
   '@mdx-js/mdx@3.1.0':
     resolution: {integrity: sha512-/QxEhPAvGwbQmy1Px8F899L5Uc2KZ6JtXwlCgJmjSTBedwOZkByYcBG4GceIGPXRDsmfxhHazuS+hlOShRLeDw==}
@@ -8349,9 +8337,6 @@ packages:
       webpack-cli:
         optional: true
 
-  whatwg-fetch@3.6.20:
-    resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
-
   whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
@@ -9900,11 +9885,6 @@ snapshots:
       - '@opentelemetry/api'
 
   '@levischuck/tiny-cbor@0.2.11': {}
-
-  '@logtail/next@0.1.7(next@15.1.7(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
-    dependencies:
-      next: 15.1.7(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      whatwg-fetch: 3.6.20
 
   '@mdx-js/mdx@3.1.0(acorn@8.14.0)':
     dependencies:
@@ -16705,8 +16685,6 @@ snapshots:
       - '@swc/core'
       - esbuild
       - uglify-js
-
-  whatwg-fetch@3.6.20: {}
 
   whatwg-url@5.0.0:
     dependencies:

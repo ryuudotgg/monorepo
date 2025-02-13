@@ -34,5 +34,3 @@ export const withSentry = (sourceConfig: NextConfig): NextConfig => {
 
   return withSentryConfig(sourceConfig, sentryConfig);
 };
-
-export { withLogtail } from "@logtail/next";

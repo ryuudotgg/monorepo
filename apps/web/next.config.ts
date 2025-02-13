@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 import { createMDX } from "fumadocs-mdx/next";
 
 import { config, withAnalyzer } from "@ryuu/nextjs";
-import { withLogtail, withSentry } from "@ryuu/observability/nextjs";
+import { withSentry } from "@ryuu/observability/nextjs";
 
 import { env } from "./src/env";
 
@@ -38,4 +38,4 @@ let nextConfig: NextConfig = {
 if (env.VERCEL) nextConfig = withSentry(nextConfig);
 if (process.env.ANALYZE === "true") nextConfig = withAnalyzer(nextConfig);
 
-export default withMDX(withLogtail(nextConfig));
+export default withMDX(nextConfig);
