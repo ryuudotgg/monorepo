@@ -14,7 +14,7 @@ interface Props {
   ip?: string;
 }
 
-async function sendSignIn({
+export async function sendSignIn({
   user,
   token,
   city,
@@ -30,5 +30,3 @@ async function sendSignIn({
     ),
   });
 }
-
-export { sendSignIn, SignIn };

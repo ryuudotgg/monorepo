@@ -232,7 +232,5 @@ export function SignIn({ user, token, city, country, ip }: SignInProps) {
   );
 }
 
-export default SignIn;
-
 const font =
   '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif';

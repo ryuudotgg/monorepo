@@ -249,7 +249,10 @@ You should use the `tsconfig` tooling as a base for your TypeScript configuratio
 When creating an app:
 ```json
 {
-  "extends": "@ryuu/tsconfig/nextjs.json", // or @ryuu/tsconfig/base.json
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/nextjs.json"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -265,7 +268,23 @@ When creating an app:
 When creating a package:
 ```json
 {
-  "extends": "@ryuu/tsconfig/internal-package.json",
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/internal-package.json"
+  ],
+  "include": ["./src", "./*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
+When creating a package with DOM requirements:
+```json
+{
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/internal-package.json",
+    "@ryuu/tsconfig/nextjs.json"
+  ],
   "include": ["./src", "./*.ts"],
   "exclude": ["node_modules"]
 }

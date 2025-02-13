@@ -5,7 +5,7 @@ import type { Session } from "@ryuu/auth";
 
 import { log } from "./log";
 
-function processError(
+export function processError(
   error: unknown,
   session?: { user?: Session["user"]; ip?: string; geo?: Geo },
   extra?: Record<string, unknown>,
@@ -45,5 +45,3 @@ function processError(
 
   return message;
 }
-
-export { processError };

@@ -1,5 +1,6 @@
 {
   "extends": [
+    "@ryuu/tsconfig/base.json",
     "@ryuu/tsconfig/internal-package.json",
     "@ryuu/tsconfig/nextjs.json"
   ],

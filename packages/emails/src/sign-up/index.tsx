@@ -12,7 +12,7 @@ interface Props {
   ip?: string;
 }
 
-function sendSignUp({
+export function sendSignUp({
   email,
   token,
   city,
@@ -26,5 +26,3 @@ function sendSignUp({
     react: <SignUp token={token} city={city} country={country} ip={ip} />,
   });
 }
-
-export { sendSignUp, SignUp };

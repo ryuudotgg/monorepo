@@ -23,7 +23,7 @@ const aj = arcjet
     }),
   );
 
-async function GET(req: Request) {
+export async function GET(req: Request) {
   const decision = await aj.protect(req);
 
   if (decision.isDenied())
@@ -47,5 +47,3 @@ async function GET(req: Request) {
 
   return new Response("OK", { status: 200 });
 }
-
-export { GET };

@@ -25,7 +25,7 @@ export interface Entities {
   };
 }
 
-const create = (key: string, defaultValue = false) =>
+export const create = (key: string, defaultValue = false) =>
   flag<boolean, Entities>({
     key,
     defaultValue,
@@ -73,5 +73,3 @@ const create = (key: string, defaultValue = false) =>
       return isEnabled;
     },
   });
-
-export { create };
