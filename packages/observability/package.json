@@ -35,7 +35,6 @@
   },
   "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@logtail/next": "^0.1.7",
     "@ryuu/env": "workspace:*",
     "@sentry/nextjs": "^9.0.1",
     "@t3-oss/env-nextjs": "catalog:",

@@ -7,7 +7,6 @@
     "./instrumentation": "./instrumentation.ts"
   },
   "dependencies": {
-    "@logtail/next": "^0.1.7",
     "@next/bundle-analyzer": "catalog:next",
     "@ryuu/blob": "workspace:*",
     "@ryuu/observability": "workspace:*",
