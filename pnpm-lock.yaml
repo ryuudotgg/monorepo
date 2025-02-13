@@ -22,8 +22,8 @@ catalogs:
       specifier: ^11.0.0-rc.764
       version: 11.0.0-rc.764
     '@types/node':
-      specifier: ^22.13.1
-      version: 22.13.1
+      specifier: ^22.13.2
+      version: 22.13.2
     eslint:
       specifier: ^9.20.1
       version: 9.20.1
@@ -72,7 +72,7 @@ importers:
         version: link:tooling/prettier
       '@turbo/gen':
         specifier: ^2.4.2
-        version: 2.4.2(@types/node@22.13.1)(typescript@5.7.3)
+        version: 2.4.2(@types/node@22.13.2)(typescript@5.7.3)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -160,7 +160,7 @@ importers:
         version: 2.0.13
       '@types/node':
         specifier: 'catalog:'
-        version: 22.13.1
+        version: 22.13.2
       '@types/react':
         specifier: catalog:react19
         version: 19.0.8
@@ -4276,6 +4276,9 @@ packages:
 
   '@types/node@22.13.1':
     resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
+
+  '@types/node@22.13.2':
+    resolution: {integrity: sha512-Z+r8y3XL9ZpI2EY52YYygAFmo2/oWfNSj4BCpAXE2McAexDk8VcnBMGC9Djn9gTKt4d2T/hhXqmPzo4hfIXtTg==}
 
   '@types/pg-pool@2.0.6':
     resolution: {integrity: sha512-TaAUE5rq2VQYxab5Ts7WZhKNmuN78Q6PiFonTDdpbx8a1H0M1vhy3rhiMjl+e2iHmogyMw7jZF4FrE6eJUy5HQ==}
@@ -11743,7 +11746,7 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@turbo/gen@2.4.2(@types/node@22.13.1)(typescript@5.7.3)':
+  '@turbo/gen@2.4.2(@types/node@22.13.2)(typescript@5.7.3)':
     dependencies:
       '@turbo/workspaces': 2.4.2
       commander: 10.0.1
@@ -11753,7 +11756,7 @@ snapshots:
       node-plop: 0.26.3
       picocolors: 1.0.1
       proxy-agent: 6.5.0
-      ts-node: 10.9.2(@types/node@22.13.1)(typescript@5.7.3)
+      ts-node: 10.9.2(@types/node@22.13.2)(typescript@5.7.3)
       update-check: 1.5.4
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
@@ -11849,6 +11852,10 @@ snapshots:
       '@types/node': 22.13.1
 
   '@types/node@22.13.1':
+    dependencies:
+      undici-types: 6.20.0
+
+  '@types/node@22.13.2':
     dependencies:
       undici-types: 6.20.0
 
@@ -16360,14 +16367,14 @@ snapshots:
       '@ts-morph/common': 0.26.1
       code-block-writer: 13.0.3
 
-  ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3):
+  ts-node@10.9.2(@types/node@22.13.2)(typescript@5.7.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.13.1
+      '@types/node': 22.13.2
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
