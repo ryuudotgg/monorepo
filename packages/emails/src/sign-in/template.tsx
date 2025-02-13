@@ -63,7 +63,7 @@ export function SignIn({ user, token, city, country, ip }: SignInProps) {
                             <div>
                               <Img
                                 src={String(
-                                  new URL("/assets/ryuu.png", baseUrl),
+                                  new URL("/assets/logo.png", baseUrl),
                                 )}
                                 width={48}
                                 height={48}
