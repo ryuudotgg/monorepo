@@ -52,8 +52,6 @@ export const authConfig = {
 
     magicLink({
       sendMagicLink: async ({ email, token }, request) => {
-        console.log("sendMagicLink", email, token);
-
         const { city, country } = request ? geolocation(request) : {};
         const ip = request ? ipAddress(request) : undefined;
 
