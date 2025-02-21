@@ -243,8 +243,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(next@15.1.7(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       posthog-js:
-        specifier: ^1.219.6
-        version: 1.219.6
+        specifier: ^1.222.0
+        version: 1.222.0(@rrweb/types@2.0.0-alpha.17)
       posthog-node:
         specifier: ^4.7.0
         version: 4.7.0
@@ -3622,6 +3622,9 @@ packages:
     resolution: {integrity: sha512-DNGZvZDO5YF7jN5fX8ZqmGLjZEXIJRdJEdTFMhiyXqyXubBa0WVLDWSNlQ5JR2PNgDbEV1VQowhVRUh+74D+RA==}
     cpu: [x64]
     os: [linux]
+
+  '@rrweb/types@2.0.0-alpha.17':
+    resolution: {integrity: sha512-AfDTVUuCyCaIG0lTSqYtrZqJX39ZEYzs4fYKnexhQ+id+kbZIpIJtaut5cto6dWZbB3SEe4fW0o90Po3LvTmfg==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -7287,8 +7290,10 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-js@1.219.6:
-    resolution: {integrity: sha512-9ac1sjQGeKN/9cQz7ICY+hOIS+lTtslqnnBqTLejCfNt1ElGu4oq7rGHfXWeosER/rIvbICZxqWQkbvr+sYq6A==}
+  posthog-js@1.222.0:
+    resolution: {integrity: sha512-NlywJSjaIdh3umdBicrXzMpaPEdpUC9/XYwaNEYjz+/dPUGiARTC6MEAMv0dOvqID9Zc+GJvKo0oWBQyrCvyaA==}
+    peerDependencies:
+      '@rrweb/types': 2.0.0-alpha.17
 
   posthog-node@4.7.0:
     resolution: {integrity: sha512-RgdUKSW8MfMOkjUa8cYVqWndNjPePNuuxlGbrZC6z1WRBsVc6TdGl8caidmC10RW8mu/BOfmrGbP4cRTo2jARg==}
@@ -7751,6 +7756,9 @@ packages:
 
   rou3@0.5.1:
     resolution: {integrity: sha512-OXMmJ3zRk2xeXFGfA3K+EOPHC5u7RDFG7lIOx0X1pdnhUkI8MdVrbV+sNsD80ElpUZ+MRHdyxPnFthq9VHs8uQ==}
+
+  rrweb-snapshot@2.0.0-alpha.18:
+    resolution: {integrity: sha512-hBHZL/NfgQX6wO1D9mpwqFu1NJPpim+moIcKhFEjVTZVRUfCln+LOugRc4teVTCISYHN8Cw5e2iNTWCSm+SkoA==}
 
   run-async@2.4.1:
     resolution: {integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==}
@@ -11136,6 +11144,10 @@ snapshots:
 
   '@rollup/rollup-linux-x64-gnu@4.6.1':
     optional: true
+
+  '@rrweb/types@2.0.0-alpha.17':
+    dependencies:
+      rrweb-snapshot: 2.0.0-alpha.18
 
   '@rtsao/scc@1.1.0': {}
 
@@ -15566,8 +15578,9 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-js@1.219.6:
+  posthog-js@1.222.0(@rrweb/types@2.0.0-alpha.17):
     dependencies:
+      '@rrweb/types': 2.0.0-alpha.17
       core-js: 3.40.0
       fflate: 0.4.8
       preact: 10.26.0
@@ -16079,6 +16092,10 @@ snapshots:
   rope-sequence@1.3.4: {}
 
   rou3@0.5.1: {}
+
+  rrweb-snapshot@2.0.0-alpha.18:
+    dependencies:
+      postcss: 8.5.3
 
   run-async@2.4.1: {}
 
