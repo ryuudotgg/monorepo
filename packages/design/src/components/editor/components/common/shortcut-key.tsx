@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@ryuu/design/lib/utils";
-
+import { cn } from "~/lib/utils";
 import { getShortcutKey } from "../../utils";
 
 export interface ShortcutKeyProps {

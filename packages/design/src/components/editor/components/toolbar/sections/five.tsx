@@ -8,9 +8,8 @@ import {
   QuoteIcon,
 } from "@radix-ui/react-icons";
 
-import type { toggleVariants } from "@ryuu/design/components/ui/toggle";
-
 import type { FormatAction } from "../../../types";
+import type { toggleVariants } from "~/components/ui/toggle";
 import { ImageEditDialog } from "../../image/image-edit-dialog";
 import { LinkEditPopover } from "../../link/link-edit-popover";
 import { ToolbarSection } from "../toolbar-section";

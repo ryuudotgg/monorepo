@@ -7,15 +7,15 @@ import {
   EyeNoneIcon,
 } from "@radix-ui/react-icons";
 
-import { Button } from "@ryuu/design/components/ui/button";
+import { Button } from "~/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@ryuu/design/components/ui/dropdown-menu";
-import { cn } from "@ryuu/design/lib/utils";
+} from "~/components/ui/dropdown-menu";
+import { cn } from "~/lib/utils";
 
 function DataTableColumnHeader<TData, TValue>({
   ref,

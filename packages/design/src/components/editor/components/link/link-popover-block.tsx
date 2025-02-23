@@ -5,8 +5,7 @@ import {
   LinkBreak2Icon,
 } from "@radix-ui/react-icons";
 
-import { Separator } from "@ryuu/design/components/ui/separator";
-
+import { Separator } from "~/components/ui/separator";
 import { ToolbarButton } from "../toolbar/toolbar-button";
 
 interface LinkPopoverBlockProps {

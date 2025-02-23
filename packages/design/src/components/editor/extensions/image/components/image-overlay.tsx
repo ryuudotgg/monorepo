@@ -1,5 +1,4 @@
-import { cn } from "@ryuu/design/lib/utils";
-
+import { cn } from "~/lib/utils";
 import { Spinner } from "../../../components/common/spinner";
 
 function ImageOverlay() {

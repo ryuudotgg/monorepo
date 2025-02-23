@@ -4,10 +4,10 @@ import { VercelToolbar } from "@vercel/toolbar/next";
 
 import { PostHogProvider } from "@ryuu/analytics/posthog/client";
 import { VercelAnalytics } from "@ryuu/analytics/vercel";
-import { Toaster } from "@ryuu/design/components/ui/sonner";
-import { TooltipProvider } from "@ryuu/design/components/ui/tooltip";
 import { env } from "@ryuu/env";
 
+import { Toaster } from "~/components/ui/sonner";
+import { TooltipProvider } from "~/components/ui/tooltip";
 import { ThemeProvider } from "./theme";
 
 function Provider({
@@ -31,4 +31,10 @@ function Provider({
   );
 }
 
-export { Provider };
+export {
+  Provider,
+  SpeedInsights,
+  ThemeProvider,
+  VercelAnalytics,
+  VercelToolbar,
+};

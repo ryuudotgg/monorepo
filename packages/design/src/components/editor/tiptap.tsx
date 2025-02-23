@@ -3,10 +3,9 @@ import "./styles/index.css";
 import type { Content, Editor } from "@tiptap/react";
 import { EditorContent } from "@tiptap/react";
 
-import { Separator } from "@ryuu/design/components/ui/separator";
-import { cn } from "@ryuu/design/lib/utils";
-
 import type { UseTiptapEditorProps } from "./hooks/use-tiptap";
+import { Separator } from "~/components/ui/separator";
+import { cn } from "~/lib/utils";
 import { LinkBubbleMenu } from "./components/bubble-menu/link-bubble-menu";
 import { MeasuredContainer } from "./components/common/measured-container";
 import { SectionFive } from "./components/toolbar/sections/five";

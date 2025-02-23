@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import { Button } from "@ryuu/design/components/ui/button";
-import { Input } from "@ryuu/design/components/ui/input";
-import { Label } from "@ryuu/design/components/ui/label";
-import { Switch } from "@ryuu/design/components/ui/switch";
-import { cn } from "@ryuu/design/lib/utils";
+import { Button } from "~/components/ui/button";
+import { Input } from "~/components/ui/input";
+import { Label } from "~/components/ui/label";
+import { Switch } from "~/components/ui/switch";
+import { cn } from "~/lib/utils";
 
 export interface LinkEditorProps extends React.HTMLAttributes<HTMLDivElement> {
   defaultUrl?: string;

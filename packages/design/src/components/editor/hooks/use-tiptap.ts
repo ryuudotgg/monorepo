@@ -7,8 +7,7 @@ import { useEditor } from "@tiptap/react";
 import { StarterKit } from "@tiptap/starter-kit";
 import { toast } from "sonner";
 
-import { cn } from "@ryuu/design/lib/utils";
-
+import { cn } from "~/lib/utils";
 import { useThrottle } from "../../../hooks/use-throttle";
 import {
   CodeBlock,

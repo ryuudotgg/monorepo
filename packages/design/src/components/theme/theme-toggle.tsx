@@ -3,13 +3,13 @@
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import { Button } from "@ryuu/design/components/ui/button";
+import { Button } from "~/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@ryuu/design/components/ui/dropdown-menu";
+} from "~/components/ui/dropdown-menu";
 
 const themes = [
   { label: "Light", value: "light" },

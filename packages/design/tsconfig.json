@@ -6,7 +6,7 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": { "@ryuu/design/*": ["./src/*"] }
+    "paths": { "~/*": ["./src/*"] }
   },
   "include": ["./src", "./*.ts"],
   "exclude": ["./node_modules"]
