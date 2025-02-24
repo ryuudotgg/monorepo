@@ -1,4 +1,4 @@
-import { cn } from "@ryuu/design/utils";
+import { cn } from "@ryuu/design/lib/utils";
 
 function Spinner({ ref, className, ...props }: React.SVGProps<SVGSVGElement>) {
   return (

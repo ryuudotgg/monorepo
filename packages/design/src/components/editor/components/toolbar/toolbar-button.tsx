@@ -1,13 +1,13 @@
 import type { TooltipContentProps } from "@radix-ui/react-tooltip";
 import * as React from "react";
 
+import { Toggle } from "@ryuu/design/components/ui/toggle";
 import {
-  Toggle,
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@ryuu/design/components";
-import { cn } from "@ryuu/design/utils";
+} from "@ryuu/design/components/ui/tooltip";
+import { cn } from "@ryuu/design/lib/utils";
 
 interface ToolbarButtonProps {
   isActive?: boolean;

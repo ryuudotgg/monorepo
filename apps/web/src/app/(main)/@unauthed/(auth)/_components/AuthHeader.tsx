@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Button } from "@ryuu/design/components";
+import { Button } from "@ryuu/design/components/ui/button";
 
 import Logo from "~/assets/logo.svg";
 

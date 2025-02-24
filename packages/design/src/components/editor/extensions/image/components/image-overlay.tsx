@@ -1,4 +1,4 @@
-import { cn } from "@ryuu/design/utils";
+import { cn } from "@ryuu/design/lib/utils";
 
 import { Spinner } from "../../../components/common/spinner";
 

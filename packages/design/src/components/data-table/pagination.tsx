@@ -7,14 +7,14 @@ import {
   DoubleArrowRightIcon,
 } from "@radix-ui/react-icons";
 
+import { Button } from "@ryuu/design/components/ui/button";
 import {
-  Button,
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@ryuu/design/components";
+} from "@ryuu/design/components/ui/select";
 
 const PAGE_SIZES = [10, 20, 30, 40, 50] as const;
 
