@@ -29,6 +29,10 @@
 
 Create Ryuu App is a modern project boilerplate designed to kickstart your new application. It provides a foundation with opinionated tools and libraries for every aspect of your application. While we've curated what we believe are the best choices, you have the flexibility to keep, remove, or modify any component to suit your tastes.
 
+> <img alt="Warning" src="https://cdn.purr.gg/i4S2S5cqr9YA.svg">
+> <br>
+> This template is still a work in progress. 🚧
+
 ## Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org) + [Expo](https://expo.dev)
