@@ -4,10 +4,9 @@ import { VercelToolbar } from "@vercel/toolbar/next";
 
 import { PostHogProvider } from "@ryuu/analytics/posthog/client";
 import { VercelAnalytics } from "@ryuu/analytics/vercel";
+import { Toaster, TooltipProvider } from "@ryuu/design/components";
 import { env } from "@ryuu/env";
 
-import { Toaster } from "~/components/ui/sonner";
-import { TooltipProvider } from "~/components/ui/tooltip";
 import { ThemeProvider } from "./theme";
 
 function Provider({

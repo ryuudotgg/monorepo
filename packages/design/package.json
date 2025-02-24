@@ -6,8 +6,7 @@
   "exports": {
     "./components": "./src/components/index.ts",
     "./hooks": "./src/hooks/index.ts",
-    "./fonts": "./src/lib/fonts.ts",
-    "./utils": "./src/lib/utils.ts",
+    "./utils": "./src/utils/index.ts",
     "./providers": "./src/providers/index.tsx",
     "./styles": "./src/styles/globals.css",
     "./postcss": "./postcss.config.cjs"

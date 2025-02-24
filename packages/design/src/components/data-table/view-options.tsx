@@ -8,12 +8,12 @@ import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { MixerHorizontalIcon } from "@radix-ui/react-icons";
 import { capitalCase } from "change-case";
 
-import { Button } from "~/components/ui/button";
 import {
+  Button,
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-} from "~/components/ui/dropdown-menu";
+} from "@ryuu/design/components";
 
 declare module "@tanstack/react-table" {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

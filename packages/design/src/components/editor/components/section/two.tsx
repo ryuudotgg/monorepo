@@ -10,8 +10,9 @@ import {
   UnderlineIcon,
 } from "@radix-ui/react-icons";
 
+import type { toggleVariants } from "@ryuu/design/components";
+
 import type { FormatAction } from "../../types";
-import type { toggleVariants } from "~/components/ui/toggle";
 import { ToolbarSection } from "../toolbar/toolbar-section";
 
 type TextStyleAction =

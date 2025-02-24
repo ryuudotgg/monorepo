@@ -7,19 +7,17 @@ import {
   SizeIcon,
 } from "@radix-ui/react-icons";
 
-import { Button } from "~/components/ui/button";
 import {
+  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
-import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "~/components/ui/tooltip";
-import { cn } from "~/lib/utils";
+} from "@ryuu/design/components";
+import { cn } from "@ryuu/design/utils";
 
 interface ImageActionsProps {
   shouldMerge?: boolean;

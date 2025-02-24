@@ -1,7 +1,7 @@
 import "./globals.css";
 
-import { fonts } from "@ryuu/design/fonts";
 import { Provider } from "@ryuu/design/providers";
+import { fonts } from "@ryuu/design/utils";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { HydrateClient } from "~/trpc/server";

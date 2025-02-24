@@ -25,7 +25,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "~/components/ui/table";
+} from "@ryuu/design/components";
+
 import { DataTableColumnHeader } from "./column-header";
 import { DataTablePagination } from "./pagination";
 import { getSelectDef } from "./select";

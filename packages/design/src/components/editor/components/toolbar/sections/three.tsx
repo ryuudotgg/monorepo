@@ -4,18 +4,18 @@ import * as React from "react";
 import { CaretDownIcon, CheckIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
-import type { toggleVariants } from "~/components/ui/toggle";
+import type { toggleVariants } from "@ryuu/design/components";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "~/components/ui/popover";
-import { ToggleGroup, ToggleGroupItem } from "~/components/ui/toggle-group";
-import {
+  ToggleGroup,
+  ToggleGroupItem,
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "~/components/ui/tooltip";
+} from "@ryuu/design/components";
+
 import { ToolbarButton } from "../toolbar-button";
 
 interface ColorItem {

@@ -3,8 +3,8 @@
 import type { Table } from "@tanstack/react-table";
 import * as React from "react";
 
-import { Button } from "~/components/ui/button";
-import { Input } from "~/components/ui/input";
+import { Button, Input } from "@ryuu/design/components";
+
 import { DataTableViewOptions } from "./view-options";
 
 function DataTableToolbar<TData>({
