@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react";
 
 function useThrottle<Args extends unknown[], R extends void | undefined>(
