@@ -5,7 +5,7 @@ import { InfoCircledIcon, TrashIcon } from "@radix-ui/react-icons";
 import { NodeViewWrapper } from "@tiptap/react";
 import { Controlled as ControlledZoom } from "react-medium-image-zoom";
 
-import { cn } from "@ryuu/design/utils";
+import { cn } from "@ryuu/design/lib/utils";
 
 import type { ElementDimensions } from "../hooks/use-drag-resize";
 import type { UploadReturnType } from "../image";

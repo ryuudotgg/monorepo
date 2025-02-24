@@ -1,7 +1,7 @@
 "use client";
 
 import { authClient } from "@ryuu/auth/react";
-import { Button } from "@ryuu/design/components";
+import { Button } from "@ryuu/design/components/ui/button";
 
 import Passkey from "~/assets/passkey.svg";
 

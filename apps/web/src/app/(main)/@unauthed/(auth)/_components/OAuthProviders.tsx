@@ -1,7 +1,7 @@
 "use client";
 
 import { authClient } from "@ryuu/auth/react";
-import { Button } from "@ryuu/design/components";
+import { Button } from "@ryuu/design/components/ui/button";
 
 import Apple from "~/assets/apple.svg";
 import Discord from "~/assets/discord.svg";

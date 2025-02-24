@@ -3,14 +3,14 @@ import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 
-import type { toggleVariants } from "@ryuu/design/components";
+import type { toggleVariants } from "@ryuu/design/components/ui/toggle";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@ryuu/design/components";
-import { cn } from "@ryuu/design/utils";
+} from "@ryuu/design/components/ui/dropdown-menu";
+import { cn } from "@ryuu/design/lib/utils";
 
 import type { FormatAction } from "../../types";
 import { getShortcutKey } from "../../utils";

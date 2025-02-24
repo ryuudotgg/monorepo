@@ -3,17 +3,16 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useHookFormAction } from "@next-safe-action/adapter-react-hook-form/hooks";
 
+import { Alert, AlertDescription } from "@ryuu/design/components/ui/alert";
+import { Button } from "@ryuu/design/components/ui/button";
 import {
-  Alert,
-  AlertDescription,
-  Button,
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-  Input,
-} from "@ryuu/design/components";
+} from "@ryuu/design/components/ui/form";
+import { Input } from "@ryuu/design/components/ui/input";
 import { emailSchema } from "@ryuu/validators";
 
 import Email from "~/assets/email.svg";

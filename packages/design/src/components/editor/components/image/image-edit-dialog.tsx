@@ -3,7 +3,7 @@ import type { VariantProps } from "class-variance-authority";
 import { useState } from "react";
 import { ImageIcon } from "@radix-ui/react-icons";
 
-import type { toggleVariants } from "@ryuu/design/components";
+import type { toggleVariants } from "@ryuu/design/components/ui/toggle";
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@ryuu/design/components";
+} from "@ryuu/design/components/ui/dialog";
 
 import { ToolbarButton } from "../toolbar/toolbar-button";
 import { ImageEditBlock } from "./image-edit-block";

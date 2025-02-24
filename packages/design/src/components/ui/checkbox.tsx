@@ -4,7 +4,7 @@ import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { CheckIcon } from "@radix-ui/react-icons";
 
-import { cn } from "@ryuu/design/utils";
+import { cn } from "@ryuu/design/lib/utils";
 
 function Checkbox({
   ref,
