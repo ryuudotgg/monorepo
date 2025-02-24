@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@ryuu/design/lib/utils";
+import { cn } from "@ryuu/design/utils";
 
 import { getShortcutKey } from "../../utils";
 

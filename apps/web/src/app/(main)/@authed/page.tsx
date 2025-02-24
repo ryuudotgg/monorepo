@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
 import { auth } from "@ryuu/auth";
-import { Button } from "@ryuu/design/components/ui/button";
+import { Button } from "@ryuu/design/components";
 
 import Logo from "~/assets/logo.svg";
 

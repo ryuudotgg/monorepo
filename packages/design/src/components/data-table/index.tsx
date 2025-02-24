@@ -25,11 +25,13 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@ryuu/design/components/ui/table";
+} from "@ryuu/design/components";
 
+import { DataTableColumnHeader } from "./column-header";
 import { DataTablePagination } from "./pagination";
 import { getSelectDef } from "./select";
 import { DataTableToolbar } from "./toolbar";
+import { DataTableViewOptions } from "./view-options";
 
 function DataTable<TData, TValue>({
   ref,
@@ -141,4 +143,10 @@ function DataTable<TData, TValue>({
   );
 }
 
-export { DataTable };
+export {
+  DataTable,
+  DataTableColumnHeader,
+  DataTablePagination,
+  DataTableToolbar,
+  DataTableViewOptions,
+};

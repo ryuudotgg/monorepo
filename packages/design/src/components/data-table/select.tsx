@@ -1,6 +1,6 @@
 import type { ColumnDef, Row, RowData, Table } from "@tanstack/react-table";
 
-import { Checkbox } from "@ryuu/design/components/ui/checkbox";
+import { Checkbox } from "@ryuu/design/components";
 
 function getRowRange<TData extends RowData>(
   rows: Row<TData>[],

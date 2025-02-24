@@ -3,12 +3,12 @@ import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
 import { Link2Icon } from "@radix-ui/react-icons";
 
-import type { toggleVariants } from "@ryuu/design/components/ui/toggle";
+import type { toggleVariants } from "@ryuu/design/components";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@ryuu/design/components/ui/popover";
+} from "@ryuu/design/components";
 
 import { ToolbarButton } from "../toolbar/toolbar-button";
 import { LinkEditBlock } from "./link-edit-block";

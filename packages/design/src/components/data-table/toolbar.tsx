@@ -3,8 +3,7 @@
 import type { Table } from "@tanstack/react-table";
 import * as React from "react";
 
-import { Button } from "@ryuu/design/components/ui/button";
-import { Input } from "@ryuu/design/components/ui/input";
+import { Button, Input } from "@ryuu/design/components";
 
 import { DataTableViewOptions } from "./view-options";
 

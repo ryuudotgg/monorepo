@@ -8,7 +8,7 @@ import {
   QuoteIcon,
 } from "@radix-ui/react-icons";
 
-import type { toggleVariants } from "@ryuu/design/components/ui/toggle";
+import type { toggleVariants } from "@ryuu/design/components";
 
 import type { FormatAction } from "../../types";
 import { ImageEditDialog } from "../image/image-edit-dialog";

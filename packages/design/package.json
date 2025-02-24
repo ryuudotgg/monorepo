@@ -4,12 +4,10 @@
   "private": true,
   "type": "module",
   "exports": {
-    "./components/*": "./src/components/*.tsx",
-    "./components/editor/extensions": "./src/components/editor/extensions/index.ts",
-    "./components/editor/utils": "./src/components/editor/utils.ts",
-    "./hooks/*": "./src/hooks/*.tsx",
-    "./lib/*": "./src/lib/*.ts",
-    "./providers/*": "./src/providers/*.tsx",
+    "./components": "./src/components/index.ts",
+    "./hooks": "./src/hooks/index.ts",
+    "./utils": "./src/utils/index.ts",
+    "./providers": "./src/providers/index.tsx",
     "./styles": "./src/styles/globals.css",
     "./postcss": "./postcss.config.cjs"
   },
