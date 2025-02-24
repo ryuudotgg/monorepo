@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 
 import { Button, Input, Label, Switch } from "@ryuu/design/components";

@@ -1,3 +1,5 @@
+"use client";
+
 import type { Editor, Extension, NodeViewProps } from "@tiptap/core";
 import type { Node as ProsemirrorNode } from "@tiptap/pm/model";
 import * as React from "react";

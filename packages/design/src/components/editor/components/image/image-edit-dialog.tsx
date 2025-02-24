@@ -1,3 +1,5 @@
+"use client";
+
 import type { Editor } from "@tiptap/react";
 import type { VariantProps } from "class-variance-authority";
 import { useState } from "react";

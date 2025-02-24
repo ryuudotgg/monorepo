@@ -1,3 +1,5 @@
+"use client";
+
 import type { Editor } from "@tiptap/react";
 import * as React from "react";
 import { BubbleMenu } from "@tiptap/react";
