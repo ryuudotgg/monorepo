@@ -186,7 +186,7 @@ function base64MimeType(encoded: string): string {
   const pattern = /^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+)(?:[^]*)/;
   const result = pattern.exec(encoded);
 
-  return result?.[1] ? result[1] : "unknown";
+  return result?.[1] ?? "unknown";
 }
 
 function isBase64(str: string): boolean {
