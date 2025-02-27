@@ -26,9 +26,9 @@ catalog:
 
 catalogs:
   next:
-    next: ^15.1.7
-    "@next/eslint-plugin-next": ^15.1.7
-    "@next/bundle-analyzer": ^15.1.7
+    next: ^15.2.0
+    "@next/eslint-plugin-next": ^15.2.0
+    "@next/bundle-analyzer": ^15.2.0
 
   react19:
     react: ^19.0.0
