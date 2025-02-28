@@ -7,9 +7,9 @@ catalog:
   "@t3-oss/env-nextjs": ^0.12.0
   "@types/node": ^22.13.5
 
-  "@trpc/client": ^11.0.0-rc.817
-  "@trpc/react-query": ^11.0.0-rc.817
-  "@trpc/server": ^11.0.0-rc.817
+  "@trpc/client": ^11.0.0-rc.818
+  "@trpc/react-query": ^11.0.0-rc.818
+  "@trpc/server": ^11.0.0-rc.818
 
   "@tanstack/react-query": ^5.66.9
 
