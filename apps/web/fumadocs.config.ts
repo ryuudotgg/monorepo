@@ -1,9 +1,5 @@
-import {
-  fileGenerator,
-  remarkDocGen,
-  remarkInstall,
-  remarkTypeScriptToJavaScript,
-} from "fumadocs-docgen";
+import { fileGenerator, remarkDocGen, remarkInstall } from "fumadocs-docgen";
+import { remarkTypeScriptToJavaScript } from "fumadocs-docgen/remark-ts2js";
 import { defineConfig, defineDocs, metaSchema } from "fumadocs-mdx/config";
 import { z } from "zod";
 
