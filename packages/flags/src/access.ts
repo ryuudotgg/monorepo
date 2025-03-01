@@ -1,5 +1,5 @@
 import type { NextRequest } from "next/server";
-import { verifyAccess } from "@vercel/flags";
+import { verifyAccess } from "flags";
 
 import * as flags from ".";
 
