@@ -758,7 +758,7 @@ importers:
       '@vercel/edge-config':
         specifier: ^1.4.0
         version: 1.4.0(@opentelemetry/api@1.9.0)
-      '@vercel/flags':
+      flags:
         specifier: ^3.1.1
         version: 3.1.1(@opentelemetry/api@1.9.0)(next@15.2.0(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       zod:
@@ -4476,27 +4476,6 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@vercel/flags@3.1.1':
-    resolution: {integrity: sha512-JM0xXRCHvN5wiSr9C2u6PSbXMnqN/0IXyNEOob6UYWB70vBWVLUKM96wgSuj6orRzRTowItmja2RTYyRvVhuQg==}
-    deprecated: This package was renamed to flags, which offers the same functionality. https://vercel.com/changelog/npm-i-flags
-    peerDependencies:
-      '@opentelemetry/api': ^1.7.0
-      '@sveltejs/kit': '*'
-      next: '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
-      '@sveltejs/kit':
-        optional: true
-      next:
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-
   '@vercel/functions@2.0.0':
     resolution: {integrity: sha512-BSwIihLHoV18gerKZJyGuqd3rtaYM6rJvET1kOwKktshucyaHXTJel7Cxegs+sdX0NZqsX4LO2MFnMU2jG01Cw==}
     engines: {node: '>= 18'}
@@ -5792,6 +5771,26 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
+
+  flags@3.1.1:
+    resolution: {integrity: sha512-UWxZ61y25rJCOId54unQ4Htc+u9fcpwbaYJ7nqoo7Yg0GZ/dVD7Bmw3srMHFuE52kDWHNnnly+6cscmTGaJ6QA==}
+    peerDependencies:
+      '@opentelemetry/api': ^1.7.0
+      '@sveltejs/kit': '*'
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    peerDependenciesMeta:
+      '@opentelemetry/api':
+        optional: true
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
@@ -12162,16 +12161,6 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.0
 
-  '@vercel/flags@3.1.1(@opentelemetry/api@1.9.0)(next@15.2.0(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
-    dependencies:
-      '@edge-runtime/cookies': 5.0.2
-      jose: 5.10.0
-    optionalDependencies:
-      '@opentelemetry/api': 1.9.0
-      next: 15.2.0(@babel/core@7.26.9)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-
   '@vercel/functions@2.0.0': {}
 
   '@vercel/kv@3.0.0':
@@ -13697,6 +13686,16 @@ snapshots:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
+
+  flags@3.1.1(@opentelemetry/api@1.9.0)(next@15.2.0(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      '@edge-runtime/cookies': 5.0.2
+      jose: 5.10.0
+    optionalDependencies:
+      '@opentelemetry/api': 1.9.0
+      next: 15.2.0(@babel/core@7.26.9)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   flat-cache@4.0.1:
     dependencies:

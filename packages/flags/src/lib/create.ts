@@ -1,8 +1,8 @@
 import type { LDSingleKindContext } from "@launchdarkly/vercel-server-sdk";
-import type { FlagOverridesType } from "@vercel/flags";
-import { decrypt } from "@vercel/flags";
-import { flag } from "@vercel/flags/next";
+import type { FlagOverridesType } from "flags";
 import { geolocation, ipAddress, waitUntil } from "@vercel/functions";
+import { decrypt } from "flags";
+import { flag } from "flags/next";
 
 import { auth } from "@ryuu/auth";
 
