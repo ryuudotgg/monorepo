@@ -25,7 +25,7 @@
   "dependencies": {
     "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
-    "basehub": "^8.1.16",
+    "basehub": "^8.1.18",
     "react": "catalog:react19",
     "zod": "catalog:"
   },

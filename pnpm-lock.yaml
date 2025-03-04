@@ -415,8 +415,8 @@ importers:
         specifier: 'catalog:'
         version: 0.12.0(typescript@5.8.2)(valibot@1.0.0-beta.15(typescript@5.8.2))(zod@3.24.2)
       basehub:
-        specifier: ^8.1.16
-        version: 8.1.16(@babel/runtime@7.26.9)(@types/react@19.0.10)(react@19.0.0)(typescript@5.8.2)
+        specifier: ^8.1.18
+        version: 8.1.18(@babel/runtime@7.26.9)(@types/react@19.0.10)(react@19.0.0)(typescript@5.8.2)
       react:
         specifier: catalog:react19
         version: 19.0.0
@@ -1689,8 +1689,8 @@ packages:
     resolution: {integrity: sha512-Y3IR1cRnOxOCDvMmNiym7XpXQ93iGDDPHx+Zj+NM+rg0fBaShfQLkg+hKPaZCEvg5N/LeCo4+Rj/i3FuJsIQaw==}
     engines: {node: '>=6.9.0'}
 
-  '@basehub/genql@9.0.0-canary.11':
-    resolution: {integrity: sha512-JwGSi/P5JfUTiLFF6tFDYobIFZQtDwBcsMilitXoN9PLjoHhkwTphgWMos6IQ6UvDBk0Cks6v6Kk3eXdtQeYmw==}
+  '@basehub/genql@9.0.0-canary.13':
+    resolution: {integrity: sha512-F3pXqJSEJYyQ0JTsp37D7YFkNaCSyQhkJqlDZ6Xr9fORoiz5OvkpHP1795RlYb4zIoQvJ3mtP4vyzQ4tsWo9Dg==}
 
   '@better-auth/utils@0.2.3':
     resolution: {integrity: sha512-Ap1GaSmo6JYhJhxJOpUB0HobkKPTNzfta+bLV89HfpyCAHN7p8ntCrmNFHNAVD0F6v0mywFVEUg1FUhNCc81Rw==}
@@ -4809,8 +4809,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  basehub@8.1.16:
-    resolution: {integrity: sha512-LlSuga6WqD++odiHGPuTVS1dn0C58Pp8Co1I/pheLlpaAUCpH8kGpyNKpv6piSt+OINsu2/UueIANF0OUAXIiQ==}
+  basehub@8.1.18:
+    resolution: {integrity: sha512-m0hm/ZQAkHXtX1qgvs2Gelx0JEWkrUddVp+Jx4jlF3PPfVIuQ/yz3S6YNqdMD2SzUHYWp5QiyBTIGirOwQRo/Q==}
     hasBin: true
 
   basic-ftp@5.0.5:
@@ -9406,7 +9406,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@basehub/genql@9.0.0-canary.11':
+  '@basehub/genql@9.0.0-canary.13':
     dependencies:
       '@graphql-tools/graphql-file-loader': 7.5.17(graphql@16.10.0)
       '@graphql-tools/load': 7.8.14(graphql@16.10.0)
@@ -12513,9 +12513,9 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  basehub@8.1.16(@babel/runtime@7.26.9)(@types/react@19.0.10)(react@19.0.0)(typescript@5.8.2):
+  basehub@8.1.18(@babel/runtime@7.26.9)(@types/react@19.0.10)(react@19.0.0)(typescript@5.8.2):
     dependencies:
-      '@basehub/genql': 9.0.0-canary.11
+      '@basehub/genql': 9.0.0-canary.13
       '@radix-ui/react-slot': 1.1.2(@types/react@19.0.10)(react@19.0.0)
       '@shikijs/transformers': 1.17.7
       '@xmldom/xmldom': 0.9.8
