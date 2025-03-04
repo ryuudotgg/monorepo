@@ -240,8 +240,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(next@15.2.0(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       posthog-js:
-        specifier: ^1.226.0
-        version: 1.226.0(@rrweb/types@2.0.0-alpha.17)
+        specifier: ^1.227.0
+        version: 1.227.0(@rrweb/types@2.0.0-alpha.17)
       posthog-node:
         specifier: ^4.8.1
         version: 4.8.1
@@ -7292,8 +7292,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-js@1.226.0:
-    resolution: {integrity: sha512-AZJJeNjWXgmU5lZkZQ9POBJHh0nAl4oDzDlE13jMPntfcRF6ZQmoEICByEUAuG8pc9+FTPUnHl+v9HRn4Qj9kw==}
+  posthog-js@1.227.0:
+    resolution: {integrity: sha512-xdXpBI+6SJDG3vUSxW3KH8o4B5CrHz0Y95anSaHjIzkEeRd9NbTTDku/Hy9lLt1+8tkiwvsh6fYi7jS1UBHL/g==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
 
@@ -15559,7 +15559,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-js@1.226.0(@rrweb/types@2.0.0-alpha.17):
+  posthog-js@1.227.0(@rrweb/types@2.0.0-alpha.17):
     dependencies:
       '@rrweb/types': 2.0.0-alpha.17
       core-js: 3.41.0
