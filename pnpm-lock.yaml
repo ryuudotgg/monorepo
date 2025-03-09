@@ -31,8 +31,8 @@ catalogs:
       specifier: ^11.0.0-rc.824
       version: 11.0.0-rc.824
     '@types/node':
-      specifier: ^22.13.9
-      version: 22.13.9
+      specifier: ^22.13.10
+      version: 22.13.10
     eslint:
       specifier: ^9.22.0
       version: 9.22.0
@@ -81,7 +81,7 @@ importers:
         version: link:tooling/prettier
       '@turbo/gen':
         specifier: ^2.4.4
-        version: 2.4.4(@types/node@22.13.9)(typescript@5.8.2)
+        version: 2.4.4(@types/node@22.13.10)(typescript@5.8.2)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -208,7 +208,7 @@ importers:
         version: 2.0.13
       '@types/node':
         specifier: 'catalog:'
-        version: 22.13.9
+        version: 22.13.10
       '@types/react':
         specifier: catalog:react19
         version: 19.0.10
@@ -4436,8 +4436,8 @@ packages:
   '@types/mysql@2.15.26':
     resolution: {integrity: sha512-DSLCOXhkvfS5WNNPbfn2KdICAmk8lLc+/PNvnPnF7gOdMZCxopXduqv0OQ13y/yA/zXTSikZZqVgybUxOEg6YQ==}
 
-  '@types/node@22.13.8':
-    resolution: {integrity: sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ==}
+  '@types/node@22.13.10':
+    resolution: {integrity: sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==}
 
   '@types/node@22.13.9':
     resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
@@ -12063,7 +12063,7 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@turbo/gen@2.4.4(@types/node@22.13.9)(typescript@5.8.2)':
+  '@turbo/gen@2.4.4(@types/node@22.13.10)(typescript@5.8.2)':
     dependencies:
       '@turbo/workspaces': 2.4.4
       commander: 10.0.1
@@ -12073,7 +12073,7 @@ snapshots:
       node-plop: 0.26.3
       picocolors: 1.0.1
       proxy-agent: 6.5.0
-      ts-node: 10.9.2(@types/node@22.13.9)(typescript@5.8.2)
+      ts-node: 10.9.2(@types/node@22.13.10)(typescript@5.8.2)
       update-check: 1.5.4
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
@@ -12128,7 +12128,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/hast@3.0.4':
     dependencies:
@@ -12166,7 +12166,7 @@ snapshots:
     dependencies:
       '@types/node': 22.13.9
 
-  '@types/node@22.13.8':
+  '@types/node@22.13.10':
     dependencies:
       undici-types: 6.20.0
 
@@ -12200,7 +12200,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/tinycolor2@1.4.6': {}
 
@@ -16751,14 +16751,14 @@ snapshots:
     dependencies:
       typescript: 5.8.2
 
-  ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2):
+  ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.13.9
+      '@types/node': 22.13.10
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
