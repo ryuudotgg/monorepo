@@ -13,7 +13,6 @@ export const config: NextConfig = withVercelToolbar()({
     "@ryuu/auth",
     "@ryuu/blob",
     "@ryuu/cache",
-    "@ryuu/cms",
     "@ryuu/db",
     "@ryuu/design",
     "@ryuu/emails",
