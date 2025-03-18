@@ -10,7 +10,7 @@ catalogs:
       specifier: ^1.0.0-beta.3
       version: 1.0.0-beta.4
     '@arcjet/next':
-      specifier: ^1.0.0-beta.3
+      specifier: ^1.0.0-beta.4
       version: 1.0.0-beta.4
     '@t3-oss/env-nextjs':
       specifier: ^0.12.0
