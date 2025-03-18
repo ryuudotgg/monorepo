@@ -164,8 +164,8 @@ importers:
         specifier: ^15.0.17
         version: 15.0.18(@types/react-dom@19.0.4(@types/react@19.0.11))(@types/react@19.0.11)(fumadocs-core@15.0.18(@types/react@19.0.11)(next@15.2.2(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(next@15.2.2(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.14)
       lucide-react:
-        specifier: ^0.481.0
-        version: 0.481.0(react@19.0.0)
+        specifier: ^0.482.0
+        version: 0.482.0(react@19.0.0)
       next:
         specifier: catalog:next
         version: 15.2.2(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -563,8 +563,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       lucide-react:
-        specifier: ^0.481.0
-        version: 0.481.0(react@19.0.0)
+        specifier: ^0.482.0
+        version: 0.482.0(react@19.0.0)
       next:
         specifier: catalog:next
         version: 15.2.2(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -6412,8 +6412,8 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  lucide-react@0.481.0:
-    resolution: {integrity: sha512-NrvUDNFwgLIvHiwTEq9boa5Kiz1KdUT8RJ+wmNijwxdn9U737Fw42c43sRxJTMqhL+ySHpGRVCWpwiF+abrEjw==}
+  lucide-react@0.482.0:
+    resolution: {integrity: sha512-XM8PzHzSrg8ATmmO+fzf+JyYlVVdQnJjuyLDj2p4V2zEtcKeBNAqAoJIGFv1x2HSBa7kT8gpYUxwdQ0g7nypfw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -14053,7 +14053,7 @@ snapshots:
     dependencies:
       react: 19.0.0
 
-  lucide-react@0.481.0(react@19.0.0):
+  lucide-react@0.482.0(react@19.0.0):
     dependencies:
       react: 19.0.0
 
