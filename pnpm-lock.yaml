@@ -698,8 +698,8 @@ importers:
   packages/flags:
     dependencies:
       '@launchdarkly/vercel-server-sdk':
-        specifier: ^1.3.23
-        version: 1.3.23(@opentelemetry/api@1.9.0)
+        specifier: ^1.3.24
+        version: 1.3.24(@opentelemetry/api@1.9.0)
       '@ryuu/auth':
         specifier: workspace:*
         version: link:../auth
@@ -2368,14 +2368,14 @@ packages:
   '@launchdarkly/js-sdk-common@2.13.0':
     resolution: {integrity: sha512-cRoOQWBEOOynY3YDHIF4am1ZxiGu6MFK4v8WyNR0zN+nVjdQiuuyfAbHB//1Q0nrc1aB0flOy6e8C51eHy+VeA==}
 
-  '@launchdarkly/js-server-sdk-common-edge@2.5.4':
-    resolution: {integrity: sha512-L79FsZfAosYMHE/eg3p7KFLiWHJn3TCdEAL89frzMOLv0e43xTp4xQEDnTovWKQpAN7gH1iYDLwKUpoWgUAS2g==}
+  '@launchdarkly/js-server-sdk-common-edge@2.6.0':
+    resolution: {integrity: sha512-zuo0XWQk9xMgHuVo8sMxsl4H73ddUL3dqkjHU3hQ0IrgYy784G7dR9bupaGJSJNzc2uRxI648FLQ4XA9Rt0qRg==}
 
-  '@launchdarkly/js-server-sdk-common@2.11.1':
-    resolution: {integrity: sha512-mz5meN+tII/By8TjPRhuI5SSztFSIYXQpK1IlUX1uUlM8xDlS/HrzM4KcP7BRLpO0TQcZKl4roEkkoMBoukPsA==}
+  '@launchdarkly/js-server-sdk-common@2.12.0':
+    resolution: {integrity: sha512-8ofXlxMu+ma6YJfA0ucaGmqAj0vF15jne5eqQJFH6LajsxmELCXMDvGE0oImi3OXHInO9Sf3f8cjE8XS+noKqQ==}
 
-  '@launchdarkly/vercel-server-sdk@1.3.23':
-    resolution: {integrity: sha512-1QcUA+QD69bbPwDWCg5PpEvRmbi8FHv1D22OECHtChKnmSlw28orHnmfw7MqcgVVZu5z2x91q/Gs37VMNkh3Ig==}
+  '@launchdarkly/vercel-server-sdk@1.3.24':
+    resolution: {integrity: sha512-eLLl3qEy7x8yK0LjgdJaoAPtUd/zZ+085o97LD+Ru3ZwDo7b4+9c6PTx8IpHw4VCiciDwJOdA28GvYs4rqXzvQ==}
 
   '@levischuck/tiny-cbor@0.2.11':
     resolution: {integrity: sha512-llBRm4dT4Z89aRsm6u2oEZ8tfwL/2l6BwpZ7JcyieouniDECM5AqNgr/y08zalEIvW3RSK4upYyybDcmjXqAow==}
@@ -9543,19 +9543,19 @@ snapshots:
 
   '@launchdarkly/js-sdk-common@2.13.0': {}
 
-  '@launchdarkly/js-server-sdk-common-edge@2.5.4':
+  '@launchdarkly/js-server-sdk-common-edge@2.6.0':
     dependencies:
-      '@launchdarkly/js-server-sdk-common': 2.11.1
+      '@launchdarkly/js-server-sdk-common': 2.12.0
       crypto-js: 4.2.0
 
-  '@launchdarkly/js-server-sdk-common@2.11.1':
+  '@launchdarkly/js-server-sdk-common@2.12.0':
     dependencies:
       '@launchdarkly/js-sdk-common': 2.13.0
       semver: 7.5.4
 
-  '@launchdarkly/vercel-server-sdk@1.3.23(@opentelemetry/api@1.9.0)':
+  '@launchdarkly/vercel-server-sdk@1.3.24(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@launchdarkly/js-server-sdk-common-edge': 2.5.4
+      '@launchdarkly/js-server-sdk-common-edge': 2.6.0
       '@vercel/edge-config': 1.4.0(@opentelemetry/api@1.9.0)
       crypto-js: 4.2.0
     transitivePeerDependencies:
