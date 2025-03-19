@@ -25,7 +25,7 @@
   "dependencies": {
     "@ryuu/env": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
-    "nanoid": "^5.1.4",
+    "nanoid": "^5.1.5",
     "zod": "catalog:"
   },
   "devDependencies": {
