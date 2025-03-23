@@ -39,7 +39,7 @@
     "@ryuu/env": "workspace:*",
     "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
-    "drizzle-orm": "^0.40.1",
+    "drizzle-orm": "^0.41.0",
     "drizzle-zod": "^0.7.0",
     "zod": "catalog:"
   },
