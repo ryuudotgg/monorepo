@@ -34,13 +34,13 @@ export const passkeys = mysqlTable(
 
     ...dates,
   },
-  (account) => [
-    index("passkeys_user_id_idx").on(account.userId),
-    index("passkeys_created_at_idx").on(account.createdAt, account.id),
+  (passkey) => [
+    index("passkeys_user_id_idx").on(passkey.userId),
+    index("passkeys_created_at_idx").on(passkey.createdAt, passkey.id),
 
     foreignKey({
       name: "passkeys_user_id_fk",
-      columns: [account.userId],
+      columns: [passkey.userId],
       foreignColumns: [users.id],
     }).onDelete("cascade"),
   ],

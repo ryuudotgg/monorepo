@@ -1,4 +1,4 @@
-@import "tailwindcss" source("../styles");
+@reference "@ryuu/design/styles";
 
 @import "./partials/code.css";
 @import "./partials/placeholder.css";
@@ -156,7 +156,7 @@
 }
 
 .tiptap-editor .ProseMirror-focused hr.ProseMirror-selectednode {
-  @apply outline-muted-foreground rounded-full outline outline-2 outline-offset-1;
+  @apply outline-muted-foreground rounded-full outline-2 outline-offset-1;
 }
 
 .tiptap-editor .ProseMirror .ProseMirror-gapcursor {

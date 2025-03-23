@@ -73,7 +73,6 @@
     "postcss": "^8.5.3",
     "prettier": "catalog:",
     "tailwindcss": "catalog:",
-    "tailwindcss-animate": "^1.0.7",
     "typescript": "catalog:",
     "zod": "catalog:"
   },

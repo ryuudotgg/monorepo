@@ -1,3 +1,5 @@
+@reference "@ryuu/design/styles";
+
 .tiptap-editor .ProseMirror .heading-node {
   @apply relative font-semibold;
 }

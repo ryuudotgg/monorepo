@@ -1,3 +1,5 @@
+@reference "@ryuu/design/styles";
+
 .tiptap-editor .ProseMirror ol {
   @apply list-decimal;
 }

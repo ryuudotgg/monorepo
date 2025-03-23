@@ -1,3 +1,5 @@
+@reference "@ryuu/design/styles";
+
 [data-rmiz-ghost] {
   @apply pointer-events-none absolute;
 }

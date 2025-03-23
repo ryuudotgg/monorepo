@@ -37,5 +37,9 @@ catalogs:
     "@types/react-dom": ^19.0.4
 
 onlyBuiltDependencies:
+  - "@sentry/cli"
   - "@vercel/speed-insights"
+  - core-js
+  - core-js-pure
   - esbuild
+  - sharp
