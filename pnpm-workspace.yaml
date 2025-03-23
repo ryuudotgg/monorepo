@@ -8,8 +8,8 @@ catalog:
   "@types/node": ^22.13.11
 
   "@trpc/client": ^11.0.0
-  "@trpc/react-query": ^11.0.0
   "@trpc/server": ^11.0.0
+  "@trpc/react-query": ^11.0.0
 
   "@tanstack/react-query": ^5.69.0
 
@@ -37,5 +37,9 @@ catalogs:
     "@types/react-dom": ^19.0.4
 
 onlyBuiltDependencies:
+  - "@sentry/cli"
   - "@vercel/speed-insights"
+  - core-js
+  - core-js-pure
   - esbuild
+  - sharp
