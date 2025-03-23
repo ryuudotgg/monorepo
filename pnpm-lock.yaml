@@ -421,11 +421,11 @@ importers:
         specifier: 'catalog:'
         version: 0.12.0(typescript@5.8.2)(valibot@1.0.0-beta.15(typescript@5.8.2))(zod@3.24.2)
       drizzle-orm:
-        specifier: ^0.40.1
-        version: 0.40.1(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6)
+        specifier: ^0.41.0
+        version: 0.41.0(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6)
       drizzle-zod:
         specifier: ^0.7.0
-        version: 0.7.0(drizzle-orm@0.40.1(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6))(zod@3.24.2)
+        version: 0.7.0(drizzle-orm@0.41.0(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6))(zod@3.24.2)
       zod:
         specifier: 'catalog:'
         version: 3.24.2
@@ -5100,8 +5100,8 @@ packages:
     resolution: {integrity: sha512-l6dMSE100u7sDaTbLczibrQZjA35jLsHNqIV+jmhNVO3O8jzM6kywMOmV9uOz9ZVSCMPQhAZEFjL/qDPVrqpUA==}
     hasBin: true
 
-  drizzle-orm@0.40.1:
-    resolution: {integrity: sha512-aPNhtiJiPfm3qxz1czrnIDkfvkSdKGXYeZkpG55NPTVI186LmK2fBLMi4dsHpPHlJrZeQ92D322YFPHADBALew==}
+  drizzle-orm@0.41.0:
+    resolution: {integrity: sha512-7A4ZxhHk9gdlXmTdPj/lREtP+3u8KvZ4yEN6MYVxBzZGex5Wtdc+CWSbu7btgF6TB0N+MNPrvW7RKBbxJchs/Q==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -12519,7 +12519,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.40.1(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6):
+  drizzle-orm@0.41.0(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6):
     optionalDependencies:
       '@opentelemetry/api': 1.9.0
       '@planetscale/database': 1.19.0
@@ -12527,9 +12527,9 @@ snapshots:
       gel: 2.0.1
       kysely: 0.27.6
 
-  drizzle-zod@0.7.0(drizzle-orm@0.40.1(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6))(zod@3.24.2):
+  drizzle-zod@0.7.0(drizzle-orm@0.41.0(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6))(zod@3.24.2):
     dependencies:
-      drizzle-orm: 0.40.1(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6)
+      drizzle-orm: 0.41.0(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@types/pg@8.6.1)(gel@2.0.1)(kysely@0.27.6)
       zod: 3.24.2
 
   dunder-proto@1.0.1:
