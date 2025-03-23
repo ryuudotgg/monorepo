@@ -11,7 +11,7 @@
     "@ryuu/blob": "workspace:*",
     "@ryuu/observability": "workspace:*",
     "@sentry/nextjs": "^9.8.0",
-    "@vercel/toolbar": "^0.1.34",
+    "@vercel/toolbar": "^0.1.35",
     "next-secure-headers": "^2.2.0"
   },
   "devDependencies": {
