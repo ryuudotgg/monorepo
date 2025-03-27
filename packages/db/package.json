@@ -48,7 +48,7 @@
     "@ryuu/prettier-config": "workspace:*",
     "@ryuu/tsconfig": "workspace:*",
     "dotenv-cli": "^8.0.0",
-    "drizzle-kit": "^0.30.5",
+    "drizzle-kit": "^0.30.6",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
