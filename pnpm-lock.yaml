@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@arcjet/decorate':
-      specifier: ^1.0.0-beta.4
-      version: 1.0.0-beta.4
+      specifier: ^1.0.0-beta.5
+      version: 1.0.0-beta.5
     '@arcjet/next':
       specifier: ^1.0.0-beta.5
       version: 1.0.0-beta.5
@@ -782,7 +782,7 @@ importers:
     dependencies:
       '@arcjet/decorate':
         specifier: 'catalog:'
-        version: 1.0.0-beta.4
+        version: 1.0.0-beta.5
       '@arcjet/next':
         specifier: 'catalog:'
         version: 1.0.0-beta.5(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
@@ -945,7 +945,7 @@ importers:
         version: 7.37.4(eslint@9.23.0(jiti@2.4.2))
       eslint-plugin-react-compiler:
         specifier: beta
-        version: 19.0.0-beta-aeaed83-20250323(eslint@9.23.0(jiti@2.4.2))
+        version: 19.0.0-beta-e993439-20250328(eslint@9.23.0(jiti@2.4.2))
       eslint-plugin-react-hooks:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.23.0(jiti@2.4.2))
@@ -1038,8 +1038,8 @@ packages:
     resolution: {integrity: sha512-o+E+TIA7xWtQ8GdHSXiK0HYg7+axw3o9y2am0i/w9SLi9JUI8WO70YU1nAKkfQEbdYZxOiPHBNmxsJMuywLzrw==}
     engines: {node: '>=18'}
 
-  '@arcjet/decorate@1.0.0-beta.4':
-    resolution: {integrity: sha512-+82RTRzEdYDSiL+uJTrSmW2xXeopzAEn6fF2V3Rt+uW+semj5gzAqiyXWcClNfW372hNxtARQuQIW3rnU+488w==}
+  '@arcjet/decorate@1.0.0-beta.5':
+    resolution: {integrity: sha512-oUOcp9VNxkK0Qj8kpXKSTrZGA00hMGY/XAtcjDJf68KliOMXlNDnL6J5GAMaPRcpbQ81TaXmg3fdtE2jjquRqw==}
     engines: {node: '>=18'}
 
   '@arcjet/duration@1.0.0-beta.5':
@@ -1068,20 +1068,12 @@ packages:
     peerDependencies:
       next: '>=13'
 
-  '@arcjet/protocol@1.0.0-beta.4':
-    resolution: {integrity: sha512-eTF5bY5ub6CfGFH4QfeyCINg33Fhc/voWvJ8WNJXN8X3wcWpnq8TpPLPfZlB6B/x6sjOzj+b9JzyeqvczW2qgg==}
-    engines: {node: '>=18'}
-
   '@arcjet/protocol@1.0.0-beta.5':
     resolution: {integrity: sha512-anuG2y2tjarugfKh4svwsRFLgobXWkAVKyH4+zMq13RrBu+6wILHx11QgTeexQhKf8KVXPqj5HKDAC9BSqQxjw==}
     engines: {node: '>=18'}
 
   '@arcjet/runtime@1.0.0-beta.5':
     resolution: {integrity: sha512-Kspn1VpfgUBEZDEs2j1Nf0omAyNBuvBdrnN2cK4oimGGrk6yBO0+elq+4rq58MCvOJ6gGpK+wFJ3XAf25pD41A==}
-    engines: {node: '>=18'}
-
-  '@arcjet/sprintf@1.0.0-beta.4':
-    resolution: {integrity: sha512-kvbLE5+ghsGaEpA/QwRsQQzaHnDco0fnsskofulrB4S6DZZdjBIarJjf0OTFLrGAp3BQFPp9u45h6XcRfj+A7Q==}
     engines: {node: '>=18'}
 
   '@arcjet/sprintf@1.0.0-beta.5':
@@ -5349,8 +5341,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-compiler@19.0.0-beta-aeaed83-20250323:
-    resolution: {integrity: sha512-zkz1RlYTt3zzo7u/O1+5GCXFf75Qwo6guOJQVqjANagc+UoiV4RHyH+HGHQ39h7Nq/QsZG8atCiUS81RMre0UQ==}
+  eslint-plugin-react-compiler@19.0.0-beta-e993439-20250328:
+    resolution: {integrity: sha512-7hTFaGMz0YYLtkStJFBHjr2zOZwULxg2qCJ8pNYlaOqq2zL1/+Wg7BiDwrPZQIpAn3YQbBu1SHF509M3qpTyIg==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -8213,10 +8205,10 @@ snapshots:
       '@arcjet/analyze-wasm': 1.0.0-beta.5
       '@arcjet/protocol': 1.0.0-beta.5
 
-  '@arcjet/decorate@1.0.0-beta.4':
+  '@arcjet/decorate@1.0.0-beta.5':
     dependencies:
-      '@arcjet/protocol': 1.0.0-beta.4
-      '@arcjet/sprintf': 1.0.0-beta.4
+      '@arcjet/protocol': 1.0.0-beta.5
+      '@arcjet/sprintf': 1.0.0-beta.5
 
   '@arcjet/duration@1.0.0-beta.5': {}
 
@@ -8241,12 +8233,6 @@ snapshots:
       arcjet: 1.0.0-beta.5
       next: 15.2.4(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
-  '@arcjet/protocol@1.0.0-beta.4':
-    dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
-      typeid-js: 1.2.0
-
   '@arcjet/protocol@1.0.0-beta.5':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
@@ -8254,8 +8240,6 @@ snapshots:
       typeid-js: 1.2.0
 
   '@arcjet/runtime@1.0.0-beta.5': {}
-
-  '@arcjet/sprintf@1.0.0-beta.4': {}
 
   '@arcjet/sprintf@1.0.0-beta.5': {}
 
@@ -12768,7 +12752,7 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-react-compiler@19.0.0-beta-aeaed83-20250323(eslint@9.23.0(jiti@2.4.2)):
+  eslint-plugin-react-compiler@19.0.0-beta-e993439-20250328(eslint@9.23.0(jiti@2.4.2)):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/parser': 7.26.10
