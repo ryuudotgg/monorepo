@@ -50,7 +50,7 @@
     "next-safe-action": "^7.10.4",
     "react": "catalog:react19",
     "react-dom": "catalog:react19",
-    "react-hook-form": "^7.54.2",
+    "react-hook-form": "^7.55.0",
     "zod": "catalog:"
   },
   "devDependencies": {
