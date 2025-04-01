@@ -11,7 +11,7 @@ catalog:
   "@trpc/server": ^11.0.1
   "@trpc/react-query": ^11.0.1
 
-  "@tanstack/react-query": ^5.71.0
+  "@tanstack/react-query": ^5.71.1
 
   "@arcjet/next": ^1.0.0-beta.5
   "@arcjet/decorate": ^1.0.0-beta.5
