@@ -35,7 +35,7 @@
     "@t3-oss/env-nextjs": "catalog:",
     "@vercel/analytics": "^1.5.0",
     "posthog-js": "^1.234.4",
-    "posthog-node": "^4.10.2",
+    "posthog-node": "^4.11.1",
     "react": "catalog:react19",
     "server-only": "^0.0.1",
     "zod": "catalog:"
