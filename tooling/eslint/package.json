@@ -14,7 +14,7 @@
   },
   "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@eslint/compat": "^1.2.7",
+    "@eslint/compat": "^1.2.8",
     "@next/eslint-plugin-next": "catalog:next",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",

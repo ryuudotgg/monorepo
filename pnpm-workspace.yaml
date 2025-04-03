@@ -11,13 +11,13 @@ catalog:
   "@trpc/server": ^11.0.1
   "@trpc/react-query": ^11.0.1
 
-  "@tanstack/react-query": ^5.71.1
+  "@tanstack/react-query": ^5.71.5
 
   "@arcjet/next": ^1.0.0-beta.5
   "@arcjet/decorate": ^1.0.0-beta.5
 
-  tailwindcss: ^4.0.17
-  "@tailwindcss/postcss": ^4.0.17
+  tailwindcss: ^4.1.1
+  "@tailwindcss/postcss": ^4.1.1
 
   eslint: ^9.23.0
   prettier: ^3.5.3
