@@ -243,8 +243,8 @@ importers:
         specifier: ^1.236.1
         version: 1.236.1
       posthog-node:
-        specifier: ^4.11.3
-        version: 4.11.3
+        specifier: ^4.11.7
+        version: 4.11.7
       react:
         specifier: catalog:react19
         version: 19.1.0
@@ -6856,8 +6856,8 @@ packages:
       rrweb-snapshot:
         optional: true
 
-  posthog-node@4.11.3:
-    resolution: {integrity: sha512-Ye7d9ZJX1reWP9084Gm9+O7NnvlW7LnbU09GzlsSdD0HzGTfxeKTQZsl9h1+CDHhfvpdWJRm8uc91/aDmXzaCA==}
+  posthog-node@4.11.7:
+    resolution: {integrity: sha512-nG6LcJBD2kdI9zbOqUm52821G0y2j9W7DK8P68exQAs/A5VNPwMKwwYO3b/1KamcUPLGf6A7vDyog0zKGK1/Hg==}
     engines: {node: '>=15.0.0'}
 
   preact@10.26.5:
@@ -14576,7 +14576,7 @@ snapshots:
       preact: 10.26.5
       web-vitals: 4.2.4
 
-  posthog-node@4.11.3:
+  posthog-node@4.11.7:
     dependencies:
       axios: 1.8.4
     transitivePeerDependencies:
