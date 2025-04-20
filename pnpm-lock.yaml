@@ -870,8 +870,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       trpc-to-openapi:
-        specifier: ^2.1.5
-        version: 2.1.5(@trpc/server@11.1.0(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.24.3))(zod@3.24.3)
+        specifier: ^2.2.0
+        version: 2.2.0(@trpc/server@11.1.0(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.24.3))(zod@3.24.3)
       zod:
         specifier: 'catalog:'
         version: 3.24.3
@@ -7645,12 +7645,12 @@ packages:
   trough@2.2.0:
     resolution: {integrity: sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==}
 
-  trpc-to-openapi@2.1.5:
-    resolution: {integrity: sha512-cX6AlrIBEK0FJe8XJ0wFCroXFqTRpF3J5v4vU5D0Tq7YI1vj8oOIY50iaJX4Gv1PZTA6Dm9DMF7R1MUtlPZ4dQ==}
+  trpc-to-openapi@2.2.0:
+    resolution: {integrity: sha512-tIKpykAKsZqad/AQXc0JKDd1Evq8fm8j3jVMVVJ+keo2KUb67uyucHRzEsJWSN99RPf6esuytsmnetx7Q0S9wg==}
     peerDependencies:
-      '@trpc/server': ^11.0.0-rc.648
+      '@trpc/server': ^11.1.0
       zod: ^3.23.8
-      zod-openapi: ^4.1.0
+      zod-openapi: 4.2.4
 
   ts-api-utils@2.1.0:
     resolution: {integrity: sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==}
@@ -15484,7 +15484,7 @@ snapshots:
 
   trough@2.2.0: {}
 
-  trpc-to-openapi@2.1.5(@trpc/server@11.1.0(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.24.3))(zod@3.24.3):
+  trpc-to-openapi@2.2.0(@trpc/server@11.1.0(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.24.3))(zod@3.24.3):
     dependencies:
       '@trpc/server': 11.1.0(typescript@5.8.3)
       co-body: 6.2.0
