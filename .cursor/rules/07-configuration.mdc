@@ -1,0 +1,128 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Configuration Guidelines
+
+Follow these configuration patterns for consistent setup across the monorepo.
+
+## TypeScript Configuration
+
+Use the `tsconfig` tooling as a base for your TypeScript configuration.
+
+### For Applications
+
+```json
+{
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/nextjs.json"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~/assets/*": ["./public/assets/*"] // Unnecessary for non Next.js apps.
+    }
+  },
+  "include": [".", ".next/types/**/*.ts"], // Include Next.js types only for Next.js apps.
+  "exclude": ["node_modules"]
+}
+```
+
+### For Packages
+
+```json
+{
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/internal-package.json"
+  ],
+  "include": ["./src", "./*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
+### For Packages with DOM Requirements
+
+```json
+{
+  "extends": [
+    "@ryuu/tsconfig/base.json",
+    "@ryuu/tsconfig/internal-package.json",
+    "@ryuu/tsconfig/nextjs.json"
+  ],
+  "include": ["./src", "./*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
+## ESLint Configuration
+
+Use the `eslint` tooling as a base for your ESLint configuration.
+
+### For Applications
+
+```javascript
+import baseConfig, { restrictEnvAccess } from "@ryuu/eslint-config/base";
+import nextjsConfig from "@ryuu/eslint-config/nextjs";
+import reactConfig from "@ryuu/eslint-config/react";
+
+/** @type {import('typescript-eslint').Config} */
+export default [
+  { ignores: [".next/**", ".source/**"] }, // Ignore .next for Next.js apps, ignore .source for Next.js apps with Fumadocs.
+  ...baseConfig,
+  ...reactConfig, // Only add for React / Next.js apps.
+  ...nextjsConfig, // Only add for Next.js apps.
+  ...restrictEnvAccess,
+];
+```
+
+## Prettier Configuration
+
+Use the `prettier` tooling to define your Prettier configuration. Add this to the root of your `package.json` file:
+
+```json
+{
+  // ...
+  "prettier": "@ryuu/prettier-config"
+}
+```
+
+## Environment Variables
+
+- Create an `env.ts` file at the root of your application or package
+- Define environment variables with proper types and validation
+- Separate environment variables by context (server, client, shared)
+- Only use `NEXT_PUBLIC_` prefixed variables in client code
+
+### Example env.ts
+
+```typescript
+import { createEnv } from '@t3-oss/env-nextjs';
+import { z } from 'zod';
+
+export const env = createEnv({
+  server: {
+    API_KEY: z.string().min(1),
+    DATABASE_URL: z.string().url(),
+  },
+
+  client: {
+    NEXT_PUBLIC_API_URL: z.string().url(),
+  },
+
+  shared: {
+    NEXT_PUBLIC_APP_ENV: z.enum(['development', 'test', 'production']),
+  },
+
+  runtimeEnv: {
+    API_KEY: process.env.API_KEY,
+    DATABASE_URL: process.env.DATABASE_URL,
+  
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV,
+  },
+});
+```

@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Development Process
+
+When approaching any development task, follow these structured steps for consistent and high-quality results.
+
+## Analysis Process
+
+### 1. Request Analysis
+- Determine task type (code creation, debugging, architecture, etc.)
+- Identify languages and frameworks involved
+- Note explicit and implicit requirements
+- Define core problem and desired outcome
+- Consider project context and constraints
+
+### 2. Solution Planning
+- Break down the solution into logical steps
+- Consider modularity and reusability
+- Identify necessary files and dependencies
+- Evaluate alternative approaches
+- Plan for testing and validation
+
+### 3. Implementation Strategy
+- Choose appropriate design patterns
+- Consider performance implications
+- Plan for error handling and edge cases
+- Ensure accessibility compliance
+- Verify best practices alignment
+
+## Code Quality Standards
+
+### General Requirements
+- Comprehensive error handling
+- Maintainable, self-documenting code
+- Security best practices
+- Proper type coverage
+- ESLint and Prettier compliance
+- Vitest for unit and integration testing
+
+### Testing Approaches
+- Plan for unit and integration tests
+- Implement proper test coverage
+- Consider edge cases and error scenarios
+- Validate accessibility compliance
+
+> Prioritize clarity and maintainability while delivering robust, accessible, and performant solutions aligned with the latest React 19 and Next.js 15 features and best practices.

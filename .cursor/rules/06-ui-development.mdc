@@ -1,0 +1,97 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# UI Development
+
+Follow these guidelines for creating consistent, accessible, and performant user interfaces.
+
+## Styling
+
+- Use Tailwind CSS with a mobile-first approach
+- Use `cn` utility for conditional classes
+- Implement Radix UI primitives in the `ui` package
+- Follow consistent spacing and layout patterns
+- Ensure responsive design across breakpoints
+- Use CSS variables for theme customization
+
+## Accessibility (a11y)
+
+- Implement proper ARIA attributes
+- Ensure keyboard navigation
+- Provide appropriate alt text for images
+- Follow WCAG 2.1 guidelines
+- Follow guidelines on sufficient color contrast
+- Test with screen readers
+- Ensure proper focus management
+
+## Component Organization
+
+- Create reusable components in the `ui` package
+- Implement component variants with Tailwind class variants
+- Document component props and examples
+- Create proper type definitions for all props
+- Implement responsive variants where appropriate
+
+## Performance Optimization
+
+- Optimize images
+  - Use WebP format when possible
+  - Implement appropriate sizing
+  - Enable lazy loading for below-the-fold images
+- Use `next/image` for optimized images in Next.js apps
+- Implement code splitting for large components
+- Use `next/font` for font optimization
+- Implement lazy loading for non-critical UI elements
+- Minimize bundle size
+
+## UI Examples
+
+### Button Component
+
+```tsx
+import { cva } from 'class-variance-authority';
+import { type VariantProps } from 'class-variance-authority';
+import { cn } from '@/lib/utils';
+
+const buttonVariants = cva(
+  'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+        outline: 'border border-input hover:bg-accent hover:text-accent-foreground',
+        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+        ghost: 'hover:bg-accent hover:text-accent-foreground',
+        link: 'underline-offset-4 hover:underline text-primary',
+      },
+      size: {
+        default: 'h-10 py-2 px-4',
+        sm: 'h-9 px-3 rounded-md',
+        lg: 'h-11 px-8 rounded-md',
+      },
+    },
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
+    },
+  }
+);
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {}
+
+function Button({ className, variant, size, ...props }: ButtonProps) {
+  return (
+    <button
+      className={cn(buttonVariants({ variant, size }), className)}
+      {...props}
+    />
+  );
+}
+
+export default Button;
+```

@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Tech Stack Overview
+
+You are working with a modern web and mobile development stack focused on high-quality, maintainable solutions.
+
+## Core Technologies
+- TypeScript
+- React 19
+- Next.js 15 (App Router)
+- Expo 52
+- Radix UI
+- Tailwind CSS
+
+## Third-Party Services and Libraries
+- **Arcjet** - API protection and rate limiting
+- **BaseHub** - Database management
+- **Better Auth** - Authentication solution
+- **Better Stack Uptime** - Monitoring
+- **Fumadocs** - Documentation
+- **LaunchDarkly** - Feature flags
+- **PlanetScale** - MySQL 8.0 database
+- **PostHog** - Product analytics
+- **Resend** - Transactional emails
+- **Sentry** - Error tracking
+- **Vercel**
+  - Vercel AI SDK
+  - Vercel Analytics
+  - Vercel Speed Insights
+  - Vercel Blob
+  - Vercel Edge Config
+  - Vercel Flags
+  - Vercel KV (Upstash)
+  - Vercel Compute (Serverless Functions, Edge Functions)
+
+## Project Structure
+The monorepo uses pnpm workspaces with the following structure:
+- `/apps` - Applications built with Next.js and Expo
+- `/packages` - Shared libraries and utilities
+- `/tooling` - Development tooling
+- `/contributing` - Documentation for contributors

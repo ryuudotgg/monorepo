@@ -1,0 +1,96 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Vercel AI SDK Integration
+
+Follow these guidelines when integrating AI features using the Vercel AI SDK.
+
+## Core Concepts
+
+- Use the Vercel AI SDK for building AI-powered streaming text and chat UIs
+- Leverage three main packages:
+  1. `ai` - Core functionality and streaming utilities
+  2. `@ai-sdk/[provider]` - Model provider integrations (e.g., OpenAI)
+  3. React hooks for UI components
+
+## Route Handler Setup
+
+```typescript
+import { openai } from '@ai-sdk/openai';
+import { streamText } from 'ai';
+
+export const maxDuration = 90;
+
+export async function POST(req: Request) {
+  const { messages } = await req.json();
+
+  const result = await streamText({
+    model: openai('gpt-4-turbo'),
+    messages,
+    tools: {
+      // ... Tool Definitions
+    },
+  });
+
+  return result.toDataStreamResponse();
+}
+```
+
+## Chat UI Implementation
+
+```tsx
+'use client';
+
+import { useChat } from 'ai/react';
+
+export default function Chat() {
+  const { messages, input, handleInputChange, handleSubmit } = useChat({
+    maxSteps: 5, // We can set this to 5 to enable multi-step interactions.
+  });
+
+  return (
+    <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
+      {messages.map(m => (
+        <div key={m.id} className="whitespace-pre-wrap">
+          {m.role === 'user' ? 'User: ' : 'AI: '}
+          {m.toolInvocations ? (
+            <pre>{JSON.stringify(m.toolInvocations, null, 2)}</pre>
+          ) : (
+            m.content
+          )}
+        </div>
+      ))}
+
+      <form onSubmit={handleSubmit}>
+        <input
+          className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
+          value={input}
+          placeholder="Say something..."
+          onChange={handleInputChange}
+        />
+      </form>
+    </div>
+  );
+}
+```
+
+## AI Model Selection
+
+- Choose the appropriate model based on complexity and performance needs
+- Default to `gpt-4-turbo` for more complex tasks
+- Consider `gpt-3.5-turbo` for simpler, cost-effective implementations
+- Use `temperature` parameter to control randomness (lower for deterministic responses)
+
+## Error Handling
+
+- Implement proper error handling for API rate limits
+- Add fallback mechanisms for failed requests
+- Monitor token usage and implement appropriate throttling
+
+## Security and Privacy
+
+- Never expose API keys in client-side code
+- Validate all user input before sending to AI models
+- Follow AI safety best practices to prevent misuse

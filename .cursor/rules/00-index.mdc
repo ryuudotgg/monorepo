@@ -1,0 +1,37 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Ryuu App Development Guidelines
+
+This is a comprehensive guide to the development standards and best practices for the Ryuu application ecosystem. Follow these rules to ensure consistency, quality, and maintainability across the codebase.
+
+## Table of Contents
+
+1. [Tech Stack Overview](mdc:01-tech-stack.mdc) - Core technologies and third-party services
+2. [Development Process](mdc:02-development-process.mdc) - Analysis and implementation workflow
+3. [Code Style and Structure](mdc:03-code-style.mdc) - Coding conventions and patterns
+4. [React and Next.js Best Practices](mdc:04-react-nextjs.mdc) - Framework-specific guidelines
+5. [Vercel AI SDK Integration](mdc:05-vercel-ai-sdk.mdc) - AI features implementation
+6. [UI Development](mdc:06-ui-development.mdc) - Interface design and accessibility
+7. [Configuration Guidelines](mdc:07-configuration.mdc) - Project setup and tooling
+
+## Project Structure
+
+The project is organized as a monorepo using pnpm workspaces with the following structure:
+
+- `/apps` - Next.js and Expo applications
+- `/packages` - Shared libraries and utilities
+- `/tooling` - Development and build tooling
+- `/contributing` - Documentation for contributors
+
+## Key Principles
+
+- Prefer React Server Components where possible
+- Write clean, maintainable TypeScript code
+- Prioritize accessibility and performance
+- Follow modern best practices for React 19 and Next.js 15
+- Maintain consistent code style across the repo
+- Document component APIs and complex logic
+- Write testable and reusable code
