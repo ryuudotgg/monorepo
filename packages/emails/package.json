@@ -19,12 +19,12 @@
   },
   "prettier": "@ryuu/prettier-config",
   "dependencies": {
-    "@react-email/components": "^0.0.34",
+    "@react-email/components": "^0.0.36",
     "@ryuu/db": "workspace:*",
     "@ryuu/env": "workspace:*",
     "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
-    "resend": "^4.1.2",
+    "resend": "^4.3.0",
     "zod": "catalog:"
   },
   "devDependencies": {

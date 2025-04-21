@@ -10,8 +10,8 @@
     "@next/bundle-analyzer": "catalog:next",
     "@ryuu/blob": "workspace:*",
     "@ryuu/observability": "workspace:*",
-    "@sentry/nextjs": "^9.9.0",
-    "@vercel/toolbar": "^0.1.35",
+    "@sentry/nextjs": "^9.13.0",
+    "@vercel/toolbar": "^0.1.36",
     "next-secure-headers": "^2.2.0"
   },
   "devDependencies": {
