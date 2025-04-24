@@ -47,7 +47,7 @@
     "fumadocs-ui": "^15.2.10",
     "lucide-react": "^0.503.0",
     "next": "catalog:next",
-    "next-safe-action": "^7.10.5",
+    "next-safe-action": "^7.10.6",
     "react": "catalog:react19",
     "react-dom": "catalog:react19",
     "react-hook-form": "^7.56.1",
