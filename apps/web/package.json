@@ -11,9 +11,9 @@
   },
   "scripts": {
     "analyze": "ANALYZE=true pnpm build",
-    "build": "pnpm with-env next build",
+    "build": "pnpm with-env next build --turbopack",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "dev": "pnpm with-env next dev --turbo",
+    "dev": "pnpm with-env next dev --turbopack",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path .gitignore",
     "postinstall": "fumadocs-mdx ./fumadocs.config.ts",
     "lint": "eslint",
