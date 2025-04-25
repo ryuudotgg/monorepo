@@ -6,7 +6,7 @@ import arcjet, {
   setRateLimitHeaders,
 } from "@ryuu/security";
 
-export const runtime: ServerRuntime = "edge";
+export const runtime: ServerRuntime = "nodejs";
 
 const aj = arcjet
   .withRule(
