@@ -41,7 +41,7 @@
     "@trpc/react-query": "catalog:",
     "@vercel/speed-insights": "^1.2.0",
     "@vercel/toolbar": "^0.1.36",
-    "fumadocs-core": "^15.2.11",
+    "fumadocs-core": "^15.2.12",
     "fumadocs-docgen": "^2.0.0",
     "fumadocs-mdx": "^11.6.1",
     "fumadocs-ui": "^15.2.12",
