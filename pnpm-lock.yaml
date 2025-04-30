@@ -695,8 +695,8 @@ importers:
   packages/flags:
     dependencies:
       '@launchdarkly/vercel-server-sdk':
-        specifier: ^1.3.28
-        version: 1.3.28(@opentelemetry/api@1.9.0)
+        specifier: ^1.3.29
+        version: 1.3.29(@opentelemetry/api@1.9.0)
       '@ryuu/auth':
         specifier: workspace:*
         version: link:../auth
@@ -2230,17 +2230,17 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@launchdarkly/js-sdk-common@2.16.0':
-    resolution: {integrity: sha512-HiD4JBWfxRG+TkYpxQivg9+8isQ0JPpfCO9hQ/vu4gVHrSw8lprBmrnoQFFKd7LhDfOxJ6x3esgIDs0PaeDx5w==}
+  '@launchdarkly/js-sdk-common@2.17.0':
+    resolution: {integrity: sha512-HYQNc4xbE58hBOO1yZsqE+BHOC36AYrHPZ5hwvlHoZRSsaoYCPM+Q/n+O+N3JhWXTqGsu6SwUzqUzTyxg8prGg==}
 
-  '@launchdarkly/js-server-sdk-common-edge@2.6.4':
-    resolution: {integrity: sha512-IyX+KG4uf0U2P/OAHtVQ+DZup0CTHdCJJpXRga4DqrPbUvUt1A2ATUVv1PLeZbkGOqe/inrTLpjdms6MIZDvAg==}
+  '@launchdarkly/js-server-sdk-common-edge@2.6.5':
+    resolution: {integrity: sha512-pdjHw5eIZMS5JBfBejLmFVyoIcAKYTxsfmp7rfU0lA1g1tMX1nhf0CdSt2vUSuPnFeH/jfwMBCbMihwXenZf6w==}
 
-  '@launchdarkly/js-server-sdk-common@2.15.0':
-    resolution: {integrity: sha512-9c9l/yrqLhKWFBrmFP0Dt/4x5/vaM1EYIO2vYX5+ypkbd/wsu7GdA2wnEXWCGBeT9+vfggixWe5kjKtgXtZxJQ==}
+  '@launchdarkly/js-server-sdk-common@2.15.1':
+    resolution: {integrity: sha512-dAp2Uvo4r8nmIXHEUaRvxspLBYJmwVX3ZTCBvgX128pDi+ucJoW0IT10r8hD/OQrN5UJA66LDxI6RMr0kgqwGA==}
 
-  '@launchdarkly/vercel-server-sdk@1.3.28':
-    resolution: {integrity: sha512-beCD26xDNibFfspkFRj2InIKihwyL8waZ7rFrPnvkJKTnq8BOKQcvMMWlz3yumoEQDRlPIjRMExB25shq20upQ==}
+  '@launchdarkly/vercel-server-sdk@1.3.29':
+    resolution: {integrity: sha512-RLX1mHsIQxrPhjxnHgDavFIaxHv6heKCTctavC4k2dk84Jd0rFOWZhzniEsbdpCBNzsPE1Tk8trEl6v0UMTIUA==}
 
   '@levischuck/tiny-cbor@0.2.11':
     resolution: {integrity: sha512-llBRm4dT4Z89aRsm6u2oEZ8tfwL/2l6BwpZ7JcyieouniDECM5AqNgr/y08zalEIvW3RSK4upYyybDcmjXqAow==}
@@ -9231,21 +9231,21 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@launchdarkly/js-sdk-common@2.16.0': {}
+  '@launchdarkly/js-sdk-common@2.17.0': {}
 
-  '@launchdarkly/js-server-sdk-common-edge@2.6.4':
+  '@launchdarkly/js-server-sdk-common-edge@2.6.5':
     dependencies:
-      '@launchdarkly/js-server-sdk-common': 2.15.0
+      '@launchdarkly/js-server-sdk-common': 2.15.1
       crypto-js: 4.2.0
 
-  '@launchdarkly/js-server-sdk-common@2.15.0':
+  '@launchdarkly/js-server-sdk-common@2.15.1':
     dependencies:
-      '@launchdarkly/js-sdk-common': 2.16.0
+      '@launchdarkly/js-sdk-common': 2.17.0
       semver: 7.5.4
 
-  '@launchdarkly/vercel-server-sdk@1.3.28(@opentelemetry/api@1.9.0)':
+  '@launchdarkly/vercel-server-sdk@1.3.29(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@launchdarkly/js-server-sdk-common-edge': 2.6.4
+      '@launchdarkly/js-server-sdk-common-edge': 2.6.5
       '@vercel/edge-config': 1.4.0(@opentelemetry/api@1.9.0)
       crypto-js: 4.2.0
     transitivePeerDependencies:
