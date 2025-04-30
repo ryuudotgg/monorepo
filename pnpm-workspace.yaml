@@ -4,7 +4,7 @@ packages:
   - tooling/*
 
 catalog:
-  "@t3-oss/env-nextjs": ^0.13.0
+  "@t3-oss/env-nextjs": ^0.13.4
   "@types/node": ^22.15.3
 
   "@trpc/client": ^11.1.2
