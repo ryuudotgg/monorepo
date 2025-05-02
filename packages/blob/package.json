@@ -28,7 +28,7 @@
   "prettier": "@ryuu/prettier-config",
   "dependencies": {
     "@t3-oss/env-nextjs": "catalog:",
-    "@vercel/blob": "^1.0.0",
+    "@vercel/blob": "^1.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
