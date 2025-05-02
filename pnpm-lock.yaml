@@ -344,8 +344,8 @@ importers:
         specifier: 'catalog:'
         version: 0.13.4(arktype@2.1.20)(typescript@5.8.3)(zod@3.24.3)
       '@vercel/blob':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.0.1
+        version: 1.0.1
       zod:
         specifier: 'catalog:'
         version: 3.24.3
@@ -4186,8 +4186,8 @@ packages:
       vue-router:
         optional: true
 
-  '@vercel/blob@1.0.0':
-    resolution: {integrity: sha512-fe4fzpL0h/2gRhaCixygaconaMXVgPo06L5ZyTlz9FSVTXDu+MBOu06DqDZ3Ye1s84m1g2sJ9w8Z5SbKCfkQ0A==}
+  '@vercel/blob@1.0.1':
+    resolution: {integrity: sha512-iGF4nF13cwMs5AxOxdKggm6f2mt5Av3RwUARqtj8BZfhBRD2z5vnmRioI0ShCOb38bDQIBBiyI7hvElGD12jjw==}
     engines: {node: '>=16.14'}
 
   '@vercel/edge-config-fs@0.1.0':
@@ -11355,7 +11355,7 @@ snapshots:
       next: 15.3.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
 
-  '@vercel/blob@1.0.0':
+  '@vercel/blob@1.0.1':
     dependencies:
       async-retry: 1.3.3
       is-buffer: 2.0.5
