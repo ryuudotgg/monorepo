@@ -21,7 +21,7 @@ You are working with a modern web and mobile development stack focused on high-q
 - **Better Auth** - Authentication solution
 - **Better Stack Uptime** - Monitoring
 - **Fumadocs** - Documentation
-- **LaunchDarkly** - Feature flags
+- **Statsig** - Feature flags
 - **PlanetScale** - MySQL 8.0 database
 - **PostHog** - Product analytics
 - **Resend** - Transactional emails
