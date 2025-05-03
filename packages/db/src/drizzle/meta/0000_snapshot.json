@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "5b3ef2ab-2b40-4e84-81da-751ee010ba83",
+  "id": "249aebed-1e31-4a45-b14c-4089032b7ca7",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "users": {
@@ -169,6 +169,13 @@
         "refresh_token_expires_at": {
           "name": "refresh_token_expires_at",
           "type": "timestamp(3)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "id_token": {
+          "name": "id_token",
+          "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
@@ -377,14 +384,14 @@
         },
         "ip_address": {
           "name": "ip_address",
-          "type": "varchar(255)",
+          "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
         },
         "user_agent": {
           "name": "user_agent",
-          "type": "varchar(255)",
+          "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false

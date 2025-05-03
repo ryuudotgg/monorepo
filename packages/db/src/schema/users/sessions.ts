@@ -3,6 +3,7 @@ import {
   foreignKey,
   index,
   mysqlTable,
+  text,
   timestamp,
   uniqueIndex,
   varchar,
@@ -24,8 +25,8 @@ export const sessions = mysqlTable(
     token: varchar({ length: 255 }).notNull(),
     expiresAt: timestamp({ mode: "date", fsp: 3 }).notNull(),
 
-    ipAddress: varchar({ length: 255 }),
-    userAgent: varchar({ length: 255 }),
+    ipAddress: text(),
+    userAgent: text(),
 
     ...dates,
   },

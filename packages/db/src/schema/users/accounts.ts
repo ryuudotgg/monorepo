@@ -29,6 +29,7 @@ export const accounts = mysqlTable(
     refreshToken: varchar({ length: 255 }),
     refreshTokenExpiresAt: timestamp({ mode: "date", fsp: 3 }),
 
+    idToken: text(),
     scope: text(),
 
     ...dates,
