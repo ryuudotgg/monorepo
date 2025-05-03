@@ -1,7 +1,6 @@
 import type { LDSingleKindContext } from "@launchdarkly/vercel-server-sdk";
-import type { FlagOverridesType } from "flags";
 import { geolocation, ipAddress, waitUntil } from "@vercel/functions";
-import { decrypt } from "flags";
+import { decryptOverrides } from "flags";
 import { flag } from "flags/next";
 
 import { auth } from "@ryuu/auth";
@@ -53,7 +52,7 @@ export const create = (key: string, defaultValue = false) =>
     async decide({ entities, cookies }) {
       const overrideCookie = cookies.get("vercel-flag-overrides")?.value;
       const overrides = overrideCookie
-        ? await decrypt<FlagOverridesType>(overrideCookie)
+        ? await decryptOverrides(overrideCookie)
         : undefined;
 
       const isEnabled =
