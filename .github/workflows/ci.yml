@@ -21,8 +21,6 @@ env:
   TURBO_TEAM: ${{ vars.TURBO_TEAM }}
   TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
 
-  BASEHUB_TOKEN: ${{ secrets.BASEHUB_TOKEN }}
-
 jobs:
   lint:
     name: Lint
