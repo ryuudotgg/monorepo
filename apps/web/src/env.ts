@@ -3,9 +3,10 @@ import { z } from "zod";
 
 import { env as analytics } from "@ryuu/analytics/env";
 import { env as shared } from "@ryuu/env";
+import { env as flags } from "@ryuu/flags/env";
 
 export const env = createEnv({
-  extends: [shared, analytics],
+  extends: [shared, analytics, flags],
 
   shared: {},
 

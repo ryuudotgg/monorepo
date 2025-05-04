@@ -1,3 +1,4 @@
+import type { Statsig } from "@flags-sdk/statsig";
 import { createStatsigAdapter } from "@flags-sdk/statsig";
 
 import { env } from "../../env";
@@ -12,3 +13,4 @@ const statsig = createStatsigAdapter({
 });
 
 export { statsig };
+export type { Statsig };

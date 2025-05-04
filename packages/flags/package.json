@@ -11,6 +11,18 @@
     "./access": {
       "types": "./dist/src/access.d.ts",
       "default": "./src/access.ts"
+    },
+    "./identify": {
+      "types": "./dist/src/lib/identify.d.ts",
+      "default": "./src/lib/identify.ts"
+    },
+    "./statsig": {
+      "types": "./dist/src/lib/statsig.d.ts",
+      "default": "./src/lib/statsig.ts"
+    },
+    "./env": {
+      "types": "./dist/env.d.ts",
+      "default": "./env.ts"
     }
   },
   "scripts": {

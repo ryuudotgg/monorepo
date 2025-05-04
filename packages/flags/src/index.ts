@@ -1,3 +1,3 @@
-import { create } from "./lib/create";
+import { createFeatureGate } from "./lib/create";
 
-export const showBetaFeature = create("show_beta_features");
+export const showBetaFeature = createFeatureGate("show_beta_features");
