@@ -36,7 +36,6 @@
     "@ryuu/shared": "workspace:*",
     "@ryuu/trpc": "workspace:*",
     "@ryuu/validators": "workspace:*",
-    "@statsig/react-bindings": "^3.16.0",
     "@tanstack/react-query": "catalog:",
     "@trpc/client": "catalog:",
     "@trpc/react-query": "catalog:",

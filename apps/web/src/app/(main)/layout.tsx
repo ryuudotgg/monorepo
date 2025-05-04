@@ -2,9 +2,8 @@ import { headers } from "next/headers";
 
 import { auth } from "@ryuu/auth";
 import { identify } from "@ryuu/flags/identify";
-import { statsig } from "@ryuu/flags/statsig";
-
-import { StatsigProvider } from "./_components/StatsigProvider";
+import { StatsigProvider } from "@ryuu/flags/statsig/client";
+import { statsig } from "@ryuu/flags/statsig/server";
 
 export default async function Layout({
   authed,

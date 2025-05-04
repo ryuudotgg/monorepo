@@ -16,9 +16,13 @@
       "types": "./dist/src/lib/identify.d.ts",
       "default": "./src/lib/identify.ts"
     },
-    "./statsig": {
-      "types": "./dist/src/lib/statsig.d.ts",
-      "default": "./src/lib/statsig.ts"
+    "./statsig/server": {
+      "types": "./dist/src/statsig/server.d.ts",
+      "default": "./src/statsig/server.ts"
+    },
+    "./statsig/client": {
+      "types": "./dist/src/statsig/client.d.ts",
+      "default": "./src/statsig/client.ts"
     },
     "./env": {
       "types": "./dist/env.d.ts",
@@ -38,6 +42,7 @@
     "@flags-sdk/statsig": "^0.2.2",
     "@ryuu/auth": "workspace:*",
     "@ryuu/env": "workspace:*",
+    "@statsig/react-bindings": "^3.16.0",
     "@t3-oss/env-nextjs": "catalog:",
     "flags": "^4.0.0",
     "zod": "catalog:"

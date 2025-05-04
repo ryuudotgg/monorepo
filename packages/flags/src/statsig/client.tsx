@@ -6,7 +6,7 @@ import {
   useClientBootstrapInit,
 } from "@statsig/react-bindings";
 
-import { env } from "~/env";
+import { env } from "../../env";
 
 export function StatsigProvider({
   children,
