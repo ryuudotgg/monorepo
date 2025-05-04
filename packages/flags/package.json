@@ -22,7 +22,7 @@
     },
     "./statsig/client": {
       "types": "./dist/src/statsig/client.d.ts",
-      "default": "./src/statsig/client.ts"
+      "default": "./src/statsig/client.tsx"
     },
     "./env": {
       "types": "./dist/env.d.ts",
