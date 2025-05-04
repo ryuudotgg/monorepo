@@ -1,4 +1,5 @@
 name: "Setup & Install"
+description: "Setup & Install"
 
 runs:
   using: composite

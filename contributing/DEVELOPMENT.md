@@ -52,7 +52,7 @@ packages
   |   └─ Shared Environment Variables
   ├─ flags
   |   └─ Vercel Edge Config
-  |   └─ LaunchDarkly
+  |   └─ Statsig
   ├─ observability
   |   ├─ Error Monitoring with Sentry
   |   └─ Logging with BetterStack
@@ -96,7 +96,7 @@ tooling
 ```typescript
 export function MyComponent({
   title,
-  onClick 
+  onClick
 }: {
   title: string;
   onClick: () => void;

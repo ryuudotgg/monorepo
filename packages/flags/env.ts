@@ -9,15 +9,29 @@ export const env = createEnv({
   shared: {},
 
   server: {
-    EDGE_CONFIG: z.string().url(),
-    LAUNCHDARKLY_CLIENT_ID: z.string(),
+    STATSIG_PROJECT_ID: z.string().optional(),
+
+    STATSIG_API_KEY: z.string(),
+    STATSIG_CONSOLE_KEY: z.string(),
+
+    STATSIG_EDGE_CONFIG: z.string().url(),
+    STATSIG_EDGE_CONFIG_KEY: z.string(),
   },
 
-  client: {},
+  client: {
+    NEXT_PUBLIC_STATSIG_CLIENT_KEY: z.string(),
+  },
 
   runtimeEnv: {
-    EDGE_CONFIG: process.env.EDGE_CONFIG,
-    LAUNCHDARKLY_CLIENT_ID: process.env.LAUNCHDARKLY_CLIENT_ID,
+    STATSIG_PROJECT_ID: process.env.STATSIG_PROJECT_ID,
+
+    STATSIG_API_KEY: process.env.STATSIG_API_KEY,
+    STATSIG_CONSOLE_KEY: process.env.STATSIG_CONSOLE_KEY,
+
+    STATSIG_EDGE_CONFIG: process.env.STATSIG_EDGE_CONFIG,
+    STATSIG_EDGE_CONFIG_KEY: process.env.STATSIG_EDGE_CONFIG_KEY,
+
+    NEXT_PUBLIC_STATSIG_CLIENT_KEY: process.env.NEXT_PUBLIC_STATSIG_CLIENT_KEY,
   },
 
   emptyStringAsUndefined: true,
