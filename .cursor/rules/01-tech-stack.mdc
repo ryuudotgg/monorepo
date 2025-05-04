@@ -17,7 +17,6 @@ You are working with a modern web and mobile development stack focused on high-q
 
 ## Third-Party Services and Libraries
 - **Arcjet** - API protection and rate limiting
-- **BaseHub** - Database management
 - **Better Auth** - Authentication solution
 - **Better Stack Uptime** - Monitoring
 - **Fumadocs** - Documentation
