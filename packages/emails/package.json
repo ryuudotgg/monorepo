@@ -24,7 +24,7 @@
     "@ryuu/env": "workspace:*",
     "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
-    "resend": "^4.5.0",
+    "resend": "^4.5.1",
     "zod": "catalog:"
   },
   "devDependencies": {
