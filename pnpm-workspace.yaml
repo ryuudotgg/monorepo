@@ -22,7 +22,7 @@ catalog:
   eslint: ^9.26.0
   prettier: ^3.5.3
   typescript: ^5.8.3
-  zod: ^3.24.3
+  zod: ^3.24.4
 
 catalogs:
   next:
