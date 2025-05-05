@@ -147,10 +147,10 @@ importers:
         version: 11.1.2(@tanstack/react-query@5.75.2(react@19.1.0))(@trpc/client@11.1.2(@trpc/server@11.1.2(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.1.2(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       '@vercel/speed-insights':
         specifier: ^1.2.0
-        version: 1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        version: 1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@vercel/toolbar':
         specifier: ^0.1.36
-        version: 0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       fumadocs-core:
         specifier: ^15.2.14
         version: 15.2.14(@types/react@19.1.2)(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -238,7 +238,7 @@ importers:
         version: 0.13.4(arktype@2.1.20)(typescript@5.8.3)(zod@3.24.4)
       '@vercel/analytics':
         specifier: ^1.5.0
-        version: 1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        version: 1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       posthog-js:
         specifier: ^1.239.1
         version: 1.239.1
@@ -380,9 +380,9 @@ importers:
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
         version: 0.13.4(arktype@2.1.20)(typescript@5.8.3)(zod@3.24.4)
-      '@vercel/kv':
-        specifier: ^3.0.0
-        version: 3.0.0
+      '@upstash/redis':
+        specifier: ^1.34.8
+        version: 1.34.8
       zod:
         specifier: 'catalog:'
         version: 3.24.4
@@ -549,10 +549,10 @@ importers:
         version: 2.11.9
       '@vercel/speed-insights':
         specifier: ^1.2.0
-        version: 1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        version: 1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@vercel/toolbar':
         specifier: ^0.1.36
-        version: 0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       change-case:
         specifier: ^5.4.4
         version: 5.4.4
@@ -990,7 +990,7 @@ importers:
         version: 9.15.0(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(webpack@5.99.7)
       '@vercel/toolbar':
         specifier: ^0.1.36
-        version: 0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next-secure-headers:
         specifier: ^2.2.0
         version: 2.2.0
@@ -4225,10 +4225,6 @@ packages:
     peerDependenciesMeta:
       '@aws-sdk/credential-provider-web-identity':
         optional: true
-
-  '@vercel/kv@3.0.0':
-    resolution: {integrity: sha512-pKT8fRnfyYk2MgvyB6fn6ipJPCdfZwiKDdw7vB+HL50rjboEBHDVBEcnwfkEpVSp2AjNtoaOUH7zG+bVC/rvSg==}
-    engines: {node: '>=14.6'}
 
   '@vercel/microfrontends@1.1.0':
     resolution: {integrity: sha512-w7SeCV10hsLh3xUB4M1xsqbBSo+ry5PPL9/pkX9St5ZDRUHGZT/UEQd4vhOcSgwObn/1gbcuV0Il/unXmPty9A==}
@@ -11517,7 +11513,7 @@ snapshots:
     dependencies:
       crypto-js: 4.2.0
 
-  '@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
+  '@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
     optionalDependencies:
       next: 15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
@@ -11542,11 +11538,7 @@ snapshots:
 
   '@vercel/functions@2.0.1': {}
 
-  '@vercel/kv@3.0.0':
-    dependencies:
-      '@upstash/redis': 1.34.8
-
-  '@vercel/microfrontends@1.1.0(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@vercel/microfrontends@1.1.0(@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       ajv: 8.17.1
       commander: 12.1.0
@@ -11557,23 +11549,23 @@ snapshots:
       nanoid: 3.3.11
       path-to-regexp: 6.2.1
     optionalDependencies:
-      '@vercel/analytics': 1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
-      '@vercel/speed-insights': 1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      '@vercel/analytics': 1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      '@vercel/speed-insights': 1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       next: 15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
     transitivePeerDependencies:
       - debug
 
-  '@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
+  '@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
     optionalDependencies:
       next: 15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
 
-  '@vercel/toolbar@0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@vercel/toolbar@0.1.36(@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@tinyhttp/app': 1.3.0
-      '@vercel/microfrontends': 1.1.0(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@vercel/microfrontends': 1.1.0(@vercel/analytics@1.5.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       chokidar: 3.6.0
       execa: 5.1.1
       fast-glob: 3.3.3
