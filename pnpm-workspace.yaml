@@ -14,7 +14,7 @@ catalog:
   "@tanstack/react-query": ^5.75.4
 
   "@arcjet/next": ^1.0.0-beta.6
-  "@arcjet/decorate": ^1.0.0-beta.6
+  "@arcjet/decorate": ^1.0.0-beta.7
 
   tailwindcss: ^4.1.5
   "@tailwindcss/postcss": ^4.1.5

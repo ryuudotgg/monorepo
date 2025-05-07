@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@arcjet/decorate':
-      specifier: ^1.0.0-beta.6
-      version: 1.0.0-beta.6
+      specifier: ^1.0.0-beta.7
+      version: 1.0.0-beta.7
     '@arcjet/next':
       specifier: ^1.0.0-beta.6
       version: 1.0.0-beta.6
@@ -782,7 +782,7 @@ importers:
     dependencies:
       '@arcjet/decorate':
         specifier: 'catalog:'
-        version: 1.0.0-beta.6
+        version: 1.0.0-beta.7
       '@arcjet/next':
         specifier: 'catalog:'
         version: 1.0.0-beta.6(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -1038,8 +1038,8 @@ packages:
     resolution: {integrity: sha512-oWvxdNdrR4qMNsrr4y9TdYsuXlx/M8sdN6iENqBwFjUBCfksYrQAzHUr6maDr1ey/g38DXdxXNhGL3PWs0XFJA==}
     engines: {node: '>=18'}
 
-  '@arcjet/decorate@1.0.0-beta.6':
-    resolution: {integrity: sha512-Kfln/d7o143IXi+mMk6IxVFcS3wKWKAM1aXykojV50nJ+UKLWoJMBqgRUNv/glY7vMWwnm/OtbbZhjC2YLpVvw==}
+  '@arcjet/decorate@1.0.0-beta.7':
+    resolution: {integrity: sha512-9qEsQhYXbsmmGqBVEGFHcuPn3s5BEA6PZKQGN4ATQaatYzXl1pjmTPw71yReZO5af9VIEzzXQXL3c4y9lXlOuA==}
     engines: {node: '>=18'}
 
   '@arcjet/duration@1.0.0-beta.6':
@@ -1072,12 +1072,20 @@ packages:
     resolution: {integrity: sha512-pD2JldnObwguoArvk/F3OOJYbRsiPnzTWJ9Y/EhedszYS3vf02K3lb+KHwdTof60EmOh00iLrtE2NxRT+cSEyA==}
     engines: {node: '>=18'}
 
+  '@arcjet/protocol@1.0.0-beta.7':
+    resolution: {integrity: sha512-qtvBvjSLwBdn0ilDtvjbAs1wpt4qqglC5ZZ7LxVaD/OzhSXhFplBEc0p8aHq3GOJFZNZfuYzls6VSxk7fjB8Xw==}
+    engines: {node: '>=18'}
+
   '@arcjet/runtime@1.0.0-beta.6':
     resolution: {integrity: sha512-Zst6CtlUXjWIdYfG9Ny9YjqxewyGVszKhtcCaMnDL8i/lbEIh/vY+kRLjf09cYH/v+bcwbwXN8ZzVfdu3nzfIg==}
     engines: {node: '>=18'}
 
   '@arcjet/sprintf@1.0.0-beta.6':
     resolution: {integrity: sha512-3ejdH/oTKtAYSQCafi+0pF56otz0crCE/Sx3pA2OPMzG0pPnLAY3/IaN45L528dYp5XYGn0/oxSS6hKJnauYcA==}
+    engines: {node: '>=18'}
+
+  '@arcjet/sprintf@1.0.0-beta.7':
+    resolution: {integrity: sha512-ZFh3RubNkBcqa0LYTz2lhvHunx5l8Zq90H5nc5Kq7I0P3bpkKClE2zpRmC7ojwD61CbHUPb2igtX1qBsujEqTw==}
     engines: {node: '>=18'}
 
   '@arcjet/transport@1.0.0-beta.6':
@@ -1650,6 +1658,9 @@ packages:
 
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
+
+  '@bufbuild/protobuf@1.10.1':
+    resolution: {integrity: sha512-wJ8ReQbHxsAfXhrf9ixl0aYbZorRuOWpBNzm8pL8ftmSxQx/wnJD5Eg861NwJU/czy2VXFIebCeZnZrI9rktIQ==}
 
   '@connectrpc/connect-node@1.6.1':
     resolution: {integrity: sha512-DxcD1wsF/aX9GegjAtl7VbpiZNjVJozy87VbaFoN6AF0Ln1Q757r5dgV59Gz0wmlk5f17txUsrEr1f2inlnnAg==}
@@ -8342,10 +8353,10 @@ snapshots:
       '@arcjet/analyze-wasm': 1.0.0-beta.6
       '@arcjet/protocol': 1.0.0-beta.6
 
-  '@arcjet/decorate@1.0.0-beta.6':
+  '@arcjet/decorate@1.0.0-beta.7':
     dependencies:
-      '@arcjet/protocol': 1.0.0-beta.6
-      '@arcjet/sprintf': 1.0.0-beta.6
+      '@arcjet/protocol': 1.0.0-beta.7
+      '@arcjet/sprintf': 1.0.0-beta.7
 
   '@arcjet/duration@1.0.0-beta.6': {}
 
@@ -8376,9 +8387,17 @@ snapshots:
       '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
       typeid-js: 1.2.0
 
+  '@arcjet/protocol@1.0.0-beta.7':
+    dependencies:
+      '@bufbuild/protobuf': 1.10.1
+      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.1)
+      typeid-js: 1.2.0
+
   '@arcjet/runtime@1.0.0-beta.6': {}
 
   '@arcjet/sprintf@1.0.0-beta.6': {}
+
+  '@arcjet/sprintf@1.0.0-beta.7': {}
 
   '@arcjet/transport@1.0.0-beta.6':
     dependencies:
@@ -9126,6 +9145,8 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
+  '@bufbuild/protobuf@1.10.1': {}
+
   '@connectrpc/connect-node@1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
@@ -9140,6 +9161,10 @@ snapshots:
   '@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0)':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
+
+  '@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.1)':
+    dependencies:
+      '@bufbuild/protobuf': 1.10.1
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -14043,7 +14068,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.15.11
+      '@types/node': 22.15.12
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
