@@ -5,7 +5,7 @@ packages:
 
 catalog:
   "@t3-oss/env-nextjs": ^0.13.4
-  "@types/node": ^22.15.12
+  "@types/node": ^22.15.14
 
   "@trpc/client": ^11.1.2
   "@trpc/server": ^11.1.2
