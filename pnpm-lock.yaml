@@ -301,8 +301,8 @@ importers:
         specifier: 'catalog:'
         version: 11.1.2(typescript@5.8.3)
       '@vercel/functions':
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^2.0.2
+        version: 2.0.2
       better-auth:
         specifier: ^1.2.7
         version: 1.2.7
@@ -763,8 +763,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@vercel/functions':
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^2.0.2
+        version: 2.0.2
       eslint:
         specifier: 'catalog:'
         version: 9.26.0(jiti@2.4.2)
@@ -4372,8 +4372,8 @@ packages:
       '@aws-sdk/credential-provider-web-identity':
         optional: true
 
-  '@vercel/functions@2.0.1':
-    resolution: {integrity: sha512-WmGX0+wAPn0AEYN5GZjrlrGE6Vr/pkkmbfHoZjoAmJn+Vybi8/jM0gil4M3D8hRYq3k1uDKuNzrHnToXc+s8Ag==}
+  '@vercel/functions@2.0.2':
+    resolution: {integrity: sha512-ywV32hWjWypcExEWePgq4D4i0kEMfwgd8kqVvEPq6G+Yiz/eGhGM24x3MbRZNHg0qlJT7g5RuityGVqkETPkZg==}
     engines: {node: '>= 18'}
     peerDependencies:
       '@aws-sdk/credential-provider-web-identity': '*'
@@ -11855,7 +11855,7 @@ snapshots:
 
   '@vercel/functions@1.6.0': {}
 
-  '@vercel/functions@2.0.1': {}
+  '@vercel/functions@2.0.2': {}
 
   '@vercel/microfrontends@1.1.0(@vercel/analytics@1.5.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(@vercel/speed-insights@1.2.0(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(next@15.3.1(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
@@ -14043,7 +14043,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.15.11
+      '@types/node': 22.15.12
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
