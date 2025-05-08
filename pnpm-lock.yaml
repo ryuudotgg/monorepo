@@ -240,8 +240,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(next@15.3.2(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       posthog-js:
-        specifier: ^1.240.4
-        version: 1.240.4
+        specifier: ^1.240.5
+        version: 1.240.5
       posthog-node:
         specifier: ^4.17.1
         version: 4.17.1
@@ -7043,8 +7043,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-js@1.240.4:
-    resolution: {integrity: sha512-Qjm2H3FIWlC8RFxD3XSDluqhDzFCgwbAjnJzcxEIqOQafvqsoj1LqstgB4cyfeSdv8CSGEnjiGqgF5LITlKk0Q==}
+  posthog-js@1.240.5:
+    resolution: {integrity: sha512-sLaDiN0TrGQnF94ed85wo044ifJ5U9rBlIVe5rueLUtusE2Gc/Vis7VcHOjbBeAaJXCHwOcs/TUZZNxbRGzNgw==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
       rrweb-snapshot: 2.0.0-alpha.17
@@ -13951,7 +13951,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.15.16
+      '@types/node': 22.15.17
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -15037,7 +15037,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-js@1.240.4:
+  posthog-js@1.240.5:
     dependencies:
       core-js: 3.42.0
       fflate: 0.4.8
