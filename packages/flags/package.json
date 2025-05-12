@@ -42,7 +42,7 @@
     "@flags-sdk/statsig": "^0.2.2",
     "@ryuu/auth": "workspace:*",
     "@ryuu/env": "workspace:*",
-    "@statsig/react-bindings": "^3.16.1",
+    "@statsig/react-bindings": "^3.16.2",
     "@t3-oss/env-nextjs": "catalog:",
     "flags": "^4.0.0",
     "zod": "catalog:"
