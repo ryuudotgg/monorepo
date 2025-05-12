@@ -45,7 +45,7 @@
     "fumadocs-docgen": "^2.0.0",
     "fumadocs-mdx": "^11.6.3",
     "fumadocs-ui": "^15.3.1",
-    "lucide-react": "^0.509.0",
+    "lucide-react": "^0.510.0",
     "next": "catalog:next",
     "next-safe-action": "^7.10.8",
     "react": "catalog:react19",
