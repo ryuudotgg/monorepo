@@ -29,7 +29,7 @@
     "typescript": "catalog:"
   },
   "engines": {
-    "node": ">=22.15.0",
+    "node": ">=22.15.1",
     "pnpm": "^10.11.0"
   }
 }
