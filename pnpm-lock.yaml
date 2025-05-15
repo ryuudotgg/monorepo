@@ -704,8 +704,8 @@ importers:
         specifier: workspace:*
         version: link:../env
       '@statsig/react-bindings':
-        specifier: ^3.16.2
-        version: 3.16.2(react@19.1.0)
+        specifier: ^3.17.0
+        version: 3.17.0(react@19.1.0)
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
         version: 0.13.4(arktype@2.1.20)(typescript@5.8.3)(zod@3.24.4)
@@ -3522,14 +3522,14 @@ packages:
   '@standard-schema/utils@0.3.0':
     resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
 
-  '@statsig/client-core@3.16.2':
-    resolution: {integrity: sha512-HsLxqL0n7PgH+oTLVMT6DpUmYLWwxi/An9R8YOx3WVMmf39FxaWMx+GHzmgxkwlW0aZ1wMiuQwfOOfXWuQAkFg==}
+  '@statsig/client-core@3.17.0':
+    resolution: {integrity: sha512-2P3NGRFGHIwD1BQE4nOMvVK1S7UtdSu04pGf70wEQio3rNxsdaz9tyBWsLk4uQ1FrRn9N8Y1ia5ALrE0DBxsBw==}
 
-  '@statsig/js-client@3.16.2':
-    resolution: {integrity: sha512-mFYdt0mjPAKHu9TRUgp19he/39u8pVBmVKAspUZcmEifzMeOLYw8xkS3nMa25ZFWJmIPWuYon6dAsicAAbLXaA==}
+  '@statsig/js-client@3.17.0':
+    resolution: {integrity: sha512-bleYQ29OK6k9cbfLzhqIDsLjQadnvRpkHk3HhiYeWS9xYKpiPltHjOwZNogcox7k9HtgHlhZpzfnT5dXqP4sWg==}
 
-  '@statsig/react-bindings@3.16.2':
-    resolution: {integrity: sha512-O7Ri+R/GSd8w65Zecn37T5bCNi2QHmBmkmeOvbH0JJUekl2r3orCo3jqqhtfNrTGIHjbTEaVaK1fGDfNA4wmSA==}
+  '@statsig/react-bindings@3.17.0':
+    resolution: {integrity: sha512-+v6ZCfR8tw/Sy+SDSCiHSuBxS3vy9UT7wCo3lKmacVDxi7nPCg9WL5v6Cz2pCSc9khx8jaSNvyRnxEye8hQmWQ==}
     peerDependencies:
       react: ^16.6.3 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -10904,16 +10904,16 @@ snapshots:
 
   '@standard-schema/utils@0.3.0': {}
 
-  '@statsig/client-core@3.16.2': {}
+  '@statsig/client-core@3.17.0': {}
 
-  '@statsig/js-client@3.16.2':
+  '@statsig/js-client@3.17.0':
     dependencies:
-      '@statsig/client-core': 3.16.2
+      '@statsig/client-core': 3.17.0
 
-  '@statsig/react-bindings@3.16.2(react@19.1.0)':
+  '@statsig/react-bindings@3.17.0(react@19.1.0)':
     dependencies:
-      '@statsig/client-core': 3.16.2
-      '@statsig/js-client': 3.16.2
+      '@statsig/client-core': 3.17.0
+      '@statsig/js-client': 3.17.0
       react: 19.1.0
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0(@babel/core@7.27.1)':
