@@ -26,7 +26,7 @@
     "@t3-oss/env-nextjs": "catalog:",
     "@trpc/server": "catalog:",
     "@vercel/functions": "^2.1.0",
-    "better-auth": "^1.2.7",
+    "better-auth": "^1.2.8",
     "next": "catalog:next",
     "react": "catalog:react19",
     "react-dom": "catalog:react19",
