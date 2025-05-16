@@ -25,7 +25,7 @@
     "@ryuu/shared": "workspace:*",
     "@t3-oss/env-nextjs": "catalog:",
     "@trpc/server": "catalog:",
-    "@vercel/functions": "^2.0.3",
+    "@vercel/functions": "^2.1.0",
     "better-auth": "^1.2.7",
     "next": "catalog:next",
     "react": "catalog:react19",
