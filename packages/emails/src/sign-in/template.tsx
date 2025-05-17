@@ -67,7 +67,7 @@ export function SignIn({ user, token, city, country, ip }: SignInProps) {
                                 )}
                                 width={48}
                                 height={48}
-                                alt="Create Ryuu App"
+                                alt="Ryuu's Monorepo"
                               />
                             </div>
                             <Heading

@@ -1,5 +1,5 @@
 {
-  "name": "create-ryuu-app",
+  "name": "monorepo",
   "private": true,
   "license": "MIT",
   "packageManager": "pnpm@10.11.0",

@@ -1,6 +1,6 @@
-# Contributing to Create Ryuu App
+# Contributing to Ryuu's Monorepo
 
-Thanks for your interest in contributing to Create Ryuu App! We're excited to have you join us. This document outlines the process and guidelines for contributing.
+Thanks for your interest in contributing to Ryuu's Monorepo! We're excited to have you join us. This document outlines the process and guidelines for contributing.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ Thanks for your interest in contributing to Create Ryuu App! We're excited to ha
 2. Clone Your Fork:
 
 ```bash
-git clone git@github.com:YOUR_USERNAME/create-ryuu-app.git
+git clone git@github.com:YOUR_USERNAME/monorepo.git
 ```
 
 3. Install Dependencies:
@@ -73,10 +73,10 @@ For any new features or changes:
 
 ## Need Help?
 
-- Ask for help on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/discussions)
-- Check existing issues on [GitHub](https://github.com/ryuudotgg/create-ryuu-app/issues)
-- Review Create Ryuu App's [Documentation](https://create.ryuu.gg/docs)
+- Ask for help on [GitHub](https://github.com/ryuudotgg/monorepo/discussions)
+- Check existing issues on [GitHub](https://github.com/ryuudotgg/monorepo/issues)
+- Review Ryuu's Monorepo's [Documentation](https://monorepo.ryuu.gg/docs)
 
 ## License
 
-By contributing to Create Ryuu App, you agree that your contributions will be licensed under its MIT license.
+By contributing to Ryuu's Monorepo, you agree that your contributions will be licensed under its MIT license.
