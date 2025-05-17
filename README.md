@@ -31,7 +31,7 @@ Ryuu's Monorepo is a modern project boilerplate designed to kickstart your new a
 
 > <img alt="Warning" src="https://cdn.ryuu.gg/i4S2S5cqr9YA.svg">
 > <br>
-> This template has been discontinued in favor of Ryuu's App.
+> This template has been discontinued in favor of Ryuu's Forge.
 
 ## Tech Stack
 
