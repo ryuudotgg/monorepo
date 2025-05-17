@@ -34,7 +34,7 @@ async function Page(props: { params: Promise<{ slugs: string[] }> }) {
       tableOfContent={{ style: "clerk", single: false }}
       editOnGithub={{
         owner: "ryuudotgg",
-        repo: "create-ryuu-app",
+        repo: "monorepo",
         sha: "main",
         path,
       }}

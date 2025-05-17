@@ -3,9 +3,9 @@ description:
 globs: 
 alwaysApply: true
 ---
-# Ryuu App Development Guidelines
+# Ryuu's Monorepo Development Guidelines
 
-This is a comprehensive guide to the development standards and best practices for the Ryuu application ecosystem. Follow these rules to ensure consistency, quality, and maintainability across the codebase.
+This is a comprehensive guide to the development standards and best practices for the Ryuu's Monorepolication ecosystem. Follow these rules to ensure consistency, quality, and maintainability across the codebase.
 
 ## Table of Contents
 

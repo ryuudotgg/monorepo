@@ -9,19 +9,19 @@ export const config = {
     title: (
       <>
         <Logo className="size-6" />
-        <span className="font-medium whitespace-nowrap">Create Ryuu App</span>
+        <span className="font-medium whitespace-nowrap">Ryuu's Monorepo</span>
       </>
     ),
   },
   links: [
     {
       text: "API Reference",
-      url: "https://api.create.ryuu.gg/docs",
+      url: "https://api.monorepo.ryuu.gg/docs",
       external: true,
     },
     {
       type: "icon",
-      url: "https://github.com/ryuudotgg/create-ryuu-app",
+      url: "https://github.com/ryuudotgg/monorepo",
       text: "GitHub",
       external: true,
       icon: (

@@ -39,8 +39,8 @@ Community leaders have the right and responsibility to remove, edit, or reject c
 
 This Code of Conduct applies within all community spaces, including but not limited to:
 
-- The Create Ryuu App GitHub repository
-- The Create Ryuu App Discord community
+- The Ryuu's Monorepo GitHub repository
+- The Ryuu's Monorepo Discord community
 - Official documentation and communication channels
 - Community events and meetups
 - Code review discussions and pull requests

@@ -46,7 +46,7 @@ export const authConfig = {
   plugins: [
     passkey({
       rpID: "ryuu",
-      rpName: "Create Ryuu App",
+      rpName: "Ryuu's Monorepo",
       origin: env.AUTH_BASE_URL,
     }),
 

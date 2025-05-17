@@ -15,13 +15,13 @@ export const viewport = {
 
 export const metadata = {
   title: {
-    default: "Create Ryuu App",
-    template: "%s – Create Ryuu App",
+    default: "Ryuu's Monorepo",
+    template: "%s – Ryuu's Monorepo",
   },
 
   description: "A modern starter for your next big thing.",
 
-  applicationName: "Create Ryuu App",
+  applicationName: "Ryuu's Monorepo",
   referrer: "origin-when-cross-origin",
 
   creator: "Ryuu",
@@ -47,8 +47,8 @@ export const metadata = {
     url: String(baseUrl),
     locale: "en",
 
-    title: "Docs – Create Ryuu App",
-    siteName: "Create Ryuu App",
+    title: "Docs – Ryuu's Monorepo",
+    siteName: "Ryuu's Monorepo",
     description: "A modern starter for your next big thing.",
 
     determiner: "",
@@ -64,7 +64,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Docs – Create Ryuu App",
+    title: "Docs – Ryuu's Monorepo",
     description: "A modern starter for your next big thing.",
 
     site: "@ryuudotgg",
@@ -98,7 +98,7 @@ export const metadata = {
   },
 
   appleWebApp: {
-    title: "Docs – Create Ryuu App",
+    title: "Docs – Ryuu's Monorepo",
     statusBarStyle: "black-translucent",
     startupImage: [
       "/launch-768x1004.png",
